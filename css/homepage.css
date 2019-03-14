@@ -1,3 +1,16 @@
+
+/* 
+font-face 
+*/
+
+@font-face {
+  font-family: "cinzel-black"; src: url("/fonts/cinzel-black.ttf") format("truetype");
+  font-family: "cinzel-bold"; src: url("/fonts/cinzel-bold.ttf") format("truetype");
+  font-family: "cinzel-regular"; src: url("/fonts/cinzel-regular.ttf") format("truetype");
+  font-family: "cinzel-decorative-bold"; src: url("/fonts/cinzel-decorative-bold.ttf") format("truetype");
+  font-family: "cinzel-decorative-regular"; src: url("/fonts/cinzel-decorative-regular.ttf") format("truetype");
+}
+
 /*
   DIAGNOSTIC STYLING Body & Header
 */
@@ -14,7 +27,7 @@ body {
  }
  
  * {
-  /*outline: dotted red 1px; */
+  outline: dotted red 1px; 
  }
  
  .whole-header {
@@ -31,6 +44,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 90px; 
+  margin-top: 25em; 
    
   animation: pulse 5s infinite; 
  }
@@ -44,6 +58,7 @@ body {
    color: #F1ECD4;   
    font-size: 36px;
    text-shadow: 2px 2px 25px black;
+   font-family: "cinzel-bold", serif;  
  }
  
  .nav-and-button {
@@ -54,8 +69,8 @@ body {
    align-items: flex-start; 
  }
  
- /* 
- overlay-navigation (class)
+ /*
+  DIAGNOSTIC STYLING overlay-navigation (class)
  */
  
  .overlay-navigation {
@@ -79,8 +94,8 @@ body {
    color: #FFD195; 
  }
  
- /*
-   open-overlay (div)
+  /*
+  DIAGNOSTIC STYLING open-overlay (div)
  */
  
  .open-overlay { 
@@ -107,22 +122,23 @@ body {
    margin: 8px;
    margin-left: 4px; 
  }
- 
- /* First Frame */ 
+
+ /* First Frame all bars */ 
  .bar-top {
-   position: absolute;
-   top: 0px; 
- }
- 
- .bar-middle {
-   position: absolute;
-   top: 7.5px;
- }
- 
- .bar-bottom {
-   position: absolute;
-   top: 15px;
- }
+  position: absolute;
+  top: 0px; 
+}
+
+.bar-middle {
+  position: absolute;
+  top: 7.5px;
+}
+
+.bar-bottom {
+  position: absolute;
+  top: 15px;
+}
+
  
   /* 
  media query for 650px and under
