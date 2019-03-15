@@ -1,0 +1,759 @@
+/* 
+font-face 
+*/
+
+@font-face {
+    font-family: "cinzel-black"; src: url("/fonts/cinzel-black.ttf") format("truetype");
+    font-family: "cinzel-bold"; src: url("/fonts/cinzel-bold.ttf") format("truetype");
+    font-family: "cinzel-regular"; src: url("/fonts/cinzel-regular.ttf") format("truetype");
+    font-family: "cinzel-decorative-bold"; src: url("/fonts/cinzel-decorative-bold.ttf") format("truetype");
+    font-family: "cinzel-decorative-regular"; src: url("/fonts/cinzel-decorative-regular.ttf") format("truetype");
+  }
+  
+  /*
+    DIAGNOSTIC STYLING Body & Header
+  */
+
+  body {
+    background-color: #2F3135; 
+  }
+
+   * {
+    outline: dotted red 1px; 
+   }
+   
+  .whole-header {
+  background-image:url('/img/lights-whole.png');
+  background-position: center;
+  background-color: #515151;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+ }
+   
+   .header-text{
+    color: white; 
+    width: 100%; 
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 10px; 
+    height: 150px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    
+    animation: pulse 5s infinite; 
+   }
+   
+   #header-subtitle{
+    font-family: "cinzel-bold", serif;  
+    text-transform: uppercase; 
+     text-shadow: 2px 2px 20px black;
+   }
+   
+   #header-title {
+     color: #F1ECD4;   
+     font-size: 46px;
+     text-shadow: 10px 10px 50px black;
+     font-family: "cinzel-decorative-bold", cursive; 
+     text-transform: uppercase; 
+   }
+   
+   .nav-and-button {
+     width: 100%;
+     height: 100px; 
+     display: flex;
+     justify-content: flex-end; 
+     align-items: flex-start; 
+   }
+   
+   /*
+    DIAGNOSTIC STYLING overlay-navigation (class)
+   */
+   
+   .overlay-navigation {
+     display: flex; 
+     flex-direction: column;
+     margin: 2.5em 50px 0px 29px; 
+     width: 100%;
+     text-transform: uppercase; 
+   }
+   
+   .nav-text {
+    font-family: "cinzel-black", serif; 
+     border: solid #F1ECD4 2px; 
+     width: 100px; 
+     height: 15px;
+     padding: 5px; 
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+     margin: 50px 0px 0px 0px; 
+     text-decoration: none;
+     color: #FFD195; 
+   }
+   
+    /*
+    DIAGNOSTIC STYLING open-overlay (div)
+   */
+   
+   .open-overlay { 
+     position: absolute;
+     left: 4rem;
+     top: 2rem;
+     z-index: auto;
+     background-color: #F1ECD4; 
+     border: solid 2px #2F3135; 
+     border-radius: 2px; 
+     padding: 4px; 
+     width: 34px;
+     height: 25px; 
+     display: block;
+     cursor: pointer;
+   }
+   
+   .open-overlay span {
+     display: block;
+     height: 1px;
+     width: 25px; 
+     background-color: #29363B;
+     cursor: pointer;
+     margin: 8px;
+     margin-left: 4px; 
+   }
+  
+   /* First Frame all bars */ 
+   .bar-top {
+    position: absolute;
+    top: 0px; 
+  }
+  
+  .bar-middle {
+    position: absolute;
+    top: 7.5px;
+  }
+  
+  .bar-bottom {
+    position: absolute;
+    top: 15px;
+  }
+  
+   
+    /* 
+   media query for 650px and under
+   */   
+     
+    @media screen and (max-width: 650px) {  
+     
+   .open-overlay { 
+     position: absolute;
+     left: 3rem;
+     top: 2rem;
+    
+     width: 34px;
+     height: 25px; 
+     display: block;
+     cursor: pointer;
+   }
+     
+    .nav-text {
+     font-size: 13px; 
+     width: 70px; 
+   }
+     
+    .whole-header { 
+       height: 315px; 
+     }
+     
+    .header-text { 
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+     text-align: center; 
+     margin-left: 140px; 
+     width: 60%;
+   }
+   
+   #header-subtitle  {
+     font-size: 12px; 
+   }
+   
+   #header-title {
+     color: #F1ECD4;   
+     font-size: 28px;
+   }   
+}
+   
+   /*
+   DIAGNOSTIC STYLING Section: Portfolio Nav
+ */
+ 
+ .portfolio-nav {
+   display: grid; 
+   grid-template-columns: repeat(300, 1fr);
+   grid-template-rows: repeat(70, 1fr); 
+   height: 120px; 
+ }
+ 
+ #vertical-bar-1 {
+   background-color: #FFD195;
+   grid-column-start: 100;
+   grid-column-end: 100;
+   grid-row-start: 1;
+   grid-row-end: 70; 
+ }
+ 
+ #vertical-bar-2 {
+   background-color: #FFD195;
+   grid-column-start: 200;
+   grid-column-end: 200;
+   grid-row-start: 1;
+   grid-row-end: 70; 
+ }
+ 
+ #horizontal-bar {
+   background-color: #FFD195;
+   grid-column-start: 1;
+   grid-column-end: 301;
+   grid-row-start: 68;
+   grid-row-end: 70; 
+ }
+   
+ .nav-names {
+  font-family: "cinzel-bold", serif; 
+   text-transform: uppercase;
+   text-decoration: none;
+ }
+ 
+ .nav-names:hover{
+   color: #FFD195;
+ }
+ 
+ 
+ #digital-design{
+   font-size: 12px; 
+   color: #F1ECD4;
+   grid-column-start: 30;
+   grid-column-end: 80;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ 
+ #writing-samples {
+   font-size: 12px; 
+   color: #F1ECD4;
+   grid-column-start: 128;
+   grid-column-end: 188;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ #photography{
+   font-size: 12px; 
+   color: #F1ECD4;
+   grid-column-start: 235;
+   grid-column-end: 275;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+  /* 
+ portfolio-nav (section) media query 650 max 
+ */ 
+ 
+ @media screen and (max-width: 650px) { 
+   
+ .portfolio-nav {
+   height: 80px; 
+ }
+ 
+ #digital-design{
+   font-size: 8px; 
+   color: #F1ECD4;
+   grid-column-start: 30;
+   grid-column-end: 80;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ 
+ #writing-samples {
+   font-size: 8px; 
+   color: #F1ECD4;
+   grid-column-start: 128;
+   grid-column-end: 188;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+ #photography{
+   font-size: 8px; 
+   color: #F1ECD4;
+   grid-column-start: 230;
+   grid-column-end: 275;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ }
+ 
+ @media screen and (max-width: 400px) { 
+ #photography{
+   grid-column-start: 220;
+   grid-column-end: 265;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ }
+ 
+ /* light filler */
+ 
+ .whole-light-filler {
+   display: grid;
+   grid-template-columns: repeat(100, 1fr);
+   grid-template-rows: repeat(100, 1fr);
+   height: 450px; 
+ }
+ 
+ #light-filler {
+   width: 150px; 
+   height: 300px; 
+   grid-column-start: 51;
+   grid-column-end: 51;
+   grid-row-start: 1;
+   grid-row-end: 10; 
+ }
+ 
+ #subject-reminder {
+   grid-column-start: 47;
+   grid-column-end: 62;
+   grid-row-start: 75;
+   grid-row-end: 75; 
+   color: #F1ECD4;
+   text-transform: uppercase; 
+ }
+   
+  /* 
+ gallery-digital-design 
+ */ 
+ 
+ #gallery-title-1 {
+   position: absolute;
+   top: 510px; 
+   left: 0px; 
+   text-transform: uppercase;
+   margin: 40px 0px 10px 50px;
+   color: #F1ECD4;
+   font-size: 20px;   
+ }
+   
+ .gallery-digital-design {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr 1fr 1fr; 
+   height: 100vh; 
+   margin: 70px 40px 40px 40px; 
+   
+   visibility: visible;
+   transition: opacity var(--transition-duration) ease, transform 0.5s ease, visibility var(--transition-duration) ease 0s;
+ }
+ 
+ .gallery-digital-design.hidden{
+    visibility: hidden;
+   transition-delay: 0s, 0s, var(--transition-duration);
+ }
+ 
+ #image-1-d-d { 
+   margin: 5px; 
+   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/space-guy.png?raw=true');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row-start: 1;
+   grid-row-end: 4; 
+ }
+ 
+ #image-2-d-d {
+   margin: 5px; 
+   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/jelly-fish-finish.png?raw=true');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   grid-column-start: 2;
+   grid-column-end: 2;
+   grid-row-start: 1;
+   grid-row-end: 3; 
+ }
+ 
+ #image-3-d-d {
+   margin: 5px; 
+   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/sl-logo.png?raw=true');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   grid-column-start: 2;
+   grid-column-end: 2;
+   grid-row-start: 3;
+   grid-row-end: 4; 
+ }
+ 
+ /* digitial design footer */
+ 
+ .footer-1 {
+   width: 95%;
+   display: grid; 
+   grid-template-columns: repeat(300, 1fr);
+   grid-template-rows: repeat(70, 1fr); 
+   height: 120px; 
+   
+   position: absolute; 
+   top: 1010px; 
+ }
+ 
+ #footer-bar-1 {
+   background-color: #FFD195;
+   grid-column-start: 1;
+   grid-column-end: 300;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   
+   margin-left: -100px; 
+ }
+ 
+ /*.bottom-arrow {
+   display: flex; 
+   justify-content: center; 
+ }
+ 
+ #arrow-down {
+   height: 30px; 
+   margin: 20px 0px 30px 5px; 
+ }*/
+ 
+  /* 
+ digital design gallery media query 650 max 
+ */ 
+ 
+ @media screen and (max-width: 650px) { 
+   
+ #gallery-title-1 {
+   top: 360px; 
+   left: 0px; 
+   margin: 40px 0px 50px 5px;
+   font-size: 14px;   
+ }
+   
+ .gallery-digital-design {
+   height: 50vh; 
+   margin: 30px 0px 5px 0px; 
+ }
+ }
+ 
+ /*
+ writing sample section  
+ */
+ 
+ #gallery-title-2 {
+   position: absolute;
+   top: -70px; 
+   left: -30px; 
+   text-transform: uppercase;
+   margin: 40px 0px 0px 50px;
+   color: #F1ECD4;
+   font-size: 20px;   
+ }
+  
+ .gallery-writing-samples {
+  position: absolute;
+   top: 870px; 
+   
+   display: grid;
+   grid-template-columns: repeat(100, 1fr);
+   grid-template-rows: repeat(100, 1fr); 
+   height: 50vh; 
+   margin: -300px 40px 40px 40px;
+   
+ visibility: visible;
+   transition: opacity var(--transition-duration) ease, transform 0.5s ease, visibility var(--transition-duration) ease 0s;
+ } 
+ 
+ .gallery-writing-samples.hidden{
+    visibility: hidden;
+   transition-delay: 0s, 0s, var(--transition-duration);
+ }
+ 
+ .gallery-images-s-w {
+ border: solid #FFD195 2px; 
+ }
+ 
+ .gallery-subject {
+   text-align: center;
+   text-decoration: none; 
+   color: #F1ECD4;
+   font-size: 15px; 
+ }
+ 
+ #sw-subject-1 {
+   grid-column-start: 10;
+   grid-column-end: 90;
+   grid-row-start: 20;
+   grid-row-end: 50; 
+ }
+ 
+ #image-1-s-w { 
+   margin: 5px; 
+   grid-column-start: 1;
+   grid-column-end: 50;
+   grid-row-start: 1;
+   grid-row-end: 50;
+   
+    display: grid;
+   grid-template-columns: repeat(100, 1fr);
+   grid-template-rows: repeat(100, 1fr); 
+ }
+ 
+ #sw-subject-2 {
+   grid-column-start: 10;
+   grid-column-end: 90;
+   grid-row-start: 20;
+   grid-row-end: 50; 
+ }
+ 
+ #image-2-s-w {
+   margin: 5px; 
+   grid-column-start: 50;
+   grid-column-end: 100;
+   grid-row-start: 1;
+   grid-row-end: 50; 
+   
+   display: grid;
+   grid-template-columns: repeat(100, 1fr);
+   grid-template-rows: repeat(100, 1fr); 
+ }
+ 
+ #sw-subject-3 {
+   grid-column-start: 10;
+   grid-column-end: 90;
+   grid-row-start: 20;
+   grid-row-end: 50; 
+ }
+ 
+ #image-3-s-w {
+   margin: 5px;  
+   grid-column-start: 50;
+   grid-column-end: 100;
+   grid-row-start: 50;
+   grid-row-end: 100;
+   
+   display: grid;
+   grid-template-columns: repeat(100, 1fr);
+   grid-template-rows: repeat(100, 1fr); 
+ }
+ 
+ #sw-subject-4 {
+   grid-column-start: 10;
+   grid-column-end: 90;
+   grid-row-start: 20;
+   grid-row-end: 50;
+ }
+ 
+ #image-4-s-w {
+   margin: 5px;  
+   grid-column-start: 1;
+   grid-column-end: 50;
+   grid-row-start: 50;
+   grid-row-end: 100;
+   
+   display: grid;
+   grid-template-columns: repeat(100, 1fr);
+   grid-template-rows: repeat(100, 1fr); 
+ }
+ 
+ /* writing sample footer */
+ 
+ .footer-2 {
+   width: 100%;
+   display: grid; 
+   grid-template-columns: repeat(300, 1fr);
+   grid-template-rows: repeat(70, 1fr); 
+   height: 120px;
+   
+   position: absolute; 
+   top: 240px; 
+ }
+ 
+ #footer-bar-2 {
+   background-color: #FFD195;
+   grid-column-start: 1;
+   grid-column-end: 300;
+   grid-row-start: 2;
+   grid-row-end: 3; 
+   
+   margin: 0px -45px 0px -45px; 
+ }
+ 
+  /* 
+ sample writing gallery media query 650 max 
+ */ 
+ 
+ @media screen and (max-width: 650px) { 
+   
+ #gallery-title-2 {
+   position: absolute;
+   top: 370px;
+   left: 0px;
+   margin: 40px 0px 0px 10px;
+   font-size: 14px;   
+ }
+  
+ .gallery-writing-samples {
+   margin: -200px 0px 5px 0px;
+   }
+   
+ 
+ .gallery-subject {
+   font-size: 8px; 
+ }
+ }
+ 
+ /*
+ photography section  
+ */
+ 
+ #gallery-title-3 {
+   position: absolute;
+   top: 510px; 
+   left: 0px; 
+   text-transform: uppercase;
+   margin: 40px 0px 10px 50px;
+   color: #F1ECD4;
+   font-size: 20px;   
+ }
+   
+ .gallery-photography {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   height: 100vh; 
+   margin: -450px 40px 40px 40px; 
+   
+   visibility: visible;
+   transition: opacity var(--transition-duration) ease, transform 0.5s ease, visibility var(--transition-duration) ease 0s; 
+ }
+ 
+ .gallery-photography.hidden{
+    visibility: hidden;
+   transition-delay: 0s, 0s, var(--transition-duration);
+ } 
+ 
+ #image-1-photography { 
+   margin: 5px; 
+   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/daisy.jpg?raw=true');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row-start: 1;
+   grid-row-end: 3; 
+ }
+ 
+ #image-2-photography {
+   margin: 5px; 
+   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/rotc.jpg?raw=true');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   grid-column-start: 2;
+   grid-column-end: 2;
+   grid-row-start: 1;
+   grid-row-end: 3; 
+ }
+ 
+ #image-3-photography {
+   margin: 5px; 
+   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/tennis-net.jpg?raw=true');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row-start: 3;
+   grid-row-end: 5; 
+ }
+ 
+ #image-4-photography {
+    margin: 5px; 
+   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/warm-weather.jpg?raw=true');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+   grid-column-start: 2;
+   grid-column-end: 4;
+   grid-row-start: 3;
+   grid-row-end: 5; 
+ }
+ 
+   /* photography footer */
+ 
+ .footer-3 {
+   width: 95%;
+   display: grid; 
+   grid-template-columns: repeat(300, 1fr);
+   grid-template-rows: repeat(70, 1fr); 
+   height: 120px; 
+   margin-top: 10px; 
+   
+   position: absolute; 
+   top: 1010px; 
+ }
+ 
+ #footer-bar-3 {
+   background-color: #FFD195;
+   grid-column-start: 1;
+   grid-column-end: 300;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   
+   margin-left: -100px; 
+ }
+ 
+ 
+  /* 
+ photography gallery media query 650 max 
+ */ 
+ 
+ @media screen and (max-width: 650px) { 
+   
+ #gallery-title-3 {
+   position: absolute;
+   top: 365px; 
+   left: 10px; 
+   text-transform: uppercase;
+   margin: 40px 0px 10px 0px;
+   color: #F1ECD4;
+   font-size: 14px;   
+ }
+   
+ .gallery-photography {
+   height: 50vh; 
+   margin: -220px 0px 5px 0px; 
+ }
+ }
+ 
+ /* general footer extras */ 
+ 
+ #copyright {
+   color: #F1ECD4;
+   font-size: 10px; 
+   grid-column-start: 125;
+   grid-column-end: 180;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
