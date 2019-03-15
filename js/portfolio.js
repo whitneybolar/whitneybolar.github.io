@@ -27,39 +27,17 @@ $('.open-overlay').click(function(){
 
 // gallery visibility
 
-//$('#digital-design').click(() => {
-//$('.gallery-digital-design').toggleClass('hidden');
-//});
+$('#digital-design').click(() => {
+$('.gallery-digital-design').toggleClass('hidden');
+});
 
-//$('#writing-samples').click(() => {
-//$('.gallery-writing-samples').toggleClass('hidden');
-//});
+$('#writing-samples').click(() => {
+$('.gallery-writing-samples').toggleClass('hidden');
+});
 
-//$('#photography').click(() => {
-//$('.gallery-photography').toggleClass('hidden');
-//});
-
-//$(document).ready(function() {
- // $("#writing-samples").click(function () {
- //  $(".gallery-digital-design").hide();
-  // $(".gallery-photography").hide();
-   //$(".gallery-writing-samples").show();
- // });
-  
-  //$(document).ready(function() {
-  //$("#digital-design").click(function () {
-   //$(".gallery-writing-samples").hide();
-  // $(".gallery-photography").hide();
-  // $(".gallery-digital-design").show();
- // });
-
-
-  //$(document).ready(function() {
-  //$("#photography").click(function () {
-  // $(".gallery-writing-samples").hide();
-   //$(".gallery-digital-design").hide();
-  /// $(".gallery-photography").show();
- // });
+$('#photography').click(() => {
+$('.gallery-photography').toggleClass('hidden');
+});
 
 // tabslet gallery
 
@@ -112,5 +90,7 @@ console.log( today, year );
 
 
 // Show current year
-$('#copyright').text( year ); 
+$('#copyright-1 span').text( year ); 
+$('#copyright-2 span').text( year ); 
+$('#copyright-3 span').text( year ); 
 

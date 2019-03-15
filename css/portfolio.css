@@ -49,16 +49,16 @@ font-face
    }
    
    #header-subtitle{
-    font-family: "cinzel-bold", serif;  
+    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
     text-transform: uppercase; 
      text-shadow: 2px 2px 20px black;
    }
    
    #header-title {
      color: #F1ECD4;   
-     font-size: 46px;
+     font-size: 56px;
      text-shadow: 10px 10px 50px black;
-     font-family: "cinzel-decorative-bold", cursive; 
+     font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      text-transform: uppercase; 
    }
    
@@ -83,7 +83,7 @@ font-face
    }
    
    .nav-text {
-    font-family: "cinzel-black", serif; 
+    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
      border: solid #F1ECD4 2px; 
      width: 100px; 
      height: 15px;
@@ -206,7 +206,7 @@ font-face
    grid-row-end: 70; 
  }
  
- #vertical-bar-2 {
+ #vertical-bar-2{
    background-color: #FFD195;
    grid-column-start: 200;
    grid-column-end: 200;
@@ -223,7 +223,7 @@ font-face
  }
    
  .nav-names {
-  font-family: "cinzel-bold", serif; 
+  font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    text-transform: uppercase;
    text-decoration: none;
  }
@@ -341,9 +341,10 @@ font-face
  */ 
  
  #gallery-title-1 {
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
    position: absolute;
-   top: 510px; 
-   left: 0px; 
+   top: -85px; 
+   left: -40px; 
    text-transform: uppercase;
    margin: 40px 0px 10px 50px;
    color: #F1ECD4;
@@ -352,10 +353,15 @@ font-face
    
  .gallery-digital-design {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: 1fr 1fr 1fr; 
-   height: 100vh; 
-   margin: 70px 40px 40px 40px; 
+   grid-template-columns: repeat(100, 1fr);
+   grid-template-rows: repeat(100, 1fr); 
+   height: 50vh;
+   width: 100%; 
+   margin: -70em 40px 40px 40px; 
+
+   position: absolute; 
+   top: 126em; 
+ 
    
    visibility: visible;
    transition: opacity var(--transition-duration) ease, transform 0.5s ease, visibility var(--transition-duration) ease 0s;
@@ -368,38 +374,38 @@ font-face
  
  #image-1-d-d { 
    margin: 5px; 
-   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/space-guy.png?raw=true');
+   background-image:url('/img/space-guy.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
    grid-column-start: 1;
-   grid-column-end: 1;
+   grid-column-end: 46;
    grid-row-start: 1;
-   grid-row-end: 4; 
+   grid-row-end: 100; 
  }
  
  #image-2-d-d {
    margin: 5px; 
-   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/jelly-fish-finish.png?raw=true');
+   background-image:url('/img/jelly-fish-finish.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; 
-   grid-column-start: 2;
-   grid-column-end: 2;
+   grid-column-start: 50;
+   grid-column-end: 92;
    grid-row-start: 1;
-   grid-row-end: 3; 
+   grid-row-end: 50; 
  }
  
  #image-3-d-d {
    margin: 5px; 
-   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/sl-logo.png?raw=true');
+   background-image:url('/img/sl-logo.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-   grid-column-start: 2;
-   grid-column-end: 2;
-   grid-row-start: 3;
-   grid-row-end: 4; 
+   grid-column-start: 50;
+   grid-column-end: 92;
+   grid-row-start: 50;
+   grid-row-end: 100; 
  }
  
  /* digitial design footer */
@@ -412,7 +418,7 @@ font-face
    height: 120px; 
    
    position: absolute; 
-   top: 1010px; 
+   top: 570px; 
  }
  
  #footer-bar-1 {
@@ -424,6 +430,17 @@ font-face
    
    margin-left: -100px; 
  }
+
+ #copyright-1 {
+  font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: #F1ECD4;
+   font-size: 12px; 
+   grid-column-start: 120;
+   grid-column-end: 170;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
  
  /*.bottom-arrow {
    display: flex; 
@@ -459,10 +476,11 @@ font-face
  */
  
  #gallery-title-2 {
-   position: absolute;
-   top: -70px; 
-   left: -30px; 
-   text-transform: uppercase;
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  position: absolute; 
+  top: -85px;
+  left: -40px;
+  text-transform: uppercase;
    margin: 40px 0px 0px 50px;
    color: #F1ECD4;
    font-size: 20px;   
@@ -470,13 +488,13 @@ font-face
   
  .gallery-writing-samples {
   position: absolute;
-   top: 870px; 
-   
+   top: 126em; 
+
    display: grid;
    grid-template-columns: repeat(100, 1fr);
    grid-template-rows: repeat(100, 1fr); 
    height: 50vh; 
-   margin: -300px 40px 40px 40px;
+   margin: -70em 40px 40px 40px; 
    
  visibility: visible;
    transition: opacity var(--transition-duration) ease, transform 0.5s ease, visibility var(--transition-duration) ease 0s;
@@ -499,6 +517,7 @@ font-face
  }
  
  #sw-subject-1 {
+  font-family: "cinzel-bold", Arial, Helvetica, sans-serif; 
    grid-column-start: 10;
    grid-column-end: 90;
    grid-row-start: 20;
@@ -518,6 +537,7 @@ font-face
  }
  
  #sw-subject-2 {
+  font-family: "cinzel-bold", Arial, Helvetica, sans-serif; 
    grid-column-start: 10;
    grid-column-end: 90;
    grid-row-start: 20;
@@ -537,6 +557,7 @@ font-face
  }
  
  #sw-subject-3 {
+  font-family: "cinzel-bold", Arial, Helvetica, sans-serif; 
    grid-column-start: 10;
    grid-column-end: 90;
    grid-row-start: 20;
@@ -556,6 +577,7 @@ font-face
  }
  
  #sw-subject-4 {
+  font-family: "cinzel-bold", Arial, Helvetica, sans-serif; 
    grid-column-start: 10;
    grid-column-end: 90;
    grid-row-start: 20;
@@ -584,7 +606,7 @@ font-face
    height: 120px;
    
    position: absolute; 
-   top: 240px; 
+   top: 35.5em; 
  }
  
  #footer-bar-2 {
@@ -597,13 +619,24 @@ font-face
    margin: 0px -45px 0px -45px; 
  }
  
+ #copyright-2 {
+  font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+   color: #F1ECD4;
+   font-size: 12px; 
+   grid-column-start: 130;
+   grid-column-end: 180;
+   grid-row-start: 35;
+   grid-row-end: 35; 
+ }
+ 
+
   /* 
  sample writing gallery media query 650 max 
  */ 
  
  @media screen and (max-width: 650px) { 
    
- #gallery-title-2 {
+ #gallery-title-2 { 
    position: absolute;
    top: 370px;
    left: 0px;
@@ -626,9 +659,10 @@ font-face
  */
  
  #gallery-title-3 {
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
    position: absolute;
-   top: 510px; 
-   left: 0px; 
+   top: -85px; 
+   left: -20px; 
    text-transform: uppercase;
    margin: 40px 0px 10px 50px;
    color: #F1ECD4;
@@ -636,11 +670,15 @@ font-face
  }
    
  .gallery-photography {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(4, 1fr);
-   height: 100vh; 
-   margin: -450px 40px 40px 40px; 
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-template-rows: repeat(100, 1fr); 
+  height: 50vh;
+  width: 95%; 
+   margin: -70em 20px 40px 20px; 
+
+   position: absolute; 
+   top: 126em; 
    
    visibility: visible;
    transition: opacity var(--transition-duration) ease, transform 0.5s ease, visibility var(--transition-duration) ease 0s; 
@@ -653,50 +691,50 @@ font-face
  
  #image-1-photography { 
    margin: 5px; 
-   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/daisy.jpg?raw=true');
+   background-image:url('/img/daisy.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-   grid-column-start: 1;
-   grid-column-end: 2;
-   grid-row-start: 1;
-   grid-row-end: 3; 
+  grid-column-start: 1;
+  grid-column-end: 50;
+  grid-row-start: 1;
+  grid-row-end: 50;
  }
  
  #image-2-photography {
    margin: 5px; 
-   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/rotc.jpg?raw=true');
+   background-image:url('/img/rotc.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; 
-   grid-column-start: 2;
-   grid-column-end: 2;
-   grid-row-start: 1;
-   grid-row-end: 3; 
+  grid-column-start: 50;
+  grid-column-end: 100;
+  grid-row-start: 1;
+  grid-row-end: 50; 
  }
  
  #image-3-photography {
    margin: 5px; 
-   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/tennis-net.jpg?raw=true');
+   background-image:url('/img/tennis-net.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-   grid-column-start: 1;
-   grid-column-end: 2;
-   grid-row-start: 3;
-   grid-row-end: 5; 
+  grid-column-start: 50;
+   grid-column-end: 100;
+   grid-row-start: 50;
+   grid-row-end: 100;
  }
  
  #image-4-photography {
-    margin: 5px; 
-   background-image:url('https://github.com/whitneybolar/whitneybolar.github.io/blob/master/web-2-starter-master/img/warm-weather.jpg?raw=true');
+  margin: 5px; 
+   background-image:url('/img/warm-weather.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-   grid-column-start: 2;
-   grid-column-end: 4;
-   grid-row-start: 3;
-   grid-row-end: 5; 
+  grid-column-start: 1;
+  grid-column-end: 50;
+  grid-row-start: 50;
+  grid-row-end: 100; 
  }
  
    /* photography footer */
@@ -708,9 +746,10 @@ font-face
    grid-template-rows: repeat(70, 1fr); 
    height: 120px; 
    margin-top: 10px; 
+   margin-left: 30px; 
    
    position: absolute; 
-   top: 1010px; 
+   top: 35em; 
  }
  
  #footer-bar-3 {
@@ -721,6 +760,16 @@ font-face
    grid-row-end: 3;
    
    margin-left: -100px; 
+ }
+ 
+ #copyright-3 {
+  font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+   color: #F1ECD4;
+   font-size: 12px; 
+   grid-column-start: 116;
+   grid-column-end: 170;
+   grid-row-start: 35;
+   grid-row-end: 35; 
  }
  
  
@@ -744,16 +793,5 @@ font-face
    height: 50vh; 
    margin: -220px 0px 5px 0px; 
  }
- }
- 
- /* general footer extras */ 
- 
- #copyright {
-   color: #F1ECD4;
-   font-size: 10px; 
-   grid-column-start: 125;
-   grid-column-end: 180;
-   grid-row-start: 35;
-   grid-row-end: 35; 
  }
  
