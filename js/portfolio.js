@@ -41,6 +41,17 @@ $('.gallery-photography').toggleClass('hidden');
 
 // tabslet gallery
 
+$(document).ready(function() {
+  $("#digital-design").click(function () {
+   $(".whole-light-filler").show();
+   $(".gallery-digital-design").hide();
+  });
+  $("#digital-design").click(function () {
+   $(".gallery-digital-design").show();
+   $(".whole-light-filler").hide();
+  });
+ });
+
 
 // light image stuff
   

@@ -143,11 +143,11 @@ font-face
   
    
     /* 
-   media query for 650px and under
+   header & body media query for 650px and under
    */   
      
-    @media screen and (max-width: 650px) {  
-     
+    @media screen and (max-width: 650px) { 
+      
    .open-overlay { 
      position: absolute;
      left: 3rem;
@@ -173,6 +173,7 @@ font-face
      align-items: center;
      justify-content: center;
      text-align: center; 
+     margin-top: -60px; 
      margin-left: 140px; 
      width: 60%;
    }
@@ -335,6 +336,40 @@ font-face
    color: #F1ECD4;
    text-transform: uppercase; 
  }
+
+ /* 
+light filler media query 650 max 
+ */ 
+ 
+
+ @media screen and (max-width: 650px) { 
+
+    .whole-light-filler {
+      display: grid;
+      grid-template-columns: repeat(100, 1fr);
+      grid-template-rows: repeat(100, 1fr);
+      height: 450px; 
+    }
+    
+    #light-filler {
+      width: 75px; 
+      height: 200px; 
+      grid-column-start: 51;
+      grid-column-end: 51;
+      grid-row-start: 1;
+      grid-row-end: 10; 
+    }
+    
+    #subject-reminder {
+      grid-column-start: 40;
+      grid-column-end: 75;
+      grid-row-start: 50;
+      grid-row-end: 50; 
+      color: #F1ECD4;
+      text-transform: uppercase; 
+      font-size: 12px; 
+    }
+  }
    
   /* 
  gallery-digital-design 
