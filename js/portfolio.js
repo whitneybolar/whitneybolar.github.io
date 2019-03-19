@@ -70,6 +70,16 @@ $('#all-subjects-link').click( function() {
   
 });
 
+// about me svg 
+
+$svg = $('#about-be-svg').drawsvg();
+
+function animate() {
+$svg.drawsvg('animate');  
+}
+
+animate();
+
 
 
 //footer copyright
