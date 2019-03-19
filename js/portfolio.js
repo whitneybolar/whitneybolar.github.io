@@ -25,68 +25,52 @@ $('.open-overlay').click(function(){
  $("#nav_item_3").slideToggle({top: '13px'});
  }); 
 
-// gallery visibility
 
-$('#digital-design').click(() => {
-$('.gallery-digital-design').toggleClass('hidden');
-});
+ // gallery filter 
 
-$('#writing-samples').click(() => {
-$('.gallery-writing-samples').toggleClass('hidden');
-});
-
-$('#photography').click(() => {
-$('.gallery-photography').toggleClass('hidden');
-});
-
-// tabslet gallery
-
-$(document).ready(function() {
-  $("#digital-design").click(function () {
-   $(".whole-light-filler").show();
-   $(".gallery-digital-design").hide();
-  });
-  $("#digital-design").click(function () {
-   $(".gallery-digital-design").show();
-   $(".whole-light-filler").hide();
-  });
- });
-
-
-// light image stuff
+ var checkClass = function() {
   
-$(document).ready(function() {
-  $("#digital-design").click(function () {
-   $(".whole-light-filler").show();
-   $(".gallery-digital-design").hide();
-  });
-  $("#digital-design").click(function () {
-   $(".gallery-digital-design").show();
-   $(".whole-light-filler").hide();
-  });
- });
+  // Remove Existing Hide 
+  if ( $('figure').hasClass('hide') ) {
+    $('figure').removeClass('hide'); 
+  }
+  
+};
 
-$(document).ready(function() {
-  $("#writing-samples").click(function () {
-   $(".whole-light-filler").show();
-   $(".gallery-writing-samples").hide();
-  });
-  $("#writing-samples").click(function () {
-   $(".gallery-writing-samples").show();
-   $(".whole-light-filler").hide();
-  });
- });
+// Click Photography
+$('#photography').click( function() {
+  
+  // Check Class
+  checkClass();
+  
+  // Hide Other Stuff
+  $('figure:not(.gallery-images-photography)').toggleClass('hide');
+});
 
-$(document).ready(function() {
-  $("#photography").click(function () {
-   $(".whole-light-filler").show();
-   $(".gallery-photography").hide();
-  });
-  $("#photography").click(function () {
-   $(".gallery-photography").show();
-   $(".whole-light-filler").hide();
-  });
- });
+// Click digital design
+$('#digital-design').click( function() {
+  
+  checkClass();
+  $('figure:not(.gallery-images-d-d)').toggleClass('hide');
+
+});
+
+// Click writing samples
+$('#writing-samples').click( function() {
+
+  checkClass();
+  $('figure:not(.gallery-images-s-w)').toggleClass('hide');
+  
+});
+
+// Show All 
+$('#all-subjects-link').click( function() {
+  
+  checkClass();
+  
+});
+
+
 
 //footer copyright
 

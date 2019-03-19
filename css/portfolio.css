@@ -345,13 +345,31 @@ font-face
   margin: 0px 50px 0px 50px; 
  } 
  
- .gallery-images {
+ .gallery-images-photography {
+  display: flex;
+  justify-content: center; 
+  border: solid #FFD195 2px;
+  margin: 5px; 
+  height: 300px;
+  width: 300px; 
+ }
+
+ .gallery-images-s-w {
    display: flex;
    justify-content: center; 
    border: solid #FFD195 2px;
    margin: 5px; 
    height: 300px;
    width: 300px; 
+ }
+
+ .gallery-images-d-d {
+  display: flex;
+  justify-content: center; 
+  border: solid #FFD195 2px;
+  margin: 5px; 
+  height: 300px;
+  width: 300px; 
  }
 
  .gallery-subject {
@@ -437,3 +455,12 @@ font-face
   background-size: cover; 
 }
  
+/* gallery filter */ 
+
+.hide {
+  opacity: 0;
+  transition: opacity .25s;
+  position: absolute;
+}
+
+
