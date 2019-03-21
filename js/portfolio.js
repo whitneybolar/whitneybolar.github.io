@@ -95,7 +95,5 @@ console.log( today, year );
 
 
 // Show current year
-$('#copyright-1 span').text( year ); 
-$('#copyright-2 span').text( year ); 
-$('#copyright-3 span').text( year ); 
+$('#copyright span').text( year );  
 
