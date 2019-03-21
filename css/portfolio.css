@@ -18,10 +18,6 @@ font-face
     background-color: #2F3135; 
   }
 
-   * {
-    outline: dotted red 1px; 
-   }
-   
   .whole-header {
   background-image:url('/img/lights-whole.png');
   background-position: center;
@@ -29,7 +25,7 @@ font-face
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 700px;
+  height: 590px;
   display: flex;
   flex-wrap: wrap;
  }
@@ -49,7 +45,7 @@ font-face
    }
    
    #header-subtitle{
-    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase; 
      text-shadow: 2px 2px 20px black;
    }
@@ -77,7 +73,7 @@ font-face
    .overlay-navigation {
      display: flex; 
      flex-direction: column;
-     margin: 2.5em 50px 0px 29px; 
+     margin: 2em 50px 0px 29px; 
      width: 100%;
      text-transform: uppercase; 
    }
@@ -232,8 +228,9 @@ font-face
  }
    
  .nav-names {
-  font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
    text-transform: uppercase;
+   font-weight: bold;
    text-decoration: none;
  }
  
@@ -244,9 +241,9 @@ font-face
  #all-subjects-link {
   font-size: 12px; 
   color: #F1ECD4;
-  grid-column-start: 33;
+  grid-column-start: 31;
   grid-column-end: 40;
-  grid-row-start: 35;
+  grid-row-start: 36;
   grid-row-end: 35; 
  }
 
@@ -254,8 +251,8 @@ font-face
  #digital-design{
    font-size: 12px; 
    color: #F1ECD4;
-   grid-column-start: 100;
-   grid-column-end: 130;
+   grid-column-start: 104;
+   grid-column-end: 121;
    grid-row-start: 35;
    grid-row-end: 35; 
  }
@@ -264,8 +261,8 @@ font-face
  #writing-samples {
    font-size: 12px; 
    color: #F1ECD4;
-   grid-column-start: 173;
-   grid-column-end: 205;
+   grid-column-start: 176;
+   grid-column-end: 196;
    grid-row-start: 35;
    grid-row-end: 35; 
  }
@@ -273,9 +270,9 @@ font-face
  #photography{
    font-size: 12px; 
    color: #F1ECD4;
-   grid-column-start: 250;
-   grid-column-end: 282;
-   grid-row-start: 35;
+   grid-column-start: 254;
+   grid-column-end: 273;
+   grid-row-start: 36;
    grid-row-end: 35; 
  }
  
@@ -531,7 +528,8 @@ gallery media query for 650px and under
   text-transform: uppercase;
   margin-left: 40px; 
   color: #F1ECD4;
-  margin-top: 20px; 
+  margin-top: 0px; 
+  font-size: 20px; 
 }
 
 .whole-certification-list {
@@ -585,11 +583,13 @@ gallery media query for 650px and under
 
 #about-me-main-title {
   font-size: 30px; 
+  color: #FFD195;
 }
 
 #about-me-subtitle {
   font-size: 16px; 
   margin-top: -20px; 
+  color: white;
 }
 
 .about-me-bars-right {
@@ -612,6 +612,7 @@ gallery media query for 650px and under
 #about-me-description-p {
   font-size: 14px; 
   padding: 0px 30px 0px 30px; 
+  color: white;
 }
 
  /* 
@@ -620,22 +621,11 @@ about me media query between 1500 & 800
      
    @media only screen and (max-width: 1500px) and (min-width: 800px) {
 
-    .about-me {
-      display: flex; 
-      flex-direction: column; 
-      background: #2F3135;
-      justify-content: center; 
-      align-items: center;
-      margin-top: 0em;
-      margin-left: 0px; 
-
-    }
     
-    h3,
     #about-me-title {
       margin-left: 20px; 
       margin-top: 30px; 
-      margin-left: 50px; 
+      font-size: 15px; 
     }
     
     .whole-certification-list { 
@@ -659,13 +649,18 @@ about me media query between 1500 & 800
       margin-bottom: -40px;
       margin-top: -7px; 
     }
+
+    #minor {
+      font-size: 15px; 
+    }
     
     #major {
       font-size: 20px; 
     }
     
     #certificate {
-      margin-bottom: -7px; 
+      margin-bottom: -7px;
+      font-size: 15px;  
     }
     
     #certificate-indication {
@@ -677,7 +672,7 @@ about me media query between 1500 & 800
       color: #FFD195; 
       display: flex;
       margin-left: 0em;
-      margin-top: 10em;  
+      margin-top: 12em;  
       height: 400px ; 
       width: 400px; 
     }
@@ -700,7 +695,7 @@ about me media query between 1500 & 800
       height: 200px; 
       width: 475px; 
       color: #F1ECD4;
-      margin-top: 0em; 
+      margin-top: -1em;   
       padding-top: 0px;   
       display: flex;
       flex-direction: column; 
@@ -713,10 +708,10 @@ about me media query between 1500 & 800
    }
 
  /* 
-about me media query between 800 & 500
+about me media query between 800 & 650
    */   
      
-   @media only screen and (max-width: 800px) and (min-width: 500px) {
+   @media only screen and (max-width: 800px) and (min-width: 650px) {
 
     .about-me {
       display: flex; 
@@ -727,13 +722,6 @@ about me media query between 800 & 500
       margin-top: 0em;
       margin-left: 0px; 
 
-    }
-    
-    h3,
-    #about-me-title {
-      margin-left: 12px; 
-      margin-top: 10px;
-      margin-left: 50px;  
     }
     
     .whole-certification-list { 
@@ -775,7 +763,7 @@ about me media query between 800 & 500
       color: #FFD195; 
       display: flex;
       margin-left: 0em;
-      margin-top: 5.5em;  
+      margin-top: 5.5em; 
       height: 300px ; 
       width: 300px; 
     }
@@ -797,8 +785,7 @@ about me media query between 800 & 500
       height: 150px; 
       width: 475px; 
       color: #F1ECD4;
-      margin: 0px; 
-      padding-top: 10px;   
+      margin-top: -1em;   
       display: flex;
       flex-direction: column; 
     }
@@ -810,10 +797,10 @@ about me media query between 800 & 500
    }
 
    /* 
-about me media query for 650px and under
+about me media query for 500px and under
    */   
      
-   @media screen and (max-width: 500px) { 
+   @media screen and (max-width: 650px) { 
 
     .about-me {
       display: flex; 
@@ -828,7 +815,8 @@ about me media query for 650px and under
     
     #about-me-title {
       margin-left: 12px; 
-      margin-top: 10px; 
+      margin-top: 15px; 
+      font-size: 12px; 
     }
     
     .whole-certification-list { 
@@ -913,8 +901,8 @@ about me media query for 650px and under
 }
 
 #my-face {
-  height: 400px; 
-  width: 400px; 
+  height: 325px; 
+  width: 325px; 
   border-radius: 20px; 
   margin-right: 50px; 
 }
@@ -923,10 +911,11 @@ form {
   display: flex; 
   align-items: center; 
   flex-direction: column;
-  margin-top: -20px; 
+  margin-top: -30px; 
 }
 
 .contact-title {
+  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
   margin-left: -10px;
   text-transform: uppercase;
   color: #F1ECD4;
@@ -958,6 +947,7 @@ form {
 label {
   text-transform: uppercase; 
   color: white; 
+  font-size: 12px; 
 }
 
 .three-inputs {
@@ -968,15 +958,15 @@ label {
 }
 
 #input-1 {
-  height: 20px; 
+  height: 15px; 
 }
 
 #input-2 {
-  height: 20px; 
+  height: 15px; 
 }
 
 #comment-input {
-  height: 125px; 
+  height: 100px; 
 }
 
 #send-button {
@@ -993,16 +983,196 @@ value {
   top: -50px;
 }
 
+/* 
+contact me media query between 800 & 500
+   */   
+     
+   @media only screen and (max-width: 800px) and (min-width: 500px) {
+
+    .whole-contact-form {
+      margin-top: 50px; 
+      display: flex;
+      justify-content: center; 
+    }
+    
+    #my-face {
+      height: 260px; 
+      width: 260px; 
+      border-radius: 20px; 
+      margin-right: 10px; 
+    }
+    
+    form {
+      display: flex; 
+      align-items: center; 
+      flex-direction: column;
+      margin-top: -30px; 
+    }
+    
+    .contact-title {
+      font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      margin-left: -10px;
+      text-transform: uppercase;
+      color: #F1ECD4;
+      margin-bottom: 0px; 
+      font-size: 14px; 
+    }
+    
+    .name-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .email-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .comments-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .submit-package {
+      margin: 20px; 
+    }
+    
+    label {
+      text-transform: uppercase; 
+      color: white; 
+      font-size: 12px; 
+    }
+    
+    .three-inputs {
+      border: #F1ECD4 solid 2px; 
+      background-color: #F1ECD4;
+      border-radius: 5px; 
+      width: 200px;
+    }
+    
+    #input-1 {
+      height: 15px; 
+    }
+    
+    #input-2 {
+      height: 15px; 
+    }
+    
+    #comment-input {
+      height: 50px; 
+    }
+    
+    #send-button {
+      border-radius: 5px; 
+      color: #2F3135;
+      text-transform: uppercase; 
+      background-color: white;
+      width: 100px; 
+      height: 30px; 
+    }
+    
+    value {
+      position: absolute;
+      top: -50px;
+    }
+   }
+
+  /* 
+contact me media query for 500px and under
+   */   
+     
+   @media screen and (max-width: 500px) { 
+
+    .whole-contact-form {
+      margin-top: 0px; 
+      display: flex;
+      justify-content: center; 
+    }
+    
+    #my-face {
+     display: none; 
+    }
+    
+    form {
+      display: flex; 
+      align-items: center; 
+      flex-direction: column;
+      margin-top: -30px; 
+    }
+    
+    .contact-title {
+      font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      margin-left: -10px;
+      text-transform: uppercase;
+      color: #F1ECD4;
+      margin-bottom: 0px; 
+      font-size: 14px; 
+    }
+    
+    .name-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .email-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .comments-package {
+      display: flex;
+      flex-direction: column;  
+      margin: 10px; 
+    }
+    
+    .submit-package {
+      margin: 20px; 
+    }
+    
+    label {
+      text-transform: uppercase; 
+      color: white; 
+      font-size: 12px; 
+    }
+    
+    .three-inputs {
+      border: #F1ECD4 solid 2px; 
+      background-color: #F1ECD4;
+      border-radius: 5px; 
+      width: 250px;
+    }
+    
+    #comment-input {
+      height: 50px; 
+    }
+    
+    #send-button {
+      border-radius: 5px; 
+      color: #2F3135;
+      text-transform: uppercase; 
+      background-color: white;
+      width: 60px; 
+      height: 30px; 
+    }
+    
+   }
+
 /* Footer */
 
 .footer {
+  margin-top: 50px; 
   display: grid; 
   grid-template-columns: repeat(300, 1fr);
   grid-template-rows: repeat(70, 1fr); 
   height: 120px; 
 }
 
-#horizontal-bar {
+#footer-bar {
   background-color: #FFD195;
   grid-column-start: 1;
   grid-column-end: 300;
@@ -1013,9 +1183,39 @@ value {
 #copyright{
   color: #F1ECD4;
   grid-column-start: 125;
-  grid-column-end: 175;
+  grid-column-end: 185;
   grid-row-start: 35;
   grid-row-end: 35; 
 }
 
+/* 
+footer media query between 800 & 500
+   */   
+     
+   @media only screen and (max-width: 800px) and (min-width: 500px) {
+
+    #copyright{
+      font-size: 12px; 
+      grid-column-start: 125;
+      grid-column-end: 195;
+      grid-row-start: 35;
+      grid-row-end: 35; 
+    }
+   }
+
+ /* 
+ footer media query for 500px and under
+   */   
+     
+   @media screen and (max-width: 500px) { 
+
+    #copyright{
+      font-size: 10px; 
+      grid-column-start: 120;
+      grid-column-end: 205;
+      grid-row-start: 35;
+      grid-row-end: 35; 
+    }
+
+   }
 
