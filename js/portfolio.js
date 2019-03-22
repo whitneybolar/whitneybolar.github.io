@@ -37,6 +37,11 @@ $('.open-overlay').click(function(){
   
 };
 
+// light gallery 
+
+$('.whole-gallery').lightGallery({ thumbnail: false, share: false, }); 
+
+
 // Click Photography
 $('#photography').click( function() {
   
