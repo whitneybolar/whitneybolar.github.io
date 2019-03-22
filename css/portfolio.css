@@ -341,6 +341,7 @@ font-face
  }
   
 #lightgallery {
+  list-style-type: none; 
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap; 
@@ -349,6 +350,7 @@ font-face
  } 
  
  .gallery-images-photography {
+  border-radius: 5px; 
   display: flex;
   justify-content: center; 
   border: solid #FFD195 2px;
@@ -358,6 +360,7 @@ font-face
  }
 
  .gallery-images-s-w {
+  border-radius: 5px; 
    display: flex;
    justify-content: center; 
    border: solid #FFD195 2px;
@@ -367,12 +370,13 @@ font-face
  }
 
  .gallery-images-d-d {
+  border-radius: 5px; 
   display: flex;
   justify-content: center; 
   border: solid #FFD195 2px;
   margin: 5px; 
   height: 200px;
-  width: 200px; 
+  width: 200px;
  }
 
  .gallery-subject {

@@ -41,6 +41,8 @@ $('.open-overlay').click(function(){
 
 $(document).ready(function() {
   $('#lightgallery').lightGallery({
+    thumbnail: false, 
+    share: false,
     pager: true
   });
 });
