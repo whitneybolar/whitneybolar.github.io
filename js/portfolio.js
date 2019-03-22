@@ -39,10 +39,11 @@ $('.open-overlay').click(function(){
 
 // light gallery 
 
-$('#gallery').lightGallery({
-  thumbnail: false, 
-  share: false
-}); 
+$(document).ready(function() {
+  $('#lightgallery').lightGallery({
+    pager: true
+  });
+});
 
 
 // Click Photography
