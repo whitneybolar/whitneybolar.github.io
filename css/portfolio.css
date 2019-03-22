@@ -340,7 +340,7 @@ font-face
    margin-left: 50px;  
  }
   
- .whole-gallery {
+#lightgallery {
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap; 
