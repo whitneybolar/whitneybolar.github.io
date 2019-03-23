@@ -679,12 +679,7 @@ about me media query between 1500 & 800
     }
     
     #about-be-svg {
-      color: #FFD195; 
-      display: flex;
-      margin-left: 0em;
-      margin-top: 12em;  
-      height: 400px ; 
-      width: 400px; 
+    display: none; 
     }
     
     #about-me-main-title {
