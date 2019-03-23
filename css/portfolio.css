@@ -712,7 +712,7 @@ about me media query between 1500 & 800
     }
     
     #about-me-description-p {
-      font-size: 10px; 
+      font-size: 14px; 
       padding: 0px 0px 0px 0px; 
     }    
    }
@@ -807,7 +807,7 @@ about me media query between 800 & 650
    }
 
    /* 
-about me media query for 500px and under
+about me media query for 650px and under
    */   
      
    @media screen and (max-width: 650px) { 
@@ -905,7 +905,7 @@ about me media query for 500px and under
 /* contact me section */
 
 .whole-contact-form {
-  margin-top: 50px; 
+  margin-top: 110px; 
   display: flex;
   justify-content: center; 
 }
@@ -1088,7 +1088,7 @@ contact me media query between min 1500
 contact me media query between 800 & 500
    */   
      
-   @media only screen and (max-width: 800px) and (min-width: 500px) {
+   @media only screen and (max-width: 800px) and (min-width: 650px) {
 
     .whole-contact-form {
       margin-top: 50px; 
@@ -1182,10 +1182,10 @@ contact me media query between 800 & 500
    }
 
   /* 
-contact me media query for 500px and under
+contact me media query for 650px and under
    */   
      
-   @media screen and (max-width: 500px) { 
+   @media screen and (max-width: 650px) { 
 
     .whole-contact-form {
       margin-top: 0px; 
