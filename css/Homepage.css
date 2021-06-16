@@ -11,39 +11,59 @@ font-face
   }
   
   /*
-    DIAGNOSTIC STYLING Body & Header for Desktop Size
+    DIAGNOSTIC STYLING Body & Header
   */
 
   body {
-    background-color: white; 
+    background-color: #000; 
   }
 
   .whole-header {
-  background-color: white; 
+  background-image:url('/img/lights-whole.png');
+  background-position: center;
+  background-color: #515151;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 590px;
   display: flex;
   flex-wrap: wrap;
  }
-  
- .whole-nav{
-  border: green 5px dotted;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-left: em;
-  height: 150px; 
-  width: 100%;
-}
-
+   
    .header-text{
-    border: red 5px dotted; 
-    color: #E78A00; 
-    margin: 0px 25px 0px 100px;
-    width: 100px;
+    color: white; 
+    width: 100%; 
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 10px; 
+    height: 150px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: left;
+    justify-content: top;
+    
+    animation: pulse 5s infinite; 
    }
    
-   .nav{
-    border: orange 5px dotted;
-     width: 60%;
+   #header-subtitle{
+    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase; 
+     text-shadow: 2px 2px 20px black;
+   }
+   
+   #header-title {
+     color: #F1ECD4;   
+     font-size: 56px;
+     text-shadow: 10px 10px 50px black;
+     font-family: "cinzel-decorative-bold", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     text-transform: uppercase; 
+   }
+   
+   .nav-and-button {
+     width: 100%;
+     height: 100px; 
+     display: flex;
+     justify-content: flex-end; 
+     align-items: flex-start; 
    }
    
    /*
@@ -51,38 +71,38 @@ font-face
    */
    
    .overlay-navigation {
+     display: flex; 
+     flex-direction: column;
+     margin: 2em 50px 0px 29px; 
      width: 100%;
+     text-transform: uppercase; 
    }
    
    .nav-text {
     font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+     border: solid #F1ECD4 2px; 
+     width: 100px; 
      height: 15px;
      padding: 5px; 
-     margin: 0px 0px 0px 20px; 
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+     margin: 50px 0px 0px 0px; 
      text-decoration: none;
-     color: black; 
-   }
-
-   /* Gallery Styling */
-   .tile-and-gallery{
-    background-color: #616161;
-    padding-top: 10px;
+     color: #FFD195; 
    }
    
     /*
     DIAGNOSTIC STYLING open-overlay (div)
    */
    
-   .nav-button{
-     border: blue 5px dotted; 
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
-
    .open-overlay { 
-     background-color: #e78b0028; 
-     border: solid 2px #E78A00; 
+     position: absolute;
+     left: 4rem;
+     top: 2rem;
+     z-index: auto;
+     background-color: #F1ECD4; 
+     border: solid 2px #2F3135; 
      border-radius: 2px; 
      padding: 4px; 
      width: 34px;
@@ -92,17 +112,16 @@ font-face
    }
    
    .open-overlay span {
-    display: block;
-    height: 1px;
-    width: 25px; 
-    background-color: black;
-    cursor: pointer;
-    margin-top: 71px;
-    margin-left: 4px; 
-     
+     display: block;
+     height: 1px;
+     width: 25px; 
+     background-color: #29363B;
+     cursor: pointer;
+     margin: 8px;
+     margin-left: 4px; 
    }
   
-   /* Frame all bars (initial) */ 
+   /* First Frame all bars */ 
    .bar-top {
     position: absolute;
     top: 0px; 
