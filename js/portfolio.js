@@ -24,7 +24,7 @@ $('.open-overlay').click(function(){
  $("#nav_item_2").slideToggle({top: '13px'});
  $("#nav_item_3").slideToggle({top: '13px'});
  }); 
-
+ 
 
  // gallery filter 
 
@@ -37,6 +37,7 @@ $('.open-overlay').click(function(){
   
 };
 
+
 // light gallery 
 
 $(document).ready(function() {
@@ -47,7 +48,7 @@ $(document).ready(function() {
   });
 });
 
-
+/*
 // Click Photography
 $('#photography').click( function() {
   
@@ -90,8 +91,7 @@ $svg.drawsvg('animate');
 }
 
 animate();
-
-
+*/
 
 //footer copyright
 

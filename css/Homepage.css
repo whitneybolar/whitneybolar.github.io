@@ -15,9 +15,111 @@ font-face
   */
 
   body {
-    background-color: #000; 
-  }
+  background-color: #343148;
+  text-align: center;
+}
 
+.main-header {
+ display: flex; 
+ flex-wrap: wrap;
+ background-image: url("/img/hand.jpg");
+ height: 400px; 
+ background-size: cover; 
+ background-position: center; 
+}
+
+.whole-nav {
+  font-family: 'Arvo', serif;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  text-transform: uppercase; 
+  width: 100%;
+  margin: 20px;
+  text-shadow: 0 0 10px black; 
+}
+
+a {
+  color: white;
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow; 
+}
+
+#title-header {
+/*font-family: 'Sedgwick Ave Display', cursive; */
+font-family: 'Staatliches', cursive;
+ text-align: end;
+ font-size: 47px;
+ margin: 150px 40px 0px 0px;
+ color: black; 
+ width: 100%; 
+ height: 100%; 
+}
+
+#portfolio-access{
+  font-family: 'Sedgwick Ave Display', cursive;
+  display: flex;
+  align-items: center;
+ font-size: 47px;
+ margin: 0px 0px 0px 0px;
+ color: black; 
+ width: 100%; 
+ height: 100%;
+}
+
+#trailer {
+  margin-top: -30px;
+  border-radius: 5px;
+}
+
+#summary-title {
+  font-family: 'Staatliches', cursive;
+  font-size: 30px;
+  margin-bottom: -2px;
+}
+
+#whole-summary {
+ color: white; 
+ width: 100%; 
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+#p-summary {
+ font-family: 'Arvo', serif;
+ padding-left: 80px; 
+ padding-right: 80px; 
+ width: 50em; 
+}
+
+#summary-image { 
+  border-radius: 5px;
+  width: 49em;
+}
+
+.entire-ticket {
+  display: flex; 
+  justify-content: center; 
+  margin: 20px 0px 0px 0px; 
+}
+
+.whole-ticket {
+  border-radius: 20px; 
+  border: solid #c12525 7px; 
+  width: 39em;
+}
+
+#ticket-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+}
+
+/*
   .whole-header {
   background-image:url('/img/lights-whole.png');
   background-position: center;
@@ -65,7 +167,7 @@ font-face
      justify-content: flex-end; 
      align-items: flex-start; 
    }
-   
+   */
    /*
     DIAGNOSTIC STYLING overlay-navigation (class)
    */
