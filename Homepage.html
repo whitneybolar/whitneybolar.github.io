@@ -50,10 +50,10 @@
 <body>
   <section class="main-header">
     <nav class="whole-nav">
-      <a href="#whole-summary"> About Me </a>
+      <a href="#whole-summary"> Biography </a>
       <a href="#ticket-title"> Resume </a>
       <a href="#trailer"> Social Media </a>
-       <a href="#reviews-title"> Contact </a>
+      <a href="#reviews-title"> Contact </a>
     </nav> 
     <section class="three-titles">
     <h3 id="title-header-2"> A technical writer, designer and programmer. </h1> 
@@ -104,39 +104,202 @@
     </div>
   </section> 
    
-  
+  <h2 id="sources_title"> Sources </h2> 
+
+  <!-- -->
+  <section class="sources">
+    <div class="letter" id="f">  <p> 
+      <section class="resume-link">
+        <a href="img/Capstone_Resume.pdf" id="resume-link"> Resume PDF </a>
+        <img id="arrow-3" src="img/arrow-1.png" alt="An arrow used as a link for Whitney Bolar's Portfolio"> 
+       </section>
+    </div>
+    <div class="letter" id="g">
+      <p> 
+      Social Media  
+      </p>
+      <section class="social-media-link">
+        <a href="https://www.linkedin.com/in/whitney-bolar-7bb222179/"> <img id="linkedin-button" src="img/social-outline-white.png" alt="A link to Linkedin"> </a>
+        <a href="https://ewu.joinhandshake.com/users/6017919"> <img id="handshake-button" src="img/social-outline-handshake.png" alt="An link to Handshake"> </a>
+       </section>
+    </div>
+  </section> 
+
+  <h2 id="sources_title"> Keep In Touch </h2> 
+
+  <form class="whole-contact-form" action="https://formsubmit.co/wbolar@eagles.ewu.edu" enctype="multipart/form-data" method="POST">
+                
+    <div class="name-package">
+            <input id="input-1" 
+                    class="inputs" 
+                     placeholder="First Name*" 
+                    type="text" 
+            name="First Name:" required>
+
+            <input id="input-2" 
+                    class="inputs" 
+                    placeholder="Last Name*" 
+                    type="text" 
+            name="Last Name:" required> 
+    </div> 
+
+    <div class="email-package">
+            <!-- <label for="_replyto"> </label>  name="Services Requested" -->
+            <input id="input-3" class="inputs" placeholder="Email*" type="email" name="Email:" required>
+    </div> 
+
+    <div class="company-package"> 
+            <!-- <label for="company"> </label> -->
+         <input id="input-4" class="inputs" placeholder="Company Name" type="text" name="Company">
+    </div> 
+
+    <div class="company-package"> 
+      <!-- <label for="company"> </label> -->
+   <input id="input-5" class="inputs" placeholder="Message" type="text" name="Message">
+</div> 
+    </div>
+    </section>
+   
+    <div class="upload_file-package">
+    <label for="upload_file"> Upload Images/Documents </label>
+    <div class="file-inputs">
+    <input type="file" id="upload_file_1" name="Attachment 1:" accept="image/*, video/*, .doc, .docx, .pdf, .xlsx" placeholder="">
+    <input type="file" id="upload_file_2" name="Attachment 2:" accept="image/*, video/*, .doc, .docx, .pdf, .xlsx" placeholder="">
+    </div>
+    </div>
+    
+    <div class="submit-package">
+            <input id="send-button" type="submit" value="Submit">
+            <input type="hidden" name="_next" value="/">
+    </div> 
+    
+    <!-- Subject of the email sent to us -->
+    <input type="hidden" name="_subject" value="New submission!">
+
+    <!-- this takes out the "I am not a robot" page. 
+    If you are having troubles with spam, you can remove this-->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Thank you page.. link to a page already made in GoDaddy -->
+    <!-- This way we will not be advertising formsubmit.co, 
+    but I would recommend giving them support. -->
+    <input type="hidden" name="_next" value="https://whitneybolar.github.io/Thank-You-Page-ACM/">
+    
+    <!-- Boxes template for email sent to us-->
+    <input type="hidden" name="_template" value="box">
+    
+  <!-- CSS -->
+  <style>
+
+    /*General styling */ 
+    
+    input[type=text]{
+            display: flex;
+            border-radius: .5cm;
+            border: rgb(240, 240, 204) 5px solid;
+            background-color:#343148;
+            height: 20px; 
+            margin: 0px 5px 0px 5px; 
+    }
+
+    input[type=email]{
+            display: flex;
+            border-radius: .5cm;
+            border: rgb(240, 240, 204) 5px solid;
+            background-color:#343148;
+            height: 20px; 
+    }
+
+
+    ::placeholder{
+      font-family: 'Staatliches', cursive;
+      color: white;
+      padding: 0px 5px 0px 5px; 
+    }
+
+    /*Info Styling */ 
+    .name-package{
+            display: flex; 
+            justify-content: center;
+    }
+
+    #address-title{
+            display: flex; 
+            justify-content: center;
+    }
+    
+    #input-1, #input-2{
+            display: flex;
+            width: 200px;
+    }
+    
+    .email-package,.company-package {
+            display: flex; 
+            justify-content: center;
+            margin: 10px 0px 10px 0px; 
+    }
+
+    /* Message Styling */
+
+    #input-3, #input-4, #input-5 {
+            display: flex;
+            width: 415px; 
+    }
+
+    #input-5{
+      height: auto;
+    }
+
+    label{
+      color: white;
+      font-family: 'Staatliches', cursive;
+    } 
+
+    /* File upload Styling*/
+
+    .upload_file-package{
+            display: flex; 
+            text-align: center;
+            flex-direction: column;
+            color:white;
+            margin: 20px 0px 0px 0px;
+    }
+
+    .file-inputs{
+            display: flex; 
+            justify-content: center;
+    }
+
+    
+    #upload_file_1, #upload_file_2{
+            justify-content: center;
+            margin: 10px 0px 0px 0px;
+            padding: 5px 0px 0px 0px; 
+    }
+
+    /* Sent Button Styling*/
+    .submit-package{
+            display: flex; 
+            justify-content: center;
+            margin: 40px 0px 0px 0px;
+    }
+
+    #send-button{
+      font-family: 'Staatliches', cursive;
+      color: black;
+            width: 100px; 
+            height: 40px;
+            border-radius: .1cm;
+            border: rgb(240, 240, 204) 5px solid;
+            background-color: rgb(240, 240, 204);
+    }
+    
+   
+  </style> 
+</form> 
 
 
 
-<!--
-  <section class="whole-contact-form">
-
-      <img id="my-face" src="https://github.com/whitneybolar/whitneybolar.github.io/blob/master/img/profile.jpg?raw=true" alt="illustration of Whitney Bolar"> 
-    <form action="https://formspree.io/whitneybolar98@live.com" method="POST">
-      
-      <h3 class="contact-title"> get in touch </h3> 
-      
-      <div class="name-package">
-              <label for="name"> Name </label> 
-              <input id="input-1" class="three-inputs" type="text" name="name"> 
-        </div> 
-  
-      <div class="email-package">
-              <label for="_replyto"> Email </label> 
-              <input id="input-2" class="three-inputs" type="email" name="_replyto">
-      </div> 
-  
-      <div class="comments-package">
-              <label for="comments"> Comments </label>
-        <textarea class="three-inputs" rows="5" id="comment-input"></textarea>
-      </div> 
-  
-      <div class="submit-package">
-              <input id="send-button" type="submit" value="Send">
-              <input type="hidden" name="_next" value="/">
-      </div> 
-            </form>
-  </section> -->
   
       <footer class="footer">
 
