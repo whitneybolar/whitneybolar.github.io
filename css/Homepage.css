@@ -237,7 +237,13 @@ height: 10px;
 }
 
  /*Contact Section: Desktop */ 
-    
+ #contact_title{
+  display: flex; 
+  justify-content: center; 
+  font-size: 30px; 
+  font-family: 'Staatliches', cursive;
+  color: white;
+ }
  input[type=text]{
   display: flex;
   border-radius: .5cm;
@@ -339,12 +345,6 @@ color: black;
   background-color: rgb(240, 240, 204);
 }
 
-
-/*about me media query between 800 & 500*/
-@media only screen and (max-width: 800px) and (min-width: 500px) {
-
-
-}
 
 /* Footer */
 
