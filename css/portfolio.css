@@ -15,53 +15,233 @@ font-face
   */
 
   body {
-    background-color: white; 
+    background-color: #343148;
+    text-align: center;
+  }
+  
+  .main-header {
+   display: flex; 
+   flex-wrap: wrap;
+   background-image: url("/img/hand.jpg");
+   height: 600px; 
+   background-size: cover; 
+   background-position: center; 
+  }
+  
+  .whole-nav {
+    font-family: 'Arvo', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: top; 
+    align-items: top;
+    text-transform: uppercase; 
+    width: 100%;
+    margin: 170px 50px 0px 0px;
+    color: white;
+    text-shadow: 5 5 5px black; 
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    -webkit-text-stroke: 1px #000000;
+  }
+  
+  a:hover {
+    font-size: 1em;
+    /*text-shadow: -1px -1px 0 rgb(255, 248, 207), 1px -1px 0 rgb(255, 248, 207), -1px 1px 0 rgb(255, 248, 207), 1px 1px 0 rgb(255, 248, 207);*/
+    color: rgb(31, 3, 75); 
+  }
+  
+  .three-titles{
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    width: 100%;
+    margin: -50px 50px 0px 0px;
+  }
+  
+  #title-header{
+  /*font-family: Trattatello, fantasy;*/
+  /*font-family: 'Roboto Condensed', Sans-Serif;*/
+   font-family: Trattatello, fantasy;
+   text-align: end;
+   font-size: 47px;
+   margin: -60px 0px 0px 0px;
+   color: black; 
+   width: 100%; 
+   height: 100%; 
+  }
+  
+  #title-header-2{
+    font-family: 'Staatliches', cursive;
+    text-align: end;
+    font-size: 17px;
+    color: black; 
+    width: 100%; 
+    height: 100%; 
+    padding: 150px 0px 0px 0px;
+    margin: -200px 0px 0px 0px;
+  } 
+  
+  .portfolio-link{
+  display: flex;
+  }
+  
+  a, #title-header-3{
+    font-family: 'Arvo', serif;
+    text-align: end;
+    font-size: 17px;
+     margin: -130px 0px 0px 0px;
+    color: black; 
+    width: 100%; 
+    height: 100%; 
+  
+  }
+  
+  #arrow-2{
+    text-align: end;
+     margin: -130px 0px 0px 5px;
+    color: black;  
+    height: 20px; 
   }
 
-  .whole-header {
-  background-color: white; 
-  display: flex;
-  flex-wrap: wrap;
- }
-  
- .whole-nav{
-  border: green 5px dotted;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-left: em;
-  height: 150px; 
-  width: 100%;
+  /*About Me Section: Desktop*/ 
+
+#about_me_title {
+  display: flex; 
+  justify-content: center; 
+  font-size: 30px; 
+  font-family: 'Staatliches', cursive;
+  color: white;
 }
 
-   .header-text{
-    border: red 5px dotted; 
-    color: #E78A00; 
-    margin: 0px 25px 0px 100px;
-    width: 100px;
-   }
-   
-   .nav{
-    border: orange 5px dotted;
-     width: 60%;
-   }
-   
-   /*
-    DIAGNOSTIC STYLING overlay-navigation (class) Desktop Version 
-   */
-   
-   .overlay-navigation {
-     width: 100%;
-   }
-   
-   .nav-text {
-    font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-     height: 15px;
-     padding: 5px; 
-     margin: 0px 0px 0px 20px; 
-     text-decoration: none;
-     color: black; 
-   }
+.letter {
+  font-family: 'Staatliches', cursive;
+  color: white;
+  border: 10px solid rgb(240, 240, 204);
+  border-radius: .5cm;
+  padding: 25px;
+}
+
+/* Parent */
+.about-me {
+  display: flex;
+  justify-content: center;
+   display: grid;
+
+/* Columns */
+grid-template-columns: 250px 250px 250px;
+grid-gap: 5px; 
+/* Rows */
+grid-template-rows: auto auto auto;
+grid-gap: 5px; 
+}
+
+/* Column: line 1, end line 2 */
+/* Row: line 1, end line 2 */
+#a {
+grid-column: 1 / 1;
+grid-row: 1 / 1;
+text-align: left;
+font-family: 'Roboto Condensed', Sans-Serif;
+}
+
+/* Column: line 3, end line 4 */
+/* Row: line 1, end line 2 */
+#b {
+background-image: url("/img/WhitneyBolarPicture.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+grid-column: 2 / 2;
+grid-row: 1/ 1;
+}
+
+#c{
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+#d{
+background-image: url("/img/blueberry-planets-grey.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+grid-column: 3/ 3;
+grid-row: 1 / 1;
+}
+
+#e{
+grid-column: 1/ 1;
+grid-row: 2 / 2;
+}
+
+#f{
+  grid-column: 2 / 2 ;
+  grid-row: 2 / 2;
+  background:rgb(240, 240, 204);
+}
+
+#g{
+grid-column: 3 / 3;
+grid-row: 2 / 2;
+}
+
+#h{
+  grid-column: 1/ 1;
+  grid-row: 3 / 3;
+}
+
+#i{
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+}
+
+/*Sources section: Desktop */
+
+#sources_title{
+  display: flex; 
+  justify-content: center; 
+  font-size: 30px; 
+  font-family: 'Staatliches', cursive;
+  color: white;
+}
+
+.sources{
+display: flex;
+justify-content: center;
+display: grid;
+/* Columns */
+grid-template-columns: 250px 250px 250px;
+grid-gap: 5px; 
+/* Rows */
+grid-template-rows: auto auto auto;
+grid-gap: 5px; 
+}
+
+#linkedin-button{
+  height: 40px; 
+}
+
+#handshake-button{
+  height: 40px; 
+}
+
+.resume-link{
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  margin: 40px 0px 0px 0px;
+}
+
+#arrow-3{
+text-align: center;
+height: 10px; 
+}
+  
 
    /* Gallery Styling For Every Gallery*/
    .tile-and-gallery{
