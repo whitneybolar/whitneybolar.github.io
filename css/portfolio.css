@@ -108,19 +108,20 @@ font-face
     height: 20px; 
   }
 
-  /*About Me Section: Desktop*/ 
+  /*Tcom Section: Desktop*/ 
 
-#about_me_title {
-  display: flex; 
-  justify-content: center; 
-  font-size: 30px; 
-  font-family: 'Staatliches', cursive;
-  color: white;
-}
+  #sources_title{
+    display: flex; 
+    justify-content: center; 
+    font-size: 30px; 
+    font-family: 'Staatliches', cursive;
+    color: white;
+  }
 
 .letter {
   font-family: 'Staatliches', cursive;
   color: white;
+  background-color: rgb(240, 240, 204);
   border: 10px solid rgb(240, 240, 204);
   border-radius: .5cm;
   padding: 25px;
@@ -140,75 +141,49 @@ grid-template-rows: auto auto auto;
 grid-gap: 5px; 
 }
 
+/*
+Images: 
+background-image: url("/img/WhitneyBolarPicture.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+\*/
+
 /* Column: line 1, end line 2 */
 /* Row: line 1, end line 2 */
 #a {
+display: flex;
+justify-content: center;
+align-items: center;
 grid-column: 1 / 1;
 grid-row: 1 / 1;
 text-align: left;
-font-family: 'Roboto Condensed', Sans-Serif;
 }
 
 /* Column: line 3, end line 4 */
 /* Row: line 1, end line 2 */
 #b {
-background-image: url("/img/WhitneyBolarPicture.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
 grid-column: 2 / 2;
 grid-row: 1/ 1;
 }
 
 #c{
-  grid-column: 3 / 3;
-  grid-row: 1 / 1;
-}
-
-#d{
-background-image: url("/img/blueberry-planets-grey.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-grid-column: 3/ 3;
-grid-row: 1 / 1;
-}
-
-#e{
-grid-column: 1/ 1;
-grid-row: 2 / 2;
-}
-
-#f{
-  grid-column: 2 / 2 ;
-  grid-row: 2 / 2;
-  background:rgb(240, 240, 204);
-}
-
-#g{
 grid-column: 3 / 3;
-grid-row: 2 / 2;
+grid-row: 1 / 1;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-#h{
-  grid-column: 1/ 1;
-  grid-row: 3 / 3;
+.tcom-gallery{
+  margin: 10px 0px 0px 0px;
 }
 
-#i{
-  grid-column: 2 / 2;
-  grid-row: 3 / 3;
-}
 
-/*Sources section: Desktop */
-
-#sources_title{
-  display: flex; 
-  justify-content: center; 
-  font-size: 30px; 
-  font-family: 'Staatliches', cursive;
-  color: white;
-}
+/*Journalism/PR section: Desktop */
 
 .sources{
 display: flex;
@@ -221,6 +196,30 @@ grid-gap: 5px;
 grid-template-rows: auto auto auto;
 grid-gap: 5px; 
 }
+
+#d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  }
+  
+  #e {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 3;
+  grid-row: 1/ 1;
+  }
+  
+  #f{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+  }
 
 #linkedin-button{
   height: 40px; 
