@@ -1,18 +1,6 @@
-/* 
-font-face 
-*/
-
-@font-face {
-    font-family: "cinzel-black"; src: url("/fonts/cinzel-black.ttf") format("truetype");
-    font-family: "cinzel-bold"; src: url("/fonts/cinzel-bold.ttf") format("truetype");
-    font-family: "cinzel-regular"; src: url("/fonts/cinzel-regular.ttf") format("truetype");
-    font-family: "cinzel-decorative-bold"; src: url("/fonts/cinzel-decorative-bold.ttf") format("truetype");
-    font-family: "cinzel-decorative-regular"; src: url("/fonts/cinzel-decorative-regular.ttf") format("truetype");
-  }
-  
-  /*
+/*
     DIAGNOSTIC STYLING Body & Header: Desktop 
-  */
+*/
 
 body {
   background-color: #343148;
@@ -41,6 +29,10 @@ body {
   text-shadow: 5 5 5px black; 
 }
 
+/*
+    ALL LINKS
+*/
+
 a {
   color: white;
   text-decoration: none;
@@ -50,9 +42,12 @@ a {
 
 a:hover {
   font-size: 1em;
-	/*text-shadow: -1px -1px 0 rgb(255, 248, 207), 1px -1px 0 rgb(255, 248, 207), -1px 1px 0 rgb(255, 248, 207), 1px 1px 0 rgb(255, 248, 207);*/
   color: rgb(31, 3, 75); 
 }
+
+/*
+    end ALL LINKS
+*/
 
 .three-titles{
   font-family: 'Staatliches', cursive;
@@ -64,8 +59,6 @@ a:hover {
 }
 
 #title-header{
-/*font-family: Trattatello, fantasy;*/
-/*font-family: 'Roboto Condensed', Sans-Serif;*/
  font-family: Trattatello, fantasy;
  text-align: end;
  font-size: 47px;
@@ -154,6 +147,7 @@ p {
 
 /* Column: line 1, end line 2 */
 /* Row: line 1, end line 2 */
+/* this gets reused for every section with a grid*/
 #a {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
@@ -172,6 +166,7 @@ p {
     grid-row: 1 / 2;
 }
 
+/* this gets reused for every section with a grid*/
 #c{
   grid-column: 1 / 4;
   grid-row: 2 / 4;
@@ -204,9 +199,8 @@ p {
     grid-row: 1 / 2;
 }
 
-
+/* table */
 td{
-    /*border-bottom:rgb(240, 240, 204) solid 1px;*/
     padding: 20px 10px 0px 10px;
 }
 
@@ -404,11 +398,168 @@ color: black;
 
 
 /* 
-footer media query between 800 & 500
+media query between 800 & 500
    */   
      
    @media only screen and (max-width: 800px) and (min-width: 500px) {
 
+    .main-header {
+        height: 400px;
+       }
+
+       .whole-nav {
+        margin: 130px 50px 0px 0px;
+      }
+      /*
+          MAIN LINKS
+      */
+      
+      a {
+        font-size: 15px;
+        pointer-events: none;
+          -webkit-text-stroke: 1px #000000;
+      }
+      
+      a:hover {
+        pointer-events: none;
+      }
+      
+      /*
+          end MAIN LINKS... Look at #title-header-3
+      */
+      
+      .three-titles{
+        margin: -50px 30px 0px 0px;
+      }
+      
+      #title-header{
+       font-size: 27px;
+      }
+      
+      #title-header-2{
+        font-size: 15px;
+      } 
+      
+      .portfolio-link{
+      display: flex;
+      }
+      
+      a, #title-header-3{
+        font-size: 13px;
+        margin: -100px 0px 0px 0px;
+      }
+      
+      #arrow-2{
+        height: 15px; 
+        margin: -100px 0px 0px 5px;
+      }
+      
+      /*About Section: 800 - 500*/ 
+      
+      .portfolio-titles, #portfolio-title{
+          font-size: 17px; 
+        }
+      
+      .letter {
+        border: 5px solid rgb(240, 240, 204);
+        font-size: 12px;
+      }
+      
+      /* Parent */
+      .about-me {
+      /* Columns */
+      grid-template-columns: 150px 150px 150px;
+      }
+      
+      p { 
+          margin-left: 30px; 
+      }
+      
+      /* Column: line 1, end line 2 */
+      /* Row: line 1, end line 2 */
+      /* this gets reused for every section with a grid*/
+      #a {
+          height: 150px;
+      }
+      
+      /*Sources section: Desktop */
+      
+      #sources_title{
+        font-size: 15px; 
+      }
+      
+      .sources{
+      grid-template-columns: 150px 150px 150px;
+      }
+
+       /*Questions Section: 500 - 800 */ 
+       #contact_title{
+        font-size: 15px; 
+       }
+       input[type=text]{
+        display: flex;
+        border-radius: .5cm;
+        border: rgb(240, 240, 204) 5px solid;
+        background-color:#343148;
+        height: 20px; 
+        margin: 0px 5px 0px 5px; 
+      }
+      
+      input[type=email]{
+        font-family: 'Arvo', serif;
+        font-size: 12px; 
+      }
+      
+      
+      ::placeholder{
+        font-family: 'Arvo', serif;
+        font-size: 12px;
+      }
+      
+      /*Info Styling */ 
+      .name-package{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #address-title{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #input-1, #input-2{
+        display: flex;
+        width: 200px;
+      }
+      
+      .email-package,.company-package {
+        display: flex; 
+        justify-content: center;
+        margin: 10px 0px 10px 0px; 
+      }
+      
+      /* Message Styling */
+      
+      #input-3, #input-4, #input-5 {
+        display: flex;
+        width: 415px; 
+      }
+      
+      #input-5{
+      height: auto;
+      }
+      
+      label{
+      color: white;
+      font-family: 'Staatliches', cursive;
+      } 
+      
+      /* File upload Styling*/
+      
+      .upload_file-package{
+        display: none;
+      }
+      
     #copyright{
       font-size: 12px; 
       grid-column-start: 125;
@@ -419,10 +570,171 @@ footer media query between 800 & 500
    }
 
  /* 
- footer media query for 500px and under
+ media query for 500px and under
    */   
      
    @media screen and (max-width: 500px) { 
+    
+
+    .main-header {
+        height: 300px;
+       }
+
+       .whole-nav {
+        margin: 130px 50px 0px 0px;
+      }
+      /*
+          MAIN LINKS
+      */
+      
+      a {
+        font-size: 12px;
+          -webkit-text-stroke: 5px #000000;
+      }
+      
+      /*a:hover {
+        font-size: 11px; 
+      }*/
+      
+      /*
+          end MAIN LINKS... Look at #title-header-3
+      */
+      
+      .three-titles{
+        margin: -50px 30px 0px 0px;
+      }
+      
+      #title-header{
+       font-size: 27px;
+      }
+      
+      #title-header-2{
+        font-size: 15px;
+      } 
+      
+      .portfolio-link{
+      display: flex;
+      }
+      
+      a, #title-header-3{
+        font-size: 11px;
+        margin: -100px 0px 0px 0px;
+      }
+      
+      #arrow-2{
+        height: 15px; 
+      }
+      
+      /*About Section: under 500 */ 
+      
+      .portfolio-titles, #portfolio-title{
+          font-size: 17px; 
+        }
+      
+      .letter {
+        border: 5px solid rgb(240, 240, 204);
+        font-size: 12px;
+      }
+      
+      /* Parent */
+      .about-me {
+      /* Columns */
+      grid-template-columns: 100px 100px 100px;
+      }
+      
+      p { 
+          margin-left: 30px; 
+      }
+      
+      /* Column: line 1, end line 2 */
+      /* Row: line 1, end line 2 */
+      /* this gets reused for every section with a grid*/
+      #a {
+          height: 150px;
+      }
+      
+      /*Sources section: Desktop */
+      
+      #sources_title{
+        font-size: 15px; 
+      }
+      
+      .sources{
+      grid-template-columns: 100px 100px 100px;
+      }
+
+       /*Questions Section: 500 - 800 */ 
+       #contact_title{
+        font-size: 15px; 
+       }
+       input[type=text]{
+        display: flex;
+        border-radius: .5cm;
+        border: rgb(240, 240, 204) 5px solid;
+        background-color:#343148;
+        height: 20px; 
+        margin: 0px 5px 0px 5px; 
+      }
+      
+      input[type=email]{
+        font-family: 'Arvo', serif;
+        font-size: 12px; 
+      }
+      
+      
+      ::placeholder{
+        font-family: 'Arvo', serif;
+        font-size: 12px;
+      }
+      
+      /*Info Styling */ 
+      .name-package{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #address-title{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #input-1, #input-2{
+        display: flex;
+        width: 125px;
+      }
+      
+      .email-package,.company-package {
+        display: flex; 
+        justify-content: center;
+        margin: 10px 0px 10px 0px; 
+      }
+      
+      /* Message Styling */
+      
+      #input-3, #input-4, #input-5 {
+        display: flex;
+        width: 350px; 
+      }
+      
+      #input-5{
+      height: auto;
+      }
+      
+      label{
+      color: white;
+      font-family: 'Staatliches', cursive;
+      } 
+      
+      /* File upload Styling*/
+      
+      .upload_file-package{
+        display: none;
+      }
+
+      #send-button{
+          width: 75px; 
+          height: 30px;
+        }
 
     #copyright{
       font-size: 10px; 
