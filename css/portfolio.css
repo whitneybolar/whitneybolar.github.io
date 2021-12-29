@@ -22,7 +22,7 @@ font-face
   .main-header {
    display: flex; 
    flex-wrap: wrap;
-   background-image: url("/img/hand.jpg");
+   background-image: url("/img/paintings/hand.jpg");
    height: 600px; 
    background-size: cover; 
    background-position: center; 
