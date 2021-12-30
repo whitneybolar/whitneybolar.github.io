@@ -416,7 +416,6 @@ media query between 800 & 500
       
       a {
         font-size: 15px;
-        pointer-events: none;
           -webkit-text-stroke: 1px #000000;
       }
       

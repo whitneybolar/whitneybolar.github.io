@@ -158,7 +158,7 @@ body {
   /* Column: line 3, end line 4 */
   /* Row: line 1, end line 2 */
   #b {
-      background-image: url("/img/ifixit-img/replacement-image-5.png");
+      background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_1_Image_0002.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -173,7 +173,7 @@ body {
   }
   
   #d {
-      background-image: url("/img/ifixit-img/replacement-image.png");
+      background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_4_Image_0002.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -182,7 +182,7 @@ body {
   }
   
   #e {
-      background-image: url("/img/ifixit-img/replacement-image-8.png");
+      background-image: url("/404-Final/images/subpage_alt_Page_3.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -191,14 +191,33 @@ body {
   }
   
   #h {
-      background-image: url("/img/ifixit-img/replacement-image-9.png");
+      background-image: url("/404-Final/images/Tabloid\ -\ 46.png");
+      height: 400px; 
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
-      grid-column: 1 / 3;
+      background-size: contain;
+      grid-column: 1 / 4;
       grid-row: 1 / 2;
   }
-  
+
+  #j{
+    background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_4_Image_0002.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #k{
+    background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_3_Image_0001.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
   /* table */
   td{
       padding: 20px 10px 0px 10px;
@@ -230,6 +249,12 @@ body {
     background:rgb(240, 240, 204);
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+  }
+
+  #i{
+    background:rgb(240, 240, 204);
+    grid-column: 1 / 4;
+    grid-row: 1 / 2; 
   }
   
   #g{
@@ -416,7 +441,6 @@ body {
         
         a {
           font-size: 15px;
-          pointer-events: none;
             -webkit-text-stroke: 1px #000000;
         }
         
