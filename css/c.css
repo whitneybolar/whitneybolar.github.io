@@ -1,0 +1,770 @@
+/*
+    DIAGNOSTIC STYLING Body & Header: Desktop 
+*/
+
+body {
+    background-color: #343148;
+    text-align: center;
+  }
+  
+  .main-header {
+   display: flex; 
+   flex-wrap: wrap;
+   background-image: url("/img/paintings/hand.jpg");
+   height: 600px; 
+   background-size: cover; 
+   background-position: center; 
+  }
+  
+  .whole-nav {
+    font-family: 'Arvo', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: top; 
+    align-items: top;
+    text-transform: uppercase; 
+    width: 100%;
+    margin: 170px 50px 0px 0px;
+    color: white;
+    text-shadow: 5 5 5px black; 
+  }
+  
+  /*
+      ALL LINKS
+  */
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+      -webkit-text-stroke: 1px #000000;
+  }
+  
+  a:hover {
+    font-size: 1em;
+    color: rgb(31, 3, 75); 
+  }
+  
+  /*
+      end ALL LINKS
+  */
+  
+  .three-titles{
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    width: 100%;
+    margin: -50px 50px 0px 0px;
+  }
+  
+  #title-header{
+   font-family: Trattatello, fantasy;
+   text-align: end;
+   font-size: 47px;
+   margin: -60px 0px 0px 0px;
+   color: black; 
+   width: 100%; 
+   height: 100%; 
+  }
+  
+  #title-header-2{
+    font-family: 'Staatliches', cursive;
+    text-align: end;
+    font-size: 17px;
+    color: black; 
+    width: 100%; 
+    height: 100%; 
+    padding: 150px 0px 0px 0px;
+    margin: -200px 0px 0px 0px;
+  } 
+  
+  .portfolio-link{
+  display: flex;
+  }
+  
+  a, #title-header-3{
+    font-family: 'Arvo', serif;
+    text-align: end;
+    font-size: 17px;
+     margin: -130px 0px 0px 0px;
+    color: black; 
+    width: 100%; 
+    height: 100%; 
+  
+  }
+  
+  #arrow-2{
+    text-align: end;
+     margin: -130px 0px 0px 5px;
+    color: black;  
+    height: 20px; 
+  }
+  
+  /*About Me Section: Desktop*/ 
+  
+  .portfolio-titles, #portfolio-title{
+      display: flex; 
+      justify-content: center; 
+      font-size: 30px; 
+      font-family: 'Staatliches', cursive;
+      color: white;
+      margin: 70px 0px 10px 0px;
+    }
+  
+  #portfolio-title{
+    border-bottom:rgb(240, 240, 204) solid 2px;
+    margin: 0px 0px 50px 0px;
+    padding: 20px 0px 10px 0px;
+  }
+  
+  .letter {
+    font-family: 'Arvo', serif;
+    color: white;
+    border: 10px solid rgb(240, 240, 204);
+    border-radius: .5cm;
+    padding: 25px;
+    text-align: left;
+  }
+  
+  /* Parent */
+  .about-me {
+    display: flex;
+    justify-content: center;
+     display: grid;
+  
+  /* Columns */
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 5px; 
+  /* Rows */
+  grid-template-rows: auto auto auto;
+  grid-gap: 5px; 
+  }
+  
+  p { 
+      margin-left: 40px; 
+  }
+  
+  /* Column: line 1, end line 2 */
+  /* Row: line 1, end line 2 */
+  /* this gets reused for every section with a grid*/
+  #a {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      height: 200px;
+  
+  }
+  
+  /* Column: line 3, end line 4 */
+  /* Row: line 1, end line 2 */
+  #b {
+      background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_1_Image_0002.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+  }
+  
+  /* this gets reused for every section with a grid*/
+  #c{
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+  }
+  
+  #d {
+      background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_4_Image_0002.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+  }
+  
+  #e {
+      background-image: url("/404-Final/images/subpage_alt_Page_3.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+  }
+  
+  #h {
+      background-image: url("/404-Final/images/Tabloid\ -\ 46.png");
+      height: 400px; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+  }
+
+  #j{
+    background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_4_Image_0002.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #k{
+    background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_3_Image_0001.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  /* table */
+  td{
+      padding: 20px 10px 0px 10px;
+  }
+  
+  /*Sources section: Desktop */
+  
+  #sources_title{
+    display: flex; 
+    justify-content: center; 
+    font-size: 30px; 
+    font-family: 'Staatliches', cursive;
+    color: white;
+  }
+  
+  .sources{
+  display: flex;
+  justify-content: center;
+  display: grid;
+  /* Columns */
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 5px; 
+  /* Rows */
+  grid-template-rows: auto auto auto;
+  grid-gap: 5px; 
+  }
+  
+  #f{
+    background:rgb(240, 240, 204);
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #i{
+    background:rgb(240, 240, 204);
+    grid-column: 1 / 4;
+    grid-row: 1 / 2; 
+  }
+  
+  #g{
+  grid-column: 3/ 4;
+  grid-row: 1 / 2;
+  background:rgb(240, 240, 204);
+  }
+  
+  #linkedin-button{
+    height: 40px; 
+  }
+  
+  #handshake-button{
+    height: 40px; 
+  }
+  
+  .resume-link{
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+  }
+  
+  #arrow-3{
+  text-align: center;
+  height: 10px; 
+  }
+  
+   /*Questions Section: Desktop */ 
+   #contact_title{
+    display: flex; 
+    justify-content: center; 
+    font-size: 30px; 
+    font-family: 'Staatliches', cursive;
+    color: white;
+    margin: 70px 0px 10px 0px;
+   }
+   input[type=text]{
+    display: flex;
+    border-radius: .5cm;
+    border: rgb(240, 240, 204) 5px solid;
+    background-color:#343148;
+    height: 20px; 
+    margin: 0px 5px 0px 5px; 
+  }
+  
+  input[type=email]{
+    display: flex;
+    border-radius: .5cm;
+    border: rgb(240, 240, 204) 5px solid;
+    background-color:#343148;
+    height: 20px; 
+  }
+  
+  
+  ::placeholder{
+  font-family: 'Staatliches', cursive;
+  color: white;
+  padding: 0px 5px 0px 5px; 
+  }
+  
+  /*Info Styling */ 
+  .name-package{
+    display: flex; 
+    justify-content: center;
+  }
+  
+  #address-title{
+    display: flex; 
+    justify-content: center;
+  }
+  
+  #input-1, #input-2{
+    display: flex;
+    width: 200px;
+  }
+  
+  .email-package,.company-package {
+    display: flex; 
+    justify-content: center;
+    margin: 10px 0px 10px 0px; 
+  }
+  
+  /* Message Styling */
+  
+  #input-3, #input-4, #input-5 {
+    display: flex;
+    width: 415px; 
+  }
+  
+  #input-5{
+  height: auto;
+  }
+  
+  label{
+  color: white;
+  font-family: 'Staatliches', cursive;
+  } 
+  
+  /* File upload Styling*/
+  
+  .upload_file-package{
+    display: flex; 
+    text-align: center;
+    flex-direction: column;
+    color:white;
+    margin: 20px 0px 0px 0px;
+  }
+  
+  .file-inputs{
+    display: flex; 
+    justify-content: center;
+  }
+  
+  
+  #upload_file_1, #upload_file_2{
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 0px 0px 0px; 
+  }
+  
+  /* Sent Button Styling*/
+  .submit-package{
+    display: flex; 
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+  }
+  
+  #send-button{
+  font-family: 'Staatliches', cursive;
+  color: black;
+    width: 100px; 
+    height: 40px;
+    border-radius: .1cm;
+    border: rgb(240, 240, 204) 5px solid;
+    background-color: rgb(240, 240, 204);
+  }
+  
+  
+  /* Footer */
+  
+  .entire-footer {
+    height: 20em;
+    color: white;
+    background-color: #483D8B;
+    margin-top: 40px; 
+    background-image: linear-gradient(to top, #483D8B 10%,  #343148 90%);
+    border-image-slice: 1;
+  }
+  
+  .footer {
+    margin-top: 50px; 
+    display: grid; 
+    grid-template-columns: repeat(300, 1fr);
+    grid-template-rows: repeat(70, 1fr); 
+    height: 120px; 
+  }
+  
+  #copyright{
+    color: #F1ECD4;
+    grid-column-start: 125;
+    grid-column-end: 185;
+    grid-row-start: 35;
+    grid-row-end: 35; 
+  }
+  
+  
+  /* 
+  media query between 800 & 500
+     */   
+       
+     @media only screen and (max-width: 800px) and (min-width: 500px) {
+  
+      .main-header {
+          height: 400px;
+         }
+  
+         .whole-nav {
+          margin: 130px 50px 0px 0px;
+        }
+        /*
+            MAIN LINKS
+        */
+        
+        a {
+          font-size: 15px;
+            -webkit-text-stroke: 1px #000000;
+        }
+        
+        a:hover {
+          pointer-events: none;
+        }
+        
+        /*
+            end MAIN LINKS... Look at #title-header-3
+        */
+        
+        .three-titles{
+          margin: -50px 30px 0px 0px;
+        }
+        
+        #title-header{
+         font-size: 27px;
+        }
+        
+        #title-header-2{
+          font-size: 15px;
+        } 
+        
+        .portfolio-link{
+        display: flex;
+        }
+        
+        a, #title-header-3{
+          font-size: 13px;
+          margin: -100px 0px 0px 0px;
+        }
+        
+        #arrow-2{
+          height: 15px; 
+          margin: -100px 0px 0px 5px;
+        }
+        
+        /*About Section: 800 - 500*/ 
+        
+        .portfolio-titles, #portfolio-title{
+            font-size: 17px; 
+          }
+        
+        .letter {
+          border: 5px solid rgb(240, 240, 204);
+          font-size: 12px;
+        }
+        
+        /* Parent */
+        .about-me {
+        /* Columns */
+        grid-template-columns: 150px 150px 150px;
+        }
+        
+        p { 
+            margin-left: 30px; 
+        }
+        
+        /* Column: line 1, end line 2 */
+        /* Row: line 1, end line 2 */
+        /* this gets reused for every section with a grid*/
+        #a {
+            height: 150px;
+        }
+        
+        /*Sources section: Desktop */
+        
+        #sources_title{
+          font-size: 15px; 
+        }
+        
+        .sources{
+        grid-template-columns: 150px 150px 150px;
+        }
+  
+         /*Questions Section: 500 - 800 */ 
+         #contact_title{
+          font-size: 15px; 
+         }
+         input[type=text]{
+          display: flex;
+          border-radius: .5cm;
+          border: rgb(240, 240, 204) 5px solid;
+          background-color:#343148;
+          height: 20px; 
+          margin: 0px 5px 0px 5px; 
+        }
+        
+        input[type=email]{
+          font-family: 'Arvo', serif;
+          font-size: 12px; 
+        }
+        
+        
+        ::placeholder{
+          font-family: 'Arvo', serif;
+          font-size: 12px;
+        }
+        
+        /*Info Styling */ 
+        .name-package{
+          display: flex; 
+          justify-content: center;
+        }
+        
+        #address-title{
+          display: flex; 
+          justify-content: center;
+        }
+        
+        #input-1, #input-2{
+          display: flex;
+          width: 200px;
+        }
+        
+        .email-package,.company-package {
+          display: flex; 
+          justify-content: center;
+          margin: 10px 0px 10px 0px; 
+        }
+        
+        /* Message Styling */
+        
+        #input-3, #input-4, #input-5 {
+          display: flex;
+          width: 415px; 
+        }
+        
+        #input-5{
+        height: auto;
+        }
+        
+        label{
+        color: white;
+        font-family: 'Staatliches', cursive;
+        } 
+        
+        /* File upload Styling*/
+        
+        .upload_file-package{
+          display: none;
+        }
+        
+      #copyright{
+        font-size: 12px; 
+        grid-column-start: 125;
+        grid-column-end: 195;
+        grid-row-start: 35;
+        grid-row-end: 35; 
+      }
+     }
+  
+   /* 
+   media query for 500px and under
+     */   
+       
+     @media screen and (max-width: 500px) { 
+      
+  
+      .main-header {
+          height: 300px;
+         }
+  
+         .whole-nav {
+          margin: 130px 50px 0px 0px;
+        }
+        /*
+            MAIN LINKS
+        */
+        
+        a {
+          font-size: 12px;
+            -webkit-text-stroke: 5px #000000;
+        }
+        
+        /*a:hover {
+          font-size: 11px; 
+        }*/
+        
+        /*
+            end MAIN LINKS... Look at #title-header-3
+        */
+        
+        .three-titles{
+          margin: -50px 30px 0px 0px;
+        }
+        
+        #title-header{
+         font-size: 27px;
+        }
+        
+        #title-header-2{
+          font-size: 15px;
+        } 
+        
+        .portfolio-link{
+        display: flex;
+        }
+        
+        a, #title-header-3{
+          font-size: 11px;
+          margin: -100px 0px 0px 0px;
+        }
+        
+        #arrow-2{
+          height: 15px; 
+        }
+        
+        /*About Section: under 500 */ 
+        
+        .portfolio-titles, #portfolio-title{
+            font-size: 17px; 
+          }
+        
+        .letter {
+          border: 5px solid rgb(240, 240, 204);
+          font-size: 12px;
+        }
+        
+        /* Parent */
+        .about-me {
+        /* Columns */
+        grid-template-columns: 100px 100px 100px;
+        }
+        
+        p { 
+            margin-left: 30px; 
+        }
+        
+        /* Column: line 1, end line 2 */
+        /* Row: line 1, end line 2 */
+        /* this gets reused for every section with a grid*/
+        #a {
+            height: 150px;
+        }
+        
+        /*Sources section: Desktop */
+        
+        #sources_title{
+          font-size: 15px; 
+        }
+        
+        .sources{
+        grid-template-columns: 100px 100px 100px;
+        }
+  
+         /*Questions Section: 500 - 800 */ 
+         #contact_title{
+          font-size: 15px; 
+         }
+         input[type=text]{
+          display: flex;
+          border-radius: .5cm;
+          border: rgb(240, 240, 204) 5px solid;
+          background-color:#343148;
+          height: 20px; 
+          margin: 0px 5px 0px 5px; 
+        }
+        
+        input[type=email]{
+          font-family: 'Arvo', serif;
+          font-size: 12px; 
+        }
+        
+        
+        ::placeholder{
+          font-family: 'Arvo', serif;
+          font-size: 12px;
+        }
+        
+        /*Info Styling */ 
+        .name-package{
+          display: flex; 
+          justify-content: center;
+        }
+        
+        #address-title{
+          display: flex; 
+          justify-content: center;
+        }
+        
+        #input-1, #input-2{
+          display: flex;
+          width: 125px;
+        }
+        
+        .email-package,.company-package {
+          display: flex; 
+          justify-content: center;
+          margin: 10px 0px 10px 0px; 
+        }
+        
+        /* Message Styling */
+        
+        #input-3, #input-4, #input-5 {
+          display: flex;
+          width: 350px; 
+        }
+        
+        #input-5{
+        height: auto;
+        }
+        
+        label{
+        color: white;
+        font-family: 'Staatliches', cursive;
+        } 
+        
+        /* File upload Styling*/
+        
+        .upload_file-package{
+          display: none;
+        }
+  
+        #send-button{
+            width: 75px; 
+            height: 30px;
+          }
+  
+      #copyright{
+        font-size: 10px; 
+        grid-column-start: 120;
+        grid-column-end: 205;
+        grid-row-start: 35;
+        grid-row-end: 35; 
+      }
+     }

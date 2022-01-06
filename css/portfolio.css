@@ -242,347 +242,344 @@ height: 10px;
 }
   
 
-   /* Gallery Styling For Every Gallery*/
-   .tile-and-gallery{
-    background-color: #616161; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-   }
-
-   .gallery-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-transform: uppercase;
-   }
-
-   .whole-gallery{
-     background-color: white; 
-     border-radius: 10px;
-     margin: 50px; 
-     padding: 50px 20px 50px 20px; 
-     display: flex;
-     align-items: center;
-     justify-content: center; 
-     flex-wrap: wrap;
-   }
-
-   .gallery-images-tcom{
-     margin: 0px 10px 0px 50px;
-   }
-   
-    /*
-    DIAGNOSTIC STYLING open-overlay (div)
-   */
-   
-   .nav-button{
-     border: blue 5px dotted; 
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
-
-   .open-overlay { 
-     background-color: #e78b0028; 
-     border: solid 2px #E78A00; 
-     border-radius: 2px; 
-     padding: 4px; 
-     width: 34px;
-     height: 25px; 
-     display: block;
-     cursor: pointer;
-   }
-   
-   .open-overlay span {
-    display: block;
-    height: 1px;
-    width: 25px; 
-    background-color: black;
-    cursor: pointer;
-    margin-top: 71px;
-    margin-left: 4px; 
-     
-   }
-  
-   /* Frame all bars (initial) */ 
-   .bar-top {
-    position: absolute;
-    top: 0px; 
-  }
-  
-  .bar-middle {
-    position: absolute;
-    top: 7.5px;
-  }
-  
-  .bar-bottom {
-    position: absolute;
-    top: 15px;
-  }
-
-    /* 
-  Nav (section) media query 650 max 
+  /* 
+media query between 800 & 500
    */   
      
-    @media screen and (max-width: 650px) { 
-      
-      .whole-header {
-        background-color: white; 
-        display: flex;
-        flex-wrap: wrap;
+   @media only screen and (max-width: 800px) and (min-width: 500px) {
+
+    .main-header {
+        height: 400px;
        }
-        
-       .whole-nav{
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        margin-left: em;
-        height: 75px; 
-        width: 100%;
+
+       .whole-nav {
+        margin: 130px 50px 0px 0px;
+      }
+      /*
+          MAIN LINKS
+      */
+      
+      a {
+        font-size: 15px;
+          -webkit-text-stroke: 1px #000000;
       }
       
-         .header-text{
-          color: #E78A00; 
-          font-size: small;
-          margin: 0px 25px 0px 20px;
-          width: 100px;
-         }
-         
-         .nav{
-           width: 60%;
-         }
-
-         .nav-text {
-          visibility: hidden;
-         }
-
-        .open-overlay { 
-          visibility: hidden;
+      a:hover {
+        pointer-events: none;
+      }
+      
+      /*
+          end MAIN LINKS... Look at #title-header-3
+      */
+      
+      .three-titles{
+        margin: -50px 30px 0px 0px;
+      }
+      
+      #title-header{
+       font-size: 27px;
+      }
+      
+      #title-header-2{
+        font-size: 15px;
+      } 
+      
+      .portfolio-link{
+      display: flex;
+      }
+      
+      a, #title-header-3{
+        font-size: 13px;
+        margin: -100px 0px 0px 0px;
+      }
+      
+      #arrow-2{
+        height: 15px; 
+        margin: -100px 0px 0px 5px;
+      }
+      
+      /*About Section: 800 - 500*/ 
+      
+      .portfolio-titles, #portfolio-title{
+          font-size: 17px; 
         }
       
-}
-   
-   /*
-   DIAGNOSTIC STYLING Section: Portfolio Nav
- 
- 
- .portfolio-nav {
-   display: grid; 
-   grid-template-columns: repeat(300, 1fr);
-   grid-template-rows: repeat(70, 1fr); 
-   height: 120px; 
- }
- */
- /* 
-gallery media query for 650px and under
-   */   
-     
-   @media screen and (max-width: 650px) { 
-
-    #gallery-title {
-       font-size: 12px;  
-       margin-left: 10px;  
-     }
+      .letter {
+        border: 5px solid rgb(240, 240, 204);
+        font-size: 12px;
+      }
       
-     .whole-gallery { 
-      margin: 0px 15px 0px 15px; 
-    
-     } 
-     
-     .gallery-images-photography {
-      display: flex;
-      justify-content: center; 
-      border: solid #E78A00 2px;
-      margin: 5px; 
-      height: 100px;
-      width: 100px; 
-     }
-    
-     .gallery-images-s-w {
-       margin: 5px; 
-       height: 100px;
-       width: 100px; 
-     }
-    
-     .gallery-images-d-d {
-      margin: 5px; 
-      height: 100px;
-      width: 100px; 
-     }
-    
-     .gallery-subject {
-       font-size: 10px; 
-     }
-     
-     .gallery-subject {
-       padding: 20px; 
-     }
+      /* Parent */
+      .about-me {
+      /* Columns */
+      grid-template-columns: 150px 150px 150px;
+      }
+      
+      p { 
+          margin-left: 0px; 
+      }
+      
+      /*Sources section: Desktop */
+      
+      #sources_title{
+        font-size: 15px; 
+      }
+      
+      .sources{
+      grid-template-columns: 150px 150px 150px;
+      }
+
+       /*Questions Section: 500 - 800 */ 
+       #contact_title{
+        font-size: 15px; 
+       }
+       input[type=text]{
+        display: flex;
+        border-radius: .5cm;
+        border: rgb(240, 240, 204) 5px solid;
+        background-color:#343148;
+        height: 20px; 
+        margin: 0px 5px 0px 5px; 
+      }
+      
+      input[type=email]{
+        font-family: 'Arvo', serif;
+        font-size: 12px; 
+      }
+      
+      
+      ::placeholder{
+        font-family: 'Arvo', serif;
+        font-size: 12px;
+      }
+      
+      /*Info Styling */ 
+      .name-package{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #address-title{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #input-1, #input-2{
+        display: flex;
+        width: 200px;
+      }
+      
+      .email-package,.company-package {
+        display: flex; 
+        justify-content: center;
+        margin: 10px 0px 10px 0px; 
+      }
+      
+      /* Message Styling */
+      
+      #input-3, #input-4, #input-5 {
+        display: flex;
+        width: 415px; 
+      }
+      
+      #input-5{
+      height: auto;
+      }
+      
+      label{
+      color: white;
+      font-family: 'Staatliches', cursive;
+      } 
+      
+      /* File upload Styling*/
+      
+      .upload_file-package{
+        display: none;
+      }
+      
+    #copyright{
+      font-size: 12px; 
+      grid-column-start: 125;
+      grid-column-end: 195;
+      grid-row-start: 35;
+      grid-row-end: 35; 
+    }
    }
- 
-   /* 
-Gallery (section) media query 400 max 
- */ 
-
- /* GALLERY BORDER COLOR*/
- @media screen and (max-width: 400px) { 
-
- }
- 
- #gallery-title {
-  display: flex; 
-  flex-wrap: wrap; 
-  font-family: "cinzel-bold", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-  text-transform: uppercase;
-   color: #F1ECD4;
-   font-size: 20px;  
-   margin-left: 50px;  
- }
-  
-#lightgallery {
-  list-style-type: none; 
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap; 
-  justify-content: space-around; 
-  margin: 0px 50px 0px 50px; 
- } 
- 
- .gallery-images-photography {
-  border-radius: 5px; 
-  display: flex;
-  justify-content: center; 
-  border: solid black 2px;
-  margin: 5px; 
-  height: 200px;
-  width: 200px; 
- }
-
- .gallery-images-s-w {
-  border-radius: 5px; 
-   display: flex;
-   justify-content: center; 
-   border: solid black 2px;
-   margin: 5px; 
-   height: 200px;
-   width: 200px; 
- }
-
- .gallery-images-d-d {
-  border-radius: 5px; 
-  display: flex;
-  justify-content: center; 
-  border: solid black 2px;
-  margin: 5px; 
-  height: 200px;
-  width: 200px;
- }
-
- .gallery-subject {
-   text-align: center;
-   text-decoration: none; 
-   color: #F1ECD4;
-   font-size: 15px; 
- }
- 
- .gallery-subject {
-  font-family: "cinzel-bold", Arial, Helvetica, sans-serif; 
-   display: flex; 
-   justify-content: center;
-   align-items: center;
-   padding: 30px; 
- }
-
-/* digital design images */
-
-#image-1-d-d { 
-   margin: 5px; 
-   background-image:url('/img/space-guy.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-#image-2-d-d {
-   margin: 5px; 
-   background-image:url('/img/jelly-fish-finish.png');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-#image-3-d-d {
-  margin: 5px; 
-  background-image:url('/img/sl-logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-#image-4-d-d {
-  margin: 5px; 
-  background-image:url('/img/tcom-305-poster.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-/* photography images */ 
-
-#image-1-photography {
-  margin: 5px; 
-  background-image:url('/img/daisy.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-#image-2-photography {
-  margin: 5px; 
-  background-image:url('/img/rotc.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-#image-3-photography {
-  margin: 5px; 
-  background-image:url('/img/warm-weather.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-#image-4-photography {
-  margin: 5px; 
-  background-image:url('/img/tennis-net.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-}
-
-/* Footer */
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
 
  /* 
- footer media query for 600px and under
+ media query for 500px and under
    */   
      
-   @media screen and (max-width: 600px) { 
+   @media screen and (max-width: 500px) { 
+    
 
-    .footer {
-      margin-top: 20px;
+    .main-header {
+        height: 300px;
+       }
+
+       .whole-nav {
+        margin: 130px 50px 0px 0px;
+      }
+      /*
+          MAIN LINKS
+      */
+      
+      a {
+        font-size: 12px;
+          -webkit-text-stroke: 5px #000000;
+      }
+      
+      /*a:hover {
+        font-size: 11px; 
+      }*/
+      
+      /*
+          end MAIN LINKS... Look at #title-header-3
+      */
+      
+      .three-titles{
+        margin: -50px 30px 0px 0px;
+      }
+      
+      #title-header{
+       font-size: 27px;
+      }
+      
+      #title-header-2{
+        font-size: 15px;
+      } 
+      
+      .portfolio-link{
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
+      }
+      
+      a, #title-header-3{
+        font-size: 11px;
+        margin: -100px 0px 0px 0px;
+      }
+      
+      #arrow-2{
+        height: 15px; 
+      }
+      
+      /*About Section: under 500 */ 
+      
+      .portfolio-titles, #portfolio-title{
+          font-size: 17px; 
+        }
+      
+      .letter {
+        border: 5px solid rgb(240, 240, 204);
+        font-size: 12px;
+      }
+      
+      /* Parent */
+      .about-me {
+      /* Columns */
+      grid-template-columns: 100px 100px 100px;
+      }
+      
+      p { 
+          margin-left: 30px; 
+      }
+      
+      /* Column: line 1, end line 2 */
+      /* Row: line 1, end line 2 */
+      /* this gets reused for every section with a grid*/
+      #a {
+          height: 150px;
+      }
+      
+      /*Sources section: Desktop */
+      
+      #sources_title{
+        font-size: 15px; 
+      }
+      
+      .sources{
+      grid-template-columns: 100px 100px 100px;
+      }
 
+       /*Questions Section: 500 - 800 */ 
+       #contact_title{
+        font-size: 15px; 
+       }
+       input[type=text]{
+        display: flex;
+        border-radius: .5cm;
+        border: rgb(240, 240, 204) 5px solid;
+        background-color:#343148;
+        height: 20px; 
+        margin: 0px 5px 0px 5px; 
+      }
+      
+      input[type=email]{
+        font-family: 'Arvo', serif;
+        font-size: 12px; 
+      }
+      
+      
+      ::placeholder{
+        font-family: 'Arvo', serif;
+        font-size: 12px;
+      }
+      
+      /*Info Styling */ 
+      .name-package{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #address-title{
+        display: flex; 
+        justify-content: center;
+      }
+      
+      #input-1, #input-2{
+        display: flex;
+        width: 125px;
+      }
+      
+      .email-package,.company-package {
+        display: flex; 
+        justify-content: center;
+        margin: 10px 0px 10px 0px; 
+      }
+      
+      /* Message Styling */
+      
+      #input-3, #input-4, #input-5 {
+        display: flex;
+        width: 350px; 
+      }
+      
+      #input-5{
+      height: auto;
+      }
+      
+      label{
+      color: white;
+      font-family: 'Staatliches', cursive;
+      } 
+      
+      /* File upload Styling*/
+      
+      .upload_file-package{
+        display: none;
+      }
+
+      #send-button{
+          width: 75px; 
+          height: 30px;
+        }
+
+    #copyright{
+      color: rgb(240, 240, 204);
+      font-size: 10px; 
+      grid-column-start: 120;
+      grid-column-end: 205;
+      grid-row-start: 35;
+      grid-row-end: 35; 
+    }
    }
 
