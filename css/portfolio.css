@@ -240,7 +240,10 @@ grid-gap: 5px;
 text-align: center;
 height: 10px; 
 }
-  
+
+#copyright{
+  color: rgb(240, 240, 204);
+}
 
   /* 
 media query between 800 & 500

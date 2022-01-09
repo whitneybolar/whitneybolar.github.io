@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="SpecificationsTable">
+    <title>Specifications:</title>
+    <refbody>
+        <simpletable frame="all" relcolwidth="1* 1*" id="SpecificationsTable">
+            <strow>
+                <stentry>Model</stentry>
+                <stentry>KC-606</stentry>
+            </strow>
+            <strow>
+                <stentry>Frequency Response</stentry>
+                <stentry>60Hz-16KHz, ±3dB</stentry>
+            </strow>
+            <strow>
+                <stentry>Signal to Noise Ratio</stentry>
+                <stentry>&gt;57dB</stentry>
+            </strow>
+            <strow>
+                <stentry>Total Harmonic Distortion</stentry>
+                <stentry>&lt;1.5%</stentry>
+            </strow>
+            <strow>
+                <stentry>MP3,link input</stentry>
+                <stentry>650mV</stentry>
+            </strow>
+            <strow>
+                <stentry>Rated Voltage</stentry>
+                <stentry>5V-2A</stentry>
+            </strow>
+            <strow>
+                <stentry>Tuning Range</stentry>
+                <stentry>FM: 87.5-108MHz</stentry>
+            </strow>
+            <strow>
+                <stentry>Power</stentry>
+                <stentry>10W</stentry>
+            </strow>
+            <strow>
+                <stentry>Material</stentry>
+                <stentry>PC+ABS</stentry>
+            </strow>
+            <strow>
+                <stentry>Dimension</stentry>
+                <stentry>168x168x40mm</stentry>
+            </strow>
+            <strow>
+                <stentry>Weight</stentry>
+                <stentry>1.2kg</stentry>
+            </strow>
+        </simpletable>
+    </refbody>
+</reference>

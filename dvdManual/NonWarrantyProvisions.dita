@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ixd_j44_yhb">
+    <title> Non-Warranty Provisions</title>
+    <shortdesc> List of actions toward the device that will break warranty. </shortdesc>
+    <conbody>
+            <ul>
+                <li> The malfunction and damage of device through misuse. </li>
+                <li> Expired warranty period. </li>
+                <li> Malfunction and damage of device through force majeure. </li>
+                <li> Malfunction and damage of device through incorrect operation. </li>
+            </ul> 
+    </conbody>
+</concept>

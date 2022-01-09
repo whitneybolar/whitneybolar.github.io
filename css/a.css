@@ -408,7 +408,8 @@ media query between 800 & 500
        }
 
        .whole-nav {
-        margin: 130px 50px 0px 0px;
+        display: none;
+        /*margin: 130px 50px 0px 0px;*/
       }
       /*
           MAIN LINKS
@@ -428,7 +429,7 @@ media query between 800 & 500
       */
       
       .three-titles{
-        margin: -50px 30px 0px 0px;
+        margin: 240px 30px 0px 0px;
       }
       
       #title-header{
@@ -580,7 +581,8 @@ media query between 800 & 500
        }
 
        .whole-nav {
-        margin: 130px 50px 0px 0px;
+        display: none;
+        /*margin: 130px 50px 0px 0px;*/
       }
       /*
           MAIN LINKS
@@ -600,7 +602,7 @@ media query between 800 & 500
       */
       
       .three-titles{
-        margin: -50px 30px 0px 0px;
+        margin: 240px 30px 0px 0px;
       }
       
       #title-header{

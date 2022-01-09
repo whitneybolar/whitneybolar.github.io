@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_a1c_5l4_yhb">
+    <title> Troubleshooting </title>
+    <refbody>
+        <properties>
+            <prophead>
+                <proptypehd> Malfunction </proptypehd>
+                <propvaluehd> Possible reason </propvaluehd>
+                <propdeschd> Solution</propdeschd>
+            </prophead>
+            <property> 
+                <proptype> Unfunctional device </proptype>
+                <propvalue> Device not plugged into power outlet </propvalue>
+                <propdesc> Fully insert device plug into power outlet </propdesc>
+            </property>
+            <property> 
+                <proptype> Unable to play device </proptype>
+                <propvalue> Disk not properly placed </propvalue>
+                <propdesc> Insert disk with cover facing upwards </propdesc>
+            </property>
+            <property> 
+                <proptype>  </proptype>
+                <propvalue> Incompatibility issue </propvalue>
+                <propdesc> Revert to another compatible disk </propdesc>
+            </property>
+            <property> 
+                <proptype> No sound output </proptype>
+                <propvalue>  Wrong operation </propvalue>
+                <propdesc> Follow instruction manual when operating </propdesc>
+            </property>
+            <property> 
+                <proptype> </proptype>
+                <propvalue> Volume set low </propvalue>
+                <propdesc> Increase volume </propdesc>
+            </property>
+            <property> 
+                <proptype> Sound stuck </proptype>
+                <propvalue> Dirty disk or laser lenses </propvalue>
+                <propdesc> Clean disk or laser </propdesc>
+            </property>
+            <property> 
+                <proptype> </proptype>
+                <propvalue> disk got scratched or curved </propvalue>
+                <propdesc> Replace disk </propdesc>
+            </property>
+        </properties>
+    </refbody>
+</reference>

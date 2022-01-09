@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="Power">
+    <title>Power</title>
+    <taskbody>
+        <context>
+            <p>How to turn on your device:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Before you turn on your device, check if the device is connected properly to another audio device.</cmd>
+            </step>
+            <step>
+                <cmd>Plug the power adapter into a power outlet.</cmd>
+            </step>
+            <step>
+                <cmd>Put the CD into the player with the cover side facing you.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+ <task id="Time">
+     <title>Time</title>
+     <taskbody>
+         <context>
+             <p></p>
+         </context>
+         <steps>
+             <step>
+                 <cmd></cmd>
+             </step>
+         </steps>
+     </taskbody>
+ </task>
+ <task id="Subtitlebutton">
+     <title>Sub-Title Button</title>
+     <taskbody>
+         <context>
+             <p>How to set the standard language:</p>
+         </context>
+         <steps>
+             <step>
+                 <cmd>When you press the sub-title button for the first time, it will display the current language mode.</cmd>
+             </step>
+             <step>
+                 <cmd>Press the button again to switch to a language you prefer.</cmd>
+             </step>
+         </steps>
+     </taskbody>
+ </task>
+ <task id="USB">
+     <title>USB</title>
+     <taskbody>
+         <context>
+             <p>How to switch to USB mode:</p>
+         </context>
+         <steps>
+             <step>
+                 <cmd>Press the MODE button on the remote control or the MODE button on the device.</cmd>
+                    <info>
+                        <note>The device will now automatically read the files from the USB drive.</note>
+                    </info>
+             </step>
+         </steps>
+     </taskbody>
+ </task>
+ <task id="Set">
+     <title>Set Button</title>
+     <taskbody>
+         <context>
+             <p>How to go to the system set up menu:</p>
+         </context>
+         <steps>
+             <step>
+                 <cmd>Press SET button.</cmd>
+             </step>
+         </steps>
+     </taskbody>
+ </task>
+ <task id="Prog">
+     <title>Prog Button</title>
+     <taskbody>
+         <context>
+             <p>How to randomly play songs:</p>
+         </context>
+         <steps>
+             <step>
+                 <cmd>Press the PROG button to randomly assign 20 songs and play it in order.</cmd>
+                 <info>
+                     <note>If inactive, the operation will turn off.</note>
+                 </info>
+             </step>
+         </steps>
+     </taskbody>
+ </task>
+ <task id="Direction">
+     <title>Direction Button</title>
+     <taskbody>
+         <context>
+             <p>How to edit a picture:</p>
+         </context>
+         <steps>
+             <step>
+                 <cmd>Press the Direction button to choose a file, zoom, or rotate a picture. </cmd>
+             </step>
+         </steps>
+     </taskbody>
+ </task>
+ <task id="System">
+     <title>System Button</title>
+     <taskbody>
+         <context>
+             <p>How to switch video output system:</p>
+         </context>
+         <steps>
+             <step>
+                 <cmd>Press the System Button to change the video output system to your preference.</cmd>
+             </step>
+         </steps>
+     </taskbody>
+ </task>
+<task id="FwdRev">
+    <title>Forward and Reverse Button</title>
+    <taskbody>
+        <context>
+            <p>How to fastforward and rewind music:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Press the FWD button to fast forward music.</cmd>
+            </step>
+            <step>
+                <cmd>Press the REW button to rewind music.</cmd>
+                <info>
+                    <note>There will be no sound during this period.</note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>
+<task id="AudioChannel">
+    <title>Channel Button</title>
+    <taskbody>
+        <context>
+            <p>How to change the channel:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Press the left and right channel button to change to your preferred channel.</cmd>
+                <info>
+                    <note>Use the Audio button to change the language.</note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+    </task>
+    <task id="OKEnter">
+        <title>OK button</title>
+        <taskbody>
+            <context>
+                <p>How to choose files or enter another part of the device:</p>
+            </context>
+            <steps>
+                <step>
+                    <cmd>Press the OK button.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="MenuButton">
+        <title>Menu Button</title>
+        <taskbody>
+            <context>
+                <p>How to display main menu:</p>
+            </context>
+            <steps>
+                <step>
+                    <cmd>Pres the MENU button to display the main menu.</cmd>
+                </step>
+                <step>
+                    <cmd>Use the Direction Button to choose file.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="Return">
+        <title>Return Button</title>
+        <taskbody>
+            <context>
+                <p>How to go back to the main menu:</p>
+            </context>
+            <steps>
+                <step>
+                    <cmd>While the disc is playing, press the RETURN button to go back to the main menu.</cmd>
+                    <info>
+                        <note>The RETURN button does not work while playing MP3, CA and VCD1.1 disc.</note>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="PlayPause">
+        <title>Play/Pause Button</title>
+        <taskbody>
+            <context>
+                <p>How to pause and play music:</p>
+            </context>
+            <steps>
+                <step>
+                    <cmd>Press the PAUSE button to stop.</cmd>
+                </step>
+                <step>
+                    <cmd>Press the button again to play again.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>    
+    <task id="PrevNext">
+        <title>Prev/Next Button</title>
+        <taskbody>
+            <context>
+                <p>How to skip files:</p>
+            </context>
+            <steps>
+                <step>
+                    <cmd>Pres the NEXT button to skip the next file.</cmd>
+                </step>
+                <step>
+                    <cmd>Press the PREV button skip the previous file.</cmd>
+                    <info>
+                        <note>If the music has stopped playing, the Prev/Next button cannot be used.</note>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+        <task id="Volume">
+            <title>Volume Button</title>
+            <taskbody>
+                <context>
+                    <p>How to adjust audio on your device:</p>
+                </context>
+                <steps>
+                    <step>
+                        <cmd>Press VOL+ to turn volume up.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Press VOL- to turn volume down.</cmd>
+                        <info>
+                            <note>The volume is not adjustable when playing a DVD.</note>
+                        </info>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+        <task id="Mute">
+            <title>Mute Button</title>
+            <taskbody>
+                <context>
+                    <p>How to turn off sound output:</p>
+                </context>
+                <steps>
+                    <step>
+                        <cmd>Press the MUTE button to close the sound output.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Press the MUTE button again to open the sound output.</cmd>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+        <task id="Sleep">
+            <title>Sleep Button</title>
+            <taskbody>
+                <context>
+                    <p>How to enable Sleep mode on your device:</p>
+                </context>
+                <steps>
+                    <step>
+                        <cmd>Press the SLEEP button to enable Sleep Mode, the LCD screen on the device will turn off.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Press the SLEEP button again to turn on screen. </cmd>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+            <task id="Loop">
+                <title>Loop Button</title>
+                <taskbody>
+                    <context>
+                        <p>How to repeat music:</p>
+                    </context>
+                    <steps>
+                        <step>
+                            <cmd>Press the LOOP button once to repeat current chapter.</cmd>
+                        </step>
+                        <step>
+                            <cmd>Press the LOOP button again to repeat current folder.</cmd>
+                        </step>
+                        <step>
+                            <cmd>Press the LOOP button for a third time to repeat the whole disc.</cmd>
+                        </step>
+                        <step>
+                            <cmd>Press the LOOP button for a fourth time to end the cycle.</cmd>
+                        </step>
+                    </steps>
+                </taskbody>
+            </task>
+    <task id="FM">
+        <title>FM Mode</title>
+        <taskbody>
+            <context>
+                <p>How to get to the FM Mode:</p>
+            </context>
+            <steps>
+                <step>
+                    <cmd>Press the MODE button on the remote control or the MODE button on the device to switch to FM Mode when the device is on.</cmd>
+                </step>
+                <step>
+                    <cmd>Press the LEFT/RIGHT button to search the video channel.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+        </task>
+        <task id="Bluetooth">
+            <title>Bluetooth</title>
+            <taskbody>
+                <context>
+                    <p>How to switch to Bluetooth Mode:</p>
+                </context>
+                <steps>
+                    <step>
+                        <cmd>Press the MODE button to switch to Bluetooth Mode when the device is on.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Press the SLEEP button again to turn on screen. </cmd>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+        <task id="MP3">
+            <title>MP3</title>
+            <taskbody>
+                <context>
+                    <p>How to play MP3 files:</p>
+                </context>
+                <steps>
+                    <step>
+                        <cmd>When using the device to play MP3 files, the MUTE, VOL+/VOL-, PLAY/PAUSE, and PREV/NEXT buttons
+                        have the same functions when playing a normal disc.</cmd>
+                    </step>
+                </steps>
+            </taskbody>
+       </task>
+        <task id="AVIXVID">
+            <title>AVI/XVID</title>
+            <taskbody>
+                <context>
+                    <p>How to play a disc containing a AVI or XVID file:</p>
+                </context>
+                <steps>
+                    <step>
+                        <cmd>Press the UP/DOWN button to find the desired file you want to play.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Press the OK or PLAY/PAUSE button to play the selected file.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Press the STOP/RETURN button to stop playing the file and return to the option interface.</cmd>
+                        <info>
+                            <note>When you put a disc containing a AVI or XVID file into the device, it will automatically
+                            enter the option interface.</note>
+                        </info>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+    <task id="set-button">
+        <title>Set Button </title>
+        <taskbody>
+            <context>
+                <p> How to access system interface: </p>
+            </context>
+            <steps>
+                <step>
+                    <cmd> Press UP/Down button to choose to find specified settings. </cmd>
+                </step>
+                <step>
+                    <cmd> Press OK button to confirm settings. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="on-timer">
+        <title> On Timer Button </title>
+        <taskbody>
+            <context>
+                <p> How to operate On Timer Button: </p>
+            </context>
+            <steps>
+                <step>
+                    <cmd> Press On Timer button when device is on. </cmd>
+                    <info>
+                        <note type="note"> LCD screen will display 00:00</note>
+                    </info>
+                </step>
+                <step>
+                    <cmd> Play original alarm clock time after reset. </cmd>
+                </step>
+                <step>
+                    <cmd> press the ON icon on LCD screen to cancel On Timer. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="off-timer">
+        <title> Off Timer Button </title>
+        <taskbody>
+            <context>
+                <p> How to operate Off Timer Button: </p>
+            </context>
+            <steps>
+                <step>
+                    <cmd> Press Off Timer button when device is on. </cmd>
+                    <info>
+                        <note type="note"> LCD screen will display 00:00</note>
+                    </info>
+                </step>
+                <step>
+                    <cmd> Play original alarm clock time after reset. </cmd>
+                </step>
+                <step>
+                    <cmd> press the ON icon on LCD screen to cancel Off Timer. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="mode-button">
+        <title> Mode Button </title>
+        <taskbody>
+            <context>
+                <p> How to operate Mode Button: </p>
+            </context>
+            <steps>
+                <step>
+                    <cmd> Press Mode button on remote control to select disc, USB, or FM mode. </cmd>
+                    <info>
+                        <note type="note"> Default mode is Disc </note>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="a-b-button">
+        <title> A-B Button </title>
+        <taskbody>
+            <context>
+                <p> How to operate A-B Button: </p>
+            </context>
+            <steps>
+                <step>
+                    <cmd> Press A-B button on remote control to choose start point. </cmd>
+                </step>
+                <step>
+                    <cmd> Press A-B button again on remote control to choose end point. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    </task>
+  

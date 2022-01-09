@@ -151,14 +151,14 @@ body {
   #a {
       grid-column: 3 / 4;
       grid-row: 1 / 2;
-      height: 200px;
+      height: 400px;
   
   }
   
   /* Column: line 3, end line 4 */
   /* Row: line 1, end line 2 */
   #b {
-      background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_1_Image_0002.jpg");
+      background-image: url("/dvdManual/images/DVD\ player\ user\ manual\ last\ page_Page_6.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -173,7 +173,8 @@ body {
   }
   
   #d {
-      background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_4_Image_0002.jpg");
+      background-image: url("/dvdManual/images/DVD\ player\ user\ manual\ page\ 1_Page_1.jpg");
+      height: 400px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -191,7 +192,7 @@ body {
   }
   
   #h {
-      background-image: url("/404-Final/images/Tabloid\ -\ 46.png");
+      background-image: url("/dvdManual/images/Tabloid\ -\ 47\ \(1\).png");
       height: 400px; 
       background-position: center;
       background-repeat: no-repeat;
@@ -201,7 +202,7 @@ body {
   }
 
   #j{
-    background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_4_Image_0002.jpg");
+    background-image: url("/dvdManual/images/DVD\ player\ user\ manual\ last\ page_Page_6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -433,7 +434,8 @@ body {
          }
   
          .whole-nav {
-          margin: 130px 50px 0px 0px;
+        display: none; 
+        /*margin: 130px 50px 0px 0px;*/
         }
         /*
             MAIN LINKS
@@ -453,8 +455,8 @@ body {
         */
         
         .three-titles{
-          margin: -50px 30px 0px 0px;
-        }
+            margin: 240px 30px 0px 0px;
+          }
         
         #title-header{
          font-size: 27px;
@@ -503,7 +505,7 @@ body {
         /* Row: line 1, end line 2 */
         /* this gets reused for every section with a grid*/
         #a {
-            height: 150px;
+            height: 400px;
         }
         
         /*Sources section: Desktop */
@@ -605,7 +607,8 @@ body {
          }
   
          .whole-nav {
-          margin: 130px 50px 0px 0px;
+        display: none;
+        /*margin: 130px 50px 0px 0px;*/
         }
         /*
             MAIN LINKS
@@ -625,8 +628,8 @@ body {
         */
         
         .three-titles{
-          margin: -50px 30px 0px 0px;
-        }
+            margin: 240px 30px 0px 0px;
+          }
         
         #title-header{
          font-size: 27px;
