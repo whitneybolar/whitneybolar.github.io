@@ -199,6 +199,15 @@ p {
     grid-row: 1 / 2;
 }
 
+#i{
+  background-image: url("/img/ifixit-img/replacement-image-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
 /* table */
 td{
     padding: 20px 10px 0px 10px;
