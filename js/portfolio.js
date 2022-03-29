@@ -41,7 +41,7 @@ $('.open-overlay').click(function(){
 // light gallery 
 
 $(document).ready(function() {
-  $('#lightgallery').lightGallery({
+  $('.lightgallery').lightGallery({
     thumbnail: false, 
     share: false,
     pager: false
