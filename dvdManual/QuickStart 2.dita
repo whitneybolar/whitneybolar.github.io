@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="QuickStart">
+    <title>Quick Start:</title>
+    <taskbody>
+        <context>
+            <p>How to quick start your Wall Mountable Bluetooth DVD Player</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>First, insert the power adapter into a power outlet. Then connect the white
+                power cable to the power adapter.</cmd>
+                <info>
+                    <note>Press the square button to open the dust-proof task. Take out the chip-protection
+                    card before putting in the CD, and lock the case afterwards.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Put a CD into the DVD player and pull the power cable to turn on the device. You 
+                know it's on when the power indicator light is on and the CD starts to rotate.
+                </cmd>
+                <info>
+                    <note>After the CD rotates for 10-20 seconds, the speaker will start playing the video file</note>
+                </info>
+            </step>
+            <step>
+                <cmd>If you want to switch audio devices, press the MODE button on the remote control or the topside
+                MODE button on the DVD player.</cmd>
+            </step>
+            <step>
+                <cmd>To turn off the DVD player, pull the power cable.</cmd>
+            </step>
+        </steps>
+       
+    </taskbody>
+</task>

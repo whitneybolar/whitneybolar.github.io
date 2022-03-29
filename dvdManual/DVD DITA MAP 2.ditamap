@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="DVDManual">
+    <title>DVD Manual DITA Map</title>
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+        <relrow>
+            <relcell><topicref href="Kind-Reminder.dita"/></relcell>
+            <relcell></relcell>
+            <relcell><topicref href="Specifications.dita"></topicref></relcell>
+        </relrow>
+        <relrow> 
+            <relcell><topicref href="NonWarrantyProvisions.dita"/>
+                <topicref href="AfterSalesWarranty.dita"/>
+            </relcell>
+            <relcell></relcell>
+            <relcell></relcell>
+        </relrow>
+        <relrow>
+            <relcell></relcell>
+            <relcell><topicref href="Maintenance.dita"></topicref></relcell>
+            <relcell><topicref href="Troubleshooting.dita"></topicref></relcell>
+        </relrow>
+        <relrow>
+            <relcell><topicref href="RemoteControl.dita"></topicref></relcell>
+            <relcell></relcell>
+            <relcell></relcell>
+        </relrow>
+        <relrow>
+            <relcell><topicref href="Caution.dita"></topicref></relcell>
+            <relcell></relcell>
+            <relcell></relcell>
+        </relrow>
+        <relrow>
+            <relcell> <topicref href="QuickStart.dita"></topicref></relcell>
+            <relcell></relcell>
+            <relcell></relcell>
+        </relrow>
+    </reltable>
+</map>

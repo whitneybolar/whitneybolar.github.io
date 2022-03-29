@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_cwf_ztl_vhb">
+    <title> Kind Reminder </title>
+    <conbody>
+        <p> When reading files from multiple directories (such as MP3, AVI, USB flash drive): </p>
+        <ul>
+            <li> By default this device would only show the directory after files successfully read, and support format would not be displayed </li>
+            <li> This device will allow you to play audio and video on file </li>
+        </ul>
+    </conbody>
+</concept>

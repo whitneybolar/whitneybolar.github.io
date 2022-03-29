@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_tfg_t5f_yhb">
+    <title> Remote Control </title>
+    <conbody>
+        <note>
+            <ul>
+                <li> The sensitivity of remote control can be contolled by light and envirnment </li>
+                <li> Included battery can last for one year, but it depends on the usage frequency. </li>
+            </ul> 
+        </note>
+        <note type="attention"> To prevent leakage and corrosion remove battery from remote when unoccupied </note>
+    </conbody>
+</concept>

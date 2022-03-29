@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="task_ifg_zwf_yhb">
+    <title> Maintenance </title>
+    <shortdesc> How to clean Wall Mountable Bluetooth DVD Player </shortdesc>
+    <taskbody>
+        <context>
+            <note type="note"> Please use cloth dipped in diluent detergent to clean device.</note>
+        </context>
+        <steps>
+            <step>
+                <cmd> Set device in a place with enough air flow.</cmd>
+                <info>
+                    <note type="attention"> Avoid direct sunlight, extreme heat and moisture. </note>
+                </info>
+            </step>
+            <step>
+                <cmd> Use clean and soft cloth to central area to outside</cmd>
+                <info>
+                    <note type="note"> No disk or sticker should be attached to device </note>
+                </info>
+            </step>
+            <step>
+                <cmd> Use camera lens brush to clean dust from laser lenses </cmd>
+            </step>
+            <step>
+                <cmd> Use clean cotton bud dipped with small omount of anhydrous alcohol to wipe laser lenses </cmd>
+            </step>
+            <step>
+                <cmd> Use plain clean cotton to wipe laser lenses </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

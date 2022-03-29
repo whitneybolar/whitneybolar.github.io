@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Caution">
+    <title>Caution:</title>
+    <shortdesc>Please read the following cautions before setting up your device:</shortdesc>
+    <conbody>
+        <ul>
+            <li>Keep the device 5-10 inches away from other items.</li>
+            <li>Avoid placing the device near any heat source.</li>
+            <li>Avoid damaging the power cable.</li>
+            <li>Unplug the device if it is left unused for a long period of time.</li>
+            <li>Do not place any items on top of the device.</li>
+            <li>If the device is not working, please have a qualified technician repair it.</li>
+        </ul>
+    </conbody>
+</concept>

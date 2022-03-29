@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="set-button">
+    <title>Set Button </title>
+    <taskbody>
+        <context>
+            <p> How to access system interface: </p>
+        </context>
+        <steps>
+            <step>
+                <cmd> Press UP/Down button to choose to find specified settings. </cmd>
+            </step>
+            <step>
+                <cmd> Press OK button to confirm settings. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>
+<task id="on-timer">
+    <title> On Timer Button </title>
+    <taskbody>
+        <context>
+            <p> How to operate On Timer Button: </p>
+        </context>
+        <steps>
+            <step>
+                <cmd> Press On Timer button when device is on. </cmd>
+                <info>
+                    <note type="note"> LCD screen will display 00:00</note>
+                </info>
+            </step>
+            <step>
+                <cmd> Play original alarm clock time after reset. </cmd>
+            </step>
+            <step>
+                <cmd> press the ON icon on LCD screen to cancel On Timer. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>
+<task id="off-timer">
+    <title> Off Timer Button </title>
+    <taskbody>
+        <context>
+            <p> How to operate Off Timer Button: </p>
+        </context>
+        <steps>
+            <step>
+                <cmd> Press Off Timer button when device is on. </cmd>
+                <info>
+                    <note type="note"> LCD screen will display 00:00</note>
+                </info>
+            </step>
+            <step>
+                <cmd> Play original alarm clock time after reset. </cmd>
+            </step>
+            <step>
+                <cmd> press the ON icon on LCD screen to cancel Off Timer. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>
+<task id="mode-button">
+    <title> Mode Button </title>
+    <taskbody>
+        <context>
+            <p> How to operate Mode Button: </p>
+        </context>
+        <steps>
+            <step>
+                <cmd> Press Mode button on remote control to select disc, USB, or FM mode. </cmd>
+                <info>
+                    <note type="note"> default mode is Disc </note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>
+<task id="a-b-button">
+    <title> A-B Button </title>
+    <taskbody>
+        <context>
+            <p> How to operate A-B Button: </p>
+        </context>
+        <steps>
+            <step>
+                <cmd> Press A-B button on remote control to choose start point. </cmd>
+            </step>
+            <step>
+                <cmd> Press A-B button again on remote control to choose end point. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

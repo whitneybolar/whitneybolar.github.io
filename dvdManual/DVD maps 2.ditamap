@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Wall Mountable Bluetooth DVD Player User Guide</title>
+    <topicmeta>
+        <copyright>
+            <copyryear year="2019"/>
+            <copyrholder>-Unknown-</copyrholder>
+        </copyright>
+    </topicmeta>
+    <topicref href="Caution.dita" format="dita" scope="local" type="concept"/>
+    <topicref href="Specifications.dita" format="dita" scope="local" type="reference"/>
+    <topicref href="Kind-Reminder.dita" format="dita" scope="local" type="concept"/>
+    <topicref href="RemoteControl.dita" format="dita" scope="local" type="concept"/>
+    <topicref>
+        <topicmeta>
+            <navtitle>Getting Started</navtitle>
+        </topicmeta>
+    </topicref>
+    <topicref href="QuickStart.dita" format="dita" scope="local" type="task"/>
+    <topicref href="Instructions.dita" format="dita" scope="local" type="task"/>
+    <topicref href="Maintenance.dita" format="dita" scope="local" type="generalTask"/>
+    <topicref href="Troubleshooting.dita" format="dita" scope="local" type="reference"/>
+    <topicref>
+        <topicmeta>
+            <navtitle>Policies</navtitle>
+        </topicmeta>
+    </topicref>
+    <topicref href="AfterSalesWarranty.dita" format="dita" scope="local" type="concept"/>
+    <topicref href="NonWarrantyProvisions.dita" format="dita" scope="local" type="concept"/>
+    
+   
+</map>
