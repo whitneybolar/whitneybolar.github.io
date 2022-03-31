@@ -2,7 +2,6 @@
 console.log('OK');
 
 // Open-overlay
-
 $(document).ready(function(){
   $(".open-overlay").click(function(){
     $(".bar-top").animate({top: "15px"});
@@ -25,17 +24,33 @@ $('.open-overlay').click(function(){
  $("#nav_item_3").slideToggle({top: '13px'});
  }); 
  
+ // drop down // add animation 
+ function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("send-button");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
 
  // gallery filter 
 
- var checkClass = function() {
-  
+ function checkClass() {
+
   // Remove Existing Hide 
-  if ( $('figure').hasClass('hide') ) {
-    $('figure').removeClass('hide'); 
+  if ($('figure').hasClass('hide')) {
+    $('figure').removeClass('hide');
   }
-  
-};
+
+}
 
 
 // light gallery 
