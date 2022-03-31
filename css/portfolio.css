@@ -433,10 +433,14 @@ media query between 800 & 500
       */
       
       a {
-        font-size: 12px;
-          -webkit-text-stroke: 5px #000000;
+        font-size: 0px;
+          -webkit-text-stroke: 0px #000000;
       }
-      
+
+      a:hover {
+        pointer-events: none;
+      }
+
       /*a:hover {
         font-size: 11px; 
       }*/
@@ -446,7 +450,7 @@ media query between 800 & 500
       */
       
       .three-titles{
-        margin: 240px 30px 0px 0px;
+        margin: 200px 30px 0px 0px;
       }
       
       #title-header{
@@ -460,14 +464,15 @@ media query between 800 & 500
       .portfolio-link{
       display: flex;
       }
-      
+
       a, #title-header-3{
         font-size: 11px;
-        margin: -100px 0px 0px 0px;
+        margin: -60px 0px 0px 0px;
       }
       
       #arrow-2{
         height: 15px; 
+        margin: -60px 0px 0px 5px;
       }
       
       /*About Section: under 500 */ 
@@ -478,26 +483,29 @@ media query between 800 & 500
       
       .letter {
         border: 5px solid rgb(240, 240, 204);
-        font-size: 12px;
+        font-size: 10px;
       }
       
       /* Parent */
       .about-me {
       /* Columns */
       grid-template-columns: 100px 100px 100px;
+      /* Rows */
+      grid-template-rows: 100px 100px 100px;
+      grid-gap: 5px; 
       }
       
       p { 
-          margin-left: 30px; 
+          width: 100%;
+          font-size: 9px;
+          padding: 0;
+          margin: -10px 0px 0px 0px;
       }
       
       /* Column: line 1, end line 2 */
       /* Row: line 1, end line 2 */
       /* this gets reused for every section with a grid*/
-      #a {
-          height: 150px;
-      }
-      
+     
       /*Sources section: Desktop */
       
       #sources_title{
@@ -505,7 +513,7 @@ media query between 800 & 500
       }
       
       .sources{
-      grid-template-columns: 100px 100px 100px;
+      grid-template-columns: 50px 50px 50px;
       }
 
        /*Questions Section: 500 - 800 */ 
