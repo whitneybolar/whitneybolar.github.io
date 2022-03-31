@@ -25,6 +25,7 @@ $('.open-overlay').click(function(){
  }); 
  
  // drop down // add animation 
+ // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_read_more
  function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
