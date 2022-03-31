@@ -8,98 +8,85 @@ body {
   }
   
   .main-header {
-   display: flex; 
-   flex-wrap: wrap;
-   background-image: url("/img/paintings/hand.jpg");
-   height: 600px; 
-   background-size: cover; 
-   background-position: center; 
-  }
-  
-  .whole-nav {
-    font-family: 'Arvo', serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: top; 
-    align-items: top;
-    text-transform: uppercase; 
-    width: 100%;
-    margin: 170px 50px 0px 0px;
-    color: white;
-    text-shadow: 5 5 5px black; 
-  }
-  
-  /*
-      ALL LINKS
-  */
-  
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-      -webkit-text-stroke: 1px #000000;
-  }
-  
-  a:hover {
-    font-size: 1em;
-    color: rgb(31, 3, 75); 
-  }
-  
-  /*
-      end ALL LINKS
-  */
-  
-  .three-titles{
-    font-family: 'Staatliches', cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    width: 100%;
-    margin: -50px 50px 0px 0px;
-  }
-  
-  #title-header{
-   font-family: Trattatello, fantasy;
-   text-align: end;
-   font-size: 47px;
-   margin: -60px 0px 0px 0px;
-   color: black; 
-   width: 100%; 
-   height: 100%; 
-  }
-  
-  #title-header-2{
-    font-family: 'Staatliches', cursive;
+    display: flex; 
+    flex-wrap: wrap;
+    height: 200px; 
+    background-color: rgb(240, 240, 204);
+   }
+   
+   .whole-nav {
+     font-family: 'Arvo', serif;
+     display: flex;
+     justify-content: space-between;
+     align-items: top; 
+     align-items: top;
+     text-transform: uppercase; 
+     width: 100%;
+     margin: 30px 50px 0px 0px;
+     color: white;
+     text-shadow: 5 5 5px black; 
+   }
+   
+   /*
+       ALL LINKS
+   */
+   
+   a {
+     color: white;
+     text-decoration: none;
+     font-size: 1em;
+       -webkit-text-stroke: 1px #000000;
+   }
+   
+   a:hover {
+     font-size: 1em;
+     color: rgb(31, 3, 75); 
+   }
+   
+   /*
+       end ALL LINKS
+   */
+   
+   .three-titles{
+     font-family: 'Staatliches', cursive;
+     display: flex;
+     flex-direction: column;
+     align-items: top;
+     width: 100%;
+     margin: 50px 50px 0px 0px;
+   }
+   
+   #title-header{
+    font-family: Trattatello, fantasy;
     text-align: end;
-    font-size: 17px;
+    font-size: 47px;
+    margin: 30px 0px 0px 0px;
     color: black; 
     width: 100%; 
     height: 100%; 
-    padding: 150px 0px 0px 0px;
-    margin: -200px 0px 0px 0px;
-  } 
-  
-  .portfolio-link{
-  display: flex;
-  }
-  
-  a, #title-header-3{
-    font-family: 'Arvo', serif;
-    text-align: end;
-    font-size: 17px;
-     margin: -130px 0px 0px 0px;
-    color: black; 
-    width: 100%; 
-    height: 100%; 
-  
-  }
-  
-  #arrow-2{
-    text-align: end;
-     margin: -130px 0px 0px 5px;
-    color: black;  
-    height: 20px; 
-  }
+   } 
+   
+   .portfolio-link{
+   display: flex;
+   }
+   
+   a, .portfolio-link {
+     font-family: 'Arvo', serif;
+     text-align: end;
+     font-size: 17px;
+      margin: 0px 0px 0px 0px;
+     color: black; 
+     width: 100%; 
+     height: 100%; 
+   
+   }
+   
+   #arrow-2{
+     text-align: end;
+     margin: 0px 0px 0px 10px;
+     color: black;  
+     height: 20px; 
+   }
   
   /*About Me Section: Desktop*/ 
   
@@ -132,6 +119,8 @@ body {
     display: flex;
     justify-content: center;
      display: grid;
+
+     list-style: none;
   
   /* Columns */
   grid-template-columns: 250px 250px 250px;
@@ -154,6 +143,19 @@ body {
       height: 200px;
   
   }
+
+  .lightgallery{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  ul li {
+    width: 100%;
+  }
   
   /* Column: line 3, end line 4 */
   /* Row: line 1, end line 2 */
@@ -164,6 +166,9 @@ body {
       background-size: cover;
       grid-column: 1 / 3;
       grid-row: 1 / 2;
+      padding: 0px;
+      margin: 0px;
+      height: 250px; 
   }
   
   /* this gets reused for every section with a grid*/
@@ -179,34 +184,35 @@ body {
       background-size: cover;
       grid-column: 1 / 3;
       grid-row: 1 / 2;
+      padding: 0px;
+      margin: 0px;
+      height: 250px; 
   }
   
-  #e {
-      background-image: url("/404-Final/images/subpage_alt_Page_3.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-  }
   
   #h {
       background-image: url("/404-Final/images/Tabloid\ -\ 46.png");
       height: 400px; 
+      width: 740px; 
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       grid-column: 1 / 4;
       grid-row: 1 / 2;
+      padding: 0px;
+      margin: 0px;
   }
 
   #j{
-    background-image: url("/404-Final/images/\(Callouts\ A\)\(Alt\ Text\ Done\)\ \(Intro_Conclusion\ Done\)\ How\ to\ create\ email\ notification\ In\ Workflow-2_Page_4_Image_0002.jpg");
+    background-image: url("/404-Final/How_to_Add_Post_to_WordPress.pdf");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    padding: 0px;
+    margin: 0px;
+    height: 250px; 
   }
 
   #k{
@@ -216,6 +222,9 @@ body {
     background-size: cover;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    padding: 0px;
+    margin: 0px;
+    height: 250px; 
   }
 
   /* table */
@@ -503,8 +512,12 @@ body {
         /* Column: line 1, end line 2 */
         /* Row: line 1, end line 2 */
         /* this gets reused for every section with a grid*/
-        #a {
-            height: 150px;
+        #a, #j, #h, #d {
+            height: 150;
+        }
+        
+        #h{
+          width: 450px;
         }
         
         /*Sources section: Desktop */

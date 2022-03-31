@@ -22,10 +22,12 @@ font-face
   .main-header {
    display: flex; 
    flex-wrap: wrap;
-   background-image: url("/img/paintings/hand.jpg");
+   background-image: url("/img/whit-essence-1.png");
+   background-color: rgb(240, 240, 204);
    height: 600px; 
-   background-size: cover; 
-   background-position: center; 
+   background-size: contain; 
+   background-position: left; 
+   background-repeat: no-repeat;
   }
   
   .whole-nav {
