@@ -430,9 +430,6 @@ media query between 800 & 500
      
    @media only screen and (max-width: 800px) and (min-width: 500px) {
 
-    .main-header {
-        height: 400px;
-       }
 
        .whole-nav {
         display: none;
@@ -455,30 +452,11 @@ media query between 800 & 500
           end MAIN LINKS... Look at #title-header-3
       */
       
-      .three-titles{
-        margin: 240px 30px 0px 0px;
-      }
+  
       
-      #title-header{
-       font-size: 27px;
-      }
-      
-      #title-header-2{
-        font-size: 15px;
-      } 
       
       .portfolio-link{
       display: flex;
-      }
-      
-      a, #title-header-3{
-        font-size: 13px;
-        margin: -100px 0px 0px 0px;
-      }
-      
-      #arrow-2{
-        height: 15px; 
-        margin: -100px 0px 0px 5px;
       }
       
       /*About Section: 800 - 500*/ 
@@ -605,10 +583,6 @@ media query between 800 & 500
      
    @media screen and (max-width: 500px) { 
     
-
-    .main-header {
-        height: 300px;
-       }
 
        .whole-nav {
         display: none;
