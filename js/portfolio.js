@@ -17,42 +17,38 @@ $(document).ready(function(){
   });
 });
 
-
-$('.open-overlay').click(function(){
- $("#nav_item_1").slideToggle({top: '13px'});
- $("#nav_item_2").slideToggle({top: '13px'});
- $("#nav_item_3").slideToggle({top: '13px'});
- }); 
- 
- // drop down // add animation 
- // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_read_more
- function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("send-button");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
+// menu animaton 
+// https://codepen.io/alvarotrigo/pen/oNGzoYd
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
 }
+
+// read more read less slide 
+// Author: M. Ferguson
+// https://stackoverflow.com/questions/48646853/add-simple-slide-down-animation-to-read-more-text-reveal
+$( "#send-button" ).click(function() {
+  $( "#more" ).slideToggle( "fast" );
+      var $this = $(this);
+        $this.toggleClass("open");
+
+        if ($this.hasClass("open")) {
+            $this.html("Read Less");
+        } else {
+            $this.html("Read more");
+        }
+});
 
  // gallery filter 
 
  function checkClass() {
-
   // Remove Existing Hide 
   if ($('figure').hasClass('hide')) {
     $('figure').removeClass('hide');
   }
 
 }
-
 
 // light gallery 
 
@@ -63,51 +59,6 @@ $(document).ready(function() {
     pager: false
   });
 });
-
-/*
-// Click Photography
-$('#photography').click( function() {
-  
-  // Check Class
-  checkClass();
-  
-  // Hide Other Stuff
-  $('figure:not(.gallery-images-photography)').toggleClass('hide');
-});
-
-// Click digital design
-$('#digital-design').click( function() {
-  
-  checkClass();
-  $('figure:not(.gallery-images-d-d)').toggleClass('hide');
-
-});
-
-// Click writing samples
-$('#writing-samples').click( function() {
-
-  checkClass();
-  $('figure:not(.gallery-images-s-w)').toggleClass('hide');
-  
-});
-
-// Show All 
-$('#all-subjects-link').click( function() {
-  
-  checkClass();
-  
-});
-
-// about me svg 
-
-$svg = $('#about-be-svg').drawsvg();
-
-function animate() {
-$svg.drawsvg('animate');  
-}
-
-animate();
-*/
 
 //footer copyright
 
