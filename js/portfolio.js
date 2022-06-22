@@ -1,22 +1,6 @@
 // Everything OK?
 console.log('OK');
 
-// Open-overlay
-$(document).ready(function(){
-  $(".open-overlay").click(function(){
-    $(".bar-top").animate({top: "15px"});
-  });
-  $(".open-overlay").click(function(){
-    $(".bar-top").animate({top: "0px"});
-  });
-  $(".open-overlay").click(function(){
-  $(".bar-bottom").animate({top: "0px"});
-  });
-  $(".open-overlay").click(function(){
-    $(".bar-bottom").animate({top: "15px"});
-  });
-});
-
 // menu animaton 
 // https://codepen.io/alvarotrigo/pen/oNGzoYd
 function menuOnClick() {

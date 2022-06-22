@@ -519,11 +519,7 @@ media query between 800 & 500
         color:rgb(31, 3, 75); 
       }
       
-      /*Sources section: Desktop */
-      
-      #sources_title{
-        font-size: 15px; 
-      }
+      /*Sources section: 500 - 800 */
 
       .sources{
       grid-template-columns: 150px 150px 150px;
@@ -552,9 +548,7 @@ media query between 800 & 500
           font-size:1.5em; 
         }
        /*Questions Section: 500 - 800 */ 
-       #contact_title{
-        font-size: 15px; 
-       }
+       
        input[type=text]{
         display: flex;
         border-radius: .5cm;
@@ -627,10 +621,6 @@ media query between 800 & 500
       grid-row-end: 35; 
     }
    }
-
-/* cober entire screen with nav*/
-  /* take out blue berry*/ 
-  /* order grid into columns*/
 
  /* 
  media query for 500px and under
@@ -948,25 +938,26 @@ media query between 800 & 500
     .upload_file-package{
       /*display: flex; 
       justify-content: center;
-      text-align: center;*/
+      text-align: center;
       color:white;
-      margin: 20px 0px 0px 0px;
+      margin: 20px 0px 0px 0px;*/
+      visibility: hidden;
     }
     
-    .file-inputs{
+    /*.file-inputs{
       display: flex; 
       justify-content: center;
       flex-direction: column;
     }
     
     #upload_file_1, #upload_file_2{
-      /*display: flex;
-      justify-content: center;*/
-      /*text-align: center;*/
+      display: flex;
+      justify-content: center;
+      text-align: center;
       margin: 10px 0px 0px 0px;
       padding: 5px 0px 0px 0px; 
       border: red dotted 2px;
-    }
+    }*/
     
     /* Sent Button Styling*/
     .submit-package{

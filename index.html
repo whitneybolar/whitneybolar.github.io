@@ -11,11 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
@@ -34,123 +33,149 @@
     <!-- Other Plugin Stylesheets -->
     <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/lg-transitions.min.css">
-<!-- My Awesome Styling -->
+<!-- My Styling -->
     <link rel="stylesheet" href="css/portfolio.css">
 
 </head>
 
 <body>
-  
   <section class="main-header">
-    <nav class="whole-nav">
-      <!--- <a href="#about_me_title"> Technical Communcation </a>
-      <a href="#sources_title"> Journalism/PR </a>
-      <a href="#contact_title"> Computer Science </a>
-      <a href="#sources_title"> Design </a> -->
-    </nav> 
+    
+    <!-- Author: Álvaro-->
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="Homepage.html">Homepage</a></li>
+          <!--<li><a href="#">About</a></li>-->
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+      </nav> 
+    </div>
+    
+    <div class="menu-bg" id="menu-bg"></div>
+  
     <section class="three-titles">
     <h3 id="title-header-2"> A technical writer, designer and programmer. </h1> 
-   <h1 id="title-header"> Whitney Bolar </h1> 
-   <section class="portfolio-link">
-   <a href="Homepage.html"> Homepage Access </a>
-   <img id="arrow-2" src="img/arrow-1.png" alt="An arrow used as a link for Whitney Bolar's Portfolio"> 
-  </section>
+    <span class="stretch"> <h1 id="title-header"> Whitney Bolar </h1> </span>
   </section>
   </section>
 
-  <h2 id="sources_title"> Technical Communcation </h2> 
-
-  <!-- Technical Communication Gallery -->
+  <h2 id="about_me_title"> Technical Communcation </h2> 
+    
   <section class="about-me">
-    <!-- <div class="all-letters">-->
-    <div class="letter" id="a"> 
-      <a href="a.html" class="tcom-gallery">
-      <p> HP Envy x360 15-u473cl Repair </p>
-    </a>
-    </div>
-
-    <div class="letter" id="b">
-      <a href="b.html" class="tcom-gallery">
-     <p> WordPress Student User Guide </p>
-    </a>
-    </div>
-  
-    <div class="letter" id="c">  
-      <a href="c.html" class="tcom-gallery">
+    <!-- </div>-->
+   <div class="letter" id="c"> 
+     <a href="a.html">
+      <p> 
+        HP Envy x360 15-u473cl Repair 
+      </p>
+      </a>
+    </div> 
+    <div class="letter" id="d">
+      <a href="b.html"> 
+      <p> 
+        WordPress Student User Guide
+      </p>
+      </a>
+    </div> 
+    <div class="letter" id="e">
+    <a href="c.html"> 
       <p> 
         DVD Player Manual Document Edit 
-      </p>
-    </a>
-    </div>
- </section>
-
-
-   <!-- Journalism/PR  Gallery -->
-  <!-- <h2 id="sources_title"> Public Relations </h2> 
-  
- <section class="sources">
-  <div class="letter" id="d"> 
-  <a href="a.html" class="tcom-gallery">
-  <p> L’Arche Spokane Social Media Advertisement  </p>
-  </a>
-  </div>
-  <div class="letter" id="e">
-  <a href="a.html" class="tcom-gallery">
-   <p> L’Arche Spokane Press Release </p>
-  </a>
-  </div>
-  <div class="letter" id="f"> 
-    <a href="a.html" class="tcom-gallery">
-    <p> 
-      WHEN Grant Proposal  
     </p>
-    </a>
-  </div>
-</section> 
--->
-
- <!-- Computer Science Gallery -->
- <!-- <h2 id="sources_title"> Computer Science </h2> 
-  
- <section class="sources">
-  <div class="letter" id="d"> 
-  <a href="a.html" class="tcom-gallery">
-  <p> TBD  </p>
-  </a>
-  </div>
-  <div class="letter" id="e">
-  <a href="a.html" class="tcom-gallery">
-   <p></p>
-  </a>
-  </div>
-  <div class="letter" id="f"> 
-    <a href="a.html" class="tcom-gallery">
-    <p>  
-    </p>
-  </a>
-  </div>
-</section> 
--->
-
-   <!-- Design Gallery -->
- <!-- <h2 id="sources_title"> Design </h2> 
-  
- <section class="sources">
-  <div class="letter" id="d"> 
-    <a href="a.html" class="tcom-gallery">
-      <p> Technical Communication Advertisement </p>
-      </a>
-  </div>
-  <div class="letter" id="e">
-    <a href="a.html" class="tcom-gallery">
-   <p> Accountable CM Website Developement </p>
    </a>
-  </div>
-  <div class="letter" id="f">  
-  </div>
-</section>
--->
+    </div> 
+  </section> 
+   
+  <h2 id="sources_title"> Sources </h2> 
 
+  <!-- -->
+  <section class="sources">
+    <div class="letter" id="f">  <p> 
+      <section class="resume-link">
+        <a target="_blank" href="img/Capstone_Resume.pdf" id="resume-link"> Resume PDF </a>
+       <!-- <img id="arrow-3" src="img/arrow-1.png" alt="An arrow used as a link for Whitney Bolar's Portfolio"> --> 
+       </section>
+    </div>
+    <div class="letter" id="g">
+      <p> 
+      Social Media  
+      </p>
+      <section class="social-media-link">
+        <a target="_blank" href="https://www.linkedin.com/in/whitney-bolar-7bb222179/"> <img id="linkedin-button" src="img/social-outline-white.png" alt="A link to Linkedin"> </a>
+        <a  target="_blank" href="https://ewu.joinhandshake.com/users/6017919"> <img id="handshake-button" src="img/social-outline-handshake.png" alt="An link to Handshake"> </a>
+       </section>
+    </div>
+  </section> 
+
+  <h2 id="contact_title"> Keep In Touch </h2> 
+
+  <form class="whole-contact-form" action="https://formsubmit.co/wbolar@ewu.edu" enctype="multipart/form-data" method="POST">
+                
+    <div class="name-package">
+            <input id="input-1" 
+                    class="inputs" style="color:white"
+                     placeholder="First Name*" 
+                    type="text" 
+            name="First Name:" required>
+
+            <input id="input-2" 
+                    class="inputs" style="color:white"
+                    placeholder="Last Name*" 
+                    type="text" 
+            name="Last Name:" required> 
+    </div> 
+
+    <div class="email-package">
+            <!-- <label for="_replyto"> </label>  name="Services Requested" -->
+            <input id="input-3" class="inputs" style="color:white" placeholder="Email*" type="email" name="Email:" required>
+    </div> 
+
+    <div class="company-package"> 
+            <!-- <label for="company"> </label> -->
+         <input id="input-4" class="inputs" style="color:white" placeholder="Company Name" type="text" name="Company">
+    </div> 
+
+    <div class="company-package"> 
+      <!-- <label for="company"> </label> -->
+   <input id="input-5" style="color:white" class="inputs" placeholder="Message" type="text" name="Message">
+</div> 
+    </div>
+    </section>
+   
+    <div class="upload_file-package">
+    <label for="upload_file"> Upload Images/Documents </label>
+    <div class="file-inputs">
+    <input type="file" id="upload_file_1" name="Attachment 1:" accept="image/*, video/*, .doc, .docx, .pdf, .xlsx" placeholder="">
+    <input type="file" id="upload_file_2" name="Attachment 2:" accept="image/*, video/*, .doc, .docx, .pdf, .xlsx" placeholder="">
+    </div>
+    </div>
+    
+    <div class="submit-package">
+            <input id="send-button" type="submit" value="Submit">
+            <input type="hidden" name="_next" value="/">
+    </div> 
+    
+    <!-- Subject of the email sent to us -->
+    <input type="hidden" name="_subject" value="New submission!">
+
+    <!-- this takes out the "I am not a robot" page. 
+    If you are having troubles with spam, you can remove this-->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- This way we will not be advertising formsubmit.co -->
+    <input type="hidden" name="_next" value="https://whitneybolar.github.io/wb_thankyoupage/">
+    
+    <!-- Boxes template for email sent to us-->
+    <input type="hidden" name="_template" value="box">
+</form> 
+  
       <footer class="footer">
 
           <div id="footer-bar"></div>
