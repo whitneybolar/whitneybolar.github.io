@@ -202,19 +202,22 @@ body,h1,h2,h3,h4,h5,h6 {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
+  /*background-color:#cc5500;*/
   background-image: url('');
   min-height: 100%;
 }
 
+/* Photo by Thought Catalog on Unsplash */
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/img/texture_background.jpg");
+  /*background-color:#cc5500;*/
   min-height: 400px;
 }
 
+/* Photo by Steinar Engeland on Unsplash */
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
+  /*background-color:#cc5500;*/
   min-height: 400px;
 }
 
@@ -644,11 +647,12 @@ media query between 800 & 500
       }
       
     #copyright{
-      font-size: 12px; 
+      visibility: hidden;
+      /*font-size: 12px; 
       grid-column-start: 125;
       grid-column-end: 195;
       grid-row-start: 35;
-      grid-row-end: 35; 
+      grid-row-end: 35; */
     }
    }
 
