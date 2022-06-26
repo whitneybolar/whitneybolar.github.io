@@ -44,25 +44,8 @@
 </head>
 
 <body>
-<!-- Hamburger -->
-<!-- Author: Álvaro-->
-<section class="hamburger"> 
-<input type="checkbox" id="navi-toggle" class="checkbox" />
-<label for="navi-toggle" class="button">
-  <span class="icon">&nbsp;</span>
-</label>
-<div class="background">&nbsp;</div>
 
-<!-- nav -->
-<nav class="nav">
-  <ul class="list">
-    <li class="item"> <a href="#home"> Home </a> </li>
-    <li class="item"> <a href="#about_me_title"> About </a> </li>
-    <li class="item"> <a href="#my-work"> Portfolio </a> </li>
-    <li class="item"> <a href="#contact_title"> Contact </a> </li>
-  </ul>
-</nav> 
-</section>
+
 
 <!-- Heading  -->
 <!-- Author:  w3.css -->
@@ -71,23 +54,14 @@
     <!-- <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>--> 
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about_me_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#my-work" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#about_me_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About </a>
+    <a href="#my-work" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio </a>
+    <a href="#myNavbar" class="w3-bar-item w3-button"> Resume & Social Media</a>
+    <a href="#contact_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact </a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>--> 
   </div>
-
-  <!-- Heading small screens -->
-  <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about_me_title" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#my-work" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact_title" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a> 
-  </div>
-</div>--> 
 
 <!-- Heading Title -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -95,6 +69,27 @@
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> Whitney <span class="w3-hide-small"> C.</span> Bolar </span>
   </div>
 </div>
+
+  <ul class="nav-menu">  
+    <li class="nav-item">
+        <a href="#about_me_title" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+        <a href="#my-work" class="nav-link">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a href="#sources_title" class="nav-link"> Resume & Social Media </a>
+  </li>
+    <li class="nav-item">
+        <a href="#contact_title" class="nav-link">Contact</a>
+    </li>
+</ul>
+<div class="hamburger">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+
 
   <h2 id="about_me_title"> About Me </h2> 
     
@@ -273,6 +268,7 @@
     <!-- Extenal code sources -->
     <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h-->
     <!-- https://codepen.io/alvarotrigo/pen/QWqKOdb -->
+    <!-- https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
     <!-- My Scripts -->
     <script src="js/portfolio.js"></script>
 </body>
