@@ -142,6 +142,14 @@ margin-top: -10px;
   margin-top: 0px;
   margin-left: 90px;
   height: 250px; 
+  position: relative;
+}
+
+#d > i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
 }
 
 #e{
@@ -163,6 +171,14 @@ margin-top: -10px;
   margin-top: 0px;
   margin-left: 90px;
   height: 250px; 
+  position: relative;
+}
+
+#b > i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
 }
 
 /* this gets reused for every section with a grid*/
@@ -178,7 +194,7 @@ td{
 }
 
 #z {
-  background-image: url("/img/ifixit-img/replacement-image.png");
+  background-image: url("/img/ifixit-img/replacement-image-8.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,6 +203,14 @@ grid-row: 1 / 2;
 margin-top: 0px;
 margin-left: 90px;
 height: 250px; 
+position: relative;
+}
+
+#z > i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
 }
 
 #h {
@@ -199,11 +223,18 @@ height: 250px;
   margin-top: 0px;
   margin-left: 90px;
   height: 250px; 
+  position: relative;
+}
 
+#h > i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
 }
 
 #y {
-  background-image: url("/img/ifixit-img/replacement-image-9.png");
+  background-image: url("/img/ifixit-img/replacement-image-4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,7 +243,14 @@ height: 250px;
   margin-top: 0px;
   margin-left: 90px;
   height: 250px; 
+  position: relative;
+}
 
+#y > i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
 }
 
 /* ------------*/ 
@@ -621,7 +659,7 @@ media query between 800 & 500
       margin-left: -20px;
     }
 
-    #e, #y, #h, #e, #d, #b{
+    #e, #y, #h, #e, #d, #b, #z{
       display:none;
     }
     
