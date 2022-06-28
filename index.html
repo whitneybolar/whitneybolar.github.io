@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&#8217" rel=’stylesheet’ type=’text/css’>
+
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
@@ -33,78 +35,151 @@
     <!-- Other Plugin Stylesheets -->
     <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/lg-transitions.min.css">
-<!-- My Styling -->
-    <link rel="stylesheet" href="css/portfolio.css">
+<!-- Styling -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/Homepage.css">
 
 </head>
 
 <body>
-  <section class="main-header">
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+<!-- Heading  -->
+<!-- Author:  w3.css -->
+<!-- <div class="w3-top">--> 
+  <div class="w3-bar" id="myNavbar">
+    <!-- <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>--> 
+    <a href="#about_me_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About </a>
+    <a href="#my-work" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio </a>
+    <a href="#sources_title" class="w3-bar-item w3-button"><i class="fa fa-hashtag"></i> Resume & Social Media</a>
+    <a href="#contact_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact </a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>--> 
+  </div>
+
+<!-- Heading Title -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> Whitney <span class="w3-hide-small"> C.</span> Bolar </span>
+  </div>
+</div>
+
+  <ul class="nav-menu">  
+    <li class="nav-item">
+        <a href="#about_me_title" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+        <a href="#my-work" class="nav-link">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a href="#sources_title" class="nav-link"> Resume & Social Media </a>
+  </li>
+    <li class="nav-item">
+        <a href="#contact_title" class="nav-link">Contact</a>
+    </li>
+</ul>
+
+  <h2 id="about_me_title"> About Me </h2> 
     
-    <!-- Author: Álvaro-->
-    <div id="menu">
-      <div id="menu-bar" onclick="menuOnClick()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
-      </div>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="Homepage.html">Homepage</a></li>
-          <!--<li><a href="#">About</a></li>-->
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </nav> 
-    </div>
-    
-    <div class="menu-bg" id="menu-bg"></div>
+  <section class="about-me">
+  <div class="letter" id="a"> 
+    <h2 id="summary-title">Summary</h2>
+    <p>Eastern Washington University senior Whitney Bolar has a creative passion for writing, drawing, coding and graphic design that they are hoping to utilize towards a career creating documents centered in software and hardware. Bolar is from Port Orchard and pursuing a bachelor’s degree in technical communication and computer science with a minor in visual communication design and a certificate in user experience.
+    <span id="more">In addition to being a full-time student, Bolar served as an intern for Accountable Custodial and Maintenance by developing their website and market approach through research and front-end programming. They also share the skills that they have learned through their academia and college experience with other students through their role as an academic coach in the JFK Library for EWU Programs Leading to University Success. Bolar served as an Eagle Ambassador where they helped serve as a university ambassador to prospective students by promoting EWU through campus events and student panels. Bolar is experienced in design, content management, research, technical writing, management, programming, and interpersonal communication. Previously Bolar served as a technical writer and visual creator for iFixit from January 2018 to March 2018, and a technical writer for EWU Information Technology from April 2019 to June 2019. Also, Bolar is certified in Course Reading Learning Association at levels one, two and three.</span></p>
+    <button onclick="myFunction()" id="send-button">Read more</button>
+    </div> 
   
-    <section class="three-titles">
-    <h3 id="title-header-2"> A technical writer, designer and programmer. </h1> 
-    <span class="stretch"> <h1 id="title-header"> Whitney Bolar </h1> </span>
-  </section>
-  </section>
+    <!-- </div>-->
+    <div class="letter" id="c">  <p> 
+      <p> 
+        Bachelor of Arts in Technical Communication 
+      </p>
+      <p> 
+        &
+      </p>
+      <p> 
+        Bachelor of Computer Science 
+    </p> 
+    </div>
+    <div class="letter" id="d">
+     
+    </div>
+    <div class="letter" id="e">
+      <p> 
+      Minor in Visual Communcations Design  
+    </p>
+    <p> 
+      &
+    </p>
+    <p> 
+      A Certificate in User Experience 
+  </p> 
+    </div>
+  </section> 
+
+  <!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center" id="my-work" >MY WORK</h3>
+  <p class="w3-center"><em> Here are some of my projects done individually or with a team. <br> Please feel free to explore my work and contact me if you have any questions.</em></p><br>
 
   <h2 id="about_me_title"> Technical Communcation </h2> 
     
   <section class="about-me">
     <!-- </div>-->
-   <div class="letter" id="c"> 
+   <div class="letter" id="j"> 
      <a href="a.html">
       <p> 
         HP Envy x360 15-u473cl Repair 
       </p>
       </a>
     </div> 
-    <div class="letter" id="d">
+    <div class="letter" id="i">
       <a href="b.html"> 
       <p> 
         WordPress Student User Guide
       </p>
       </a>
     </div> 
-    <div class="letter" id="e">
-    <a href="c.html"> 
+    <div class="letter" id="h">
+    <!-- <a href="c.html"> --> 
       <p> 
-        DVD Player Manual Document Edit 
+        <!-- DVD Player Manual Document Edit --> 
+       To Be Determined
     </p>
-   </a>
-    </div> 
+   <!-- </a>--> 
+    </div>
   </section> 
+
+  </div>
    
-  <h2 id="sources_title"> Sources </h2> 
+  <h2 id="sources_title"> Social Media & Resume </h2> 
 
   <!-- -->
   <section class="sources">
     <div class="letter" id="f">  <p> 
       <section class="resume-link">
-        <a target="_blank" href="img/Capstone_Resume.pdf" id="resume-link"> Resume PDF </a>
+        <a target="_blank" href="img/Capstone_Resume.pdf" id="resume-link"> Resume PDF >> </a>
        <!-- <img id="arrow-3" src="img/arrow-1.png" alt="An arrow used as a link for Whitney Bolar's Portfolio"> --> 
        </section>
     </div>
     <div class="letter" id="g">
-      <p> 
+      <p id="social-media-title"> 
       Social Media  
       </p>
       <section class="social-media-link">
@@ -114,19 +189,26 @@
     </div>
   </section> 
 
+  <!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
   <h2 id="contact_title"> Keep In Touch </h2> 
 
-  <form class="whole-contact-form" action="https://formsubmit.co/wbolar@ewu.edu" enctype="multipart/form-data" method="POST">
+  <form class="whole-contact-form" action="https://formsubmit.co/whitneybolar98@live.com" enctype="multipart/form-data" method="POST">
                 
     <div class="name-package">
             <input id="input-1" 
-                    class="inputs" style="color:white"
+                    class="inputs" 
                      placeholder="First Name*" 
                     type="text" 
             name="First Name:" required>
 
             <input id="input-2" 
-                    class="inputs" style="color:white"
+                    class="inputs" 
                     placeholder="Last Name*" 
                     type="text" 
             name="Last Name:" required> 
@@ -134,28 +216,20 @@
 
     <div class="email-package">
             <!-- <label for="_replyto"> </label>  name="Services Requested" -->
-            <input id="input-3" class="inputs" style="color:white" placeholder="Email*" type="email" name="Email:" required>
+            <input id="input-3" class="inputs" placeholder="Email*" type="email" name="Email:" required>
     </div> 
 
     <div class="company-package"> 
             <!-- <label for="company"> </label> -->
-         <input id="input-4" class="inputs" style="color:white" placeholder="Company Name" type="text" name="Company">
+         <input id="input-4" class="inputs" placeholder="Company Name" type="text" name="Company">
     </div> 
 
     <div class="company-package"> 
       <!-- <label for="company"> </label> -->
-   <input id="input-5" style="color:white" class="inputs" placeholder="Message" type="text" name="Message">
+   <input id="input-5" class="inputs" placeholder="Message" type="text" name="Message">
 </div> 
     </div>
     </section>
-   
-    <div class="upload_file-package">
-    <label for="upload_file"> Upload Images/Documents </label>
-    <div class="file-inputs">
-    <input type="file" id="upload_file_1" name="Attachment 1:" accept="image/*, video/*, .doc, .docx, .pdf, .xlsx" placeholder="">
-    <input type="file" id="upload_file_2" name="Attachment 2:" accept="image/*, video/*, .doc, .docx, .pdf, .xlsx" placeholder="">
-    </div>
-    </div>
     
     <div class="submit-package">
             <input id="send-button" type="submit" value="Submit">
@@ -189,6 +263,10 @@
     <!-- Plugins(s) -->
     <script src="js/lightgallery-all.min.js"></script>
     <script src="js/jquery.drawsvg.js"></script>
+    <!-- Extenal code sources -->
+    <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h-->
+    <!-- https://codepen.io/alvarotrigo/pen/QWqKOdb -->
+    <!-- https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
     <!-- My Scripts -->
     <script src="js/portfolio.js"></script>
 </body>
