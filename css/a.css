@@ -190,7 +190,7 @@ margin-top: -10px;
 }
 
 td{
-  padding: 10px;
+  padding-left: 5px;
 }
 
 #z {
@@ -490,10 +490,16 @@ media query between 800 & 500
    } 
 
  /* 
- media query for 550px and under
+ media query for 600px and under
    */   
      
-  @media screen and (max-width: 550px) { 
+  @media screen and (max-width: 600px) { 
+
+    .w3-center{
+      /*visibility: hidden;*/
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     .w3-bar-item{
       visibility: hidden;
