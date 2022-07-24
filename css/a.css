@@ -22,10 +22,6 @@ body {
   .nav-link, li{
     margin-left: -120px;
   }
-  
-body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Lato", sans-serif;
-}
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -495,10 +491,13 @@ media query between 800 & 500
      
   @media screen and (max-width: 600px) { 
 
+    html {
+      margin-top: 100px;
+      scroll-behavior: smooth;
+    }
+    
     .w3-center{
-      /*visibility: hidden;*/
-      display: flex;
-      flex-wrap: wrap;
+      margin-bottom: 50px;
     }
 
     .w3-bar-item{
@@ -538,15 +537,8 @@ media query between 800 & 500
       text-decoration: none;
   }
 
-  .header{
-    border-bottom: 1px solid #E2E8F0;
-}
-
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
 }
 
 .hamburger {
@@ -590,7 +582,7 @@ media query between 800 & 500
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
-      
+      margin-top: 6em;
   }
 
   .nav-menu.active {
@@ -598,7 +590,6 @@ media query between 800 & 500
   }
 
   .nav-item {
-     
       margin: 2.5rem 0;
       margin-left: 120px;
   }
@@ -716,12 +707,12 @@ media query between 800 & 500
     
     #f{
       grid-column: 2 / 3;
-      grid-row: 1 / 2;
+    grid-row: 2 / 3;
     }
     
     #g{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
     display: flex; 
     justify-content: center;
     align-items: center;
