@@ -15,6 +15,13 @@ body {
   visibility: hidden;
   }
 
+  .w3-bar{
+    position: fixed;
+    margin-top: -100px;
+    background-color: #efede7;
+  }
+
+
  .item{ 
     margin-top: -180px; 
   }

@@ -11,6 +11,12 @@ body {
   background-color: #efede7;
 }
 
+.w3-bar{
+  position: fixed;
+  margin-top: -100px;
+  background-color: #efede7;
+}
+
 .checkbox{
   visibility: hidden;
   }

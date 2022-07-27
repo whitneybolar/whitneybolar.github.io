@@ -21,38 +21,6 @@ window.onscroll = function() {myFunction()};
     }
 }*/
 
-/*const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
-
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
-  } else {
-    menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
-  }
-}
-
-hamburger.addEventListener("click", toggleMenu);
-
-menuItems.forEach( 
-  function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
-  }
-)
-
-function menuOnClick() {
-  document.getElementById("nav").classList("icon");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}*/
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -71,14 +39,6 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-
-// menu animaton 
-// https://codepen.io/alvarotrigo/pen/oNGzoYd
-/*function menuOnClick() {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}*/
 
 // read more read less slide 
 // Author: M. Ferguson
