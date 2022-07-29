@@ -29,6 +29,10 @@ body {
     margin-left: -120px;
   }
 
+/*Headings*/
+/*Author: w3.css
+https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
+*/
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
