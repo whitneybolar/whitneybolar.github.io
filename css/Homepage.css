@@ -420,6 +420,11 @@ media query between 800 & 500
       p { 
           margin-left: 0px; 
       }
+
+      #d{
+        display: flex;
+        justify-content: center;
+      }
    } 
 
  /* 

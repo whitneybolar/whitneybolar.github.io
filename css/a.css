@@ -583,7 +583,7 @@ media query between 800 & 500
 
 
   .nav-menu {
-      position: fixed;
+      position: absolute;
       left: -100%;
       top: 5rem;
       flex-direction: column;

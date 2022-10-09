@@ -255,8 +255,8 @@ a{
   grid-row: 1 / 2;
 }
 
-#g{
-grid-column: 3/ 4;
+#client-extra{
+  grid-column: 1/ 4;
 grid-row: 1 / 2;
 background-color: #383838;
 display: flex; 
@@ -264,7 +264,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 font-weight: bold;
-}
+  }
 
 #social-media-title{
   color: white;
@@ -582,7 +582,7 @@ media query between 800 & 500
 
 
   .nav-menu {
-      position: fixed;
+      position: absolute;
       left: -100%;
       top: 5rem;
       flex-direction: column;
@@ -692,7 +692,7 @@ media query between 800 & 500
     grid-row: 4 / 5;
     }
 
-    /*Sources section: Desktop */
+    /*Sources section:  Mobile*/
     
     #sources_title{
       display: flex; 
@@ -712,6 +712,28 @@ media query between 800 & 500
     /* Rows */
     grid-template-rows: auto auto auto;
     grid-gap: 5px; 
+    }
+    
+    #f{
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    #l{
+      margin-bottom: 5px;
+      grid-column: 2 / 3;
+      grid-row: 3 / 3;
+    }
+
+    #client-extra{
+    visibility: visible;
+    background-color: #383838;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
     
     #linkedin-button, #handshake-button {
