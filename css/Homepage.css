@@ -11,6 +11,10 @@ body {
   background-color: #efede7;
 }
 
+ a {
+      text-decoration: none;
+  }
+
 .checkbox{
   visibility: hidden;
   }
@@ -62,6 +66,27 @@ font-family: 'Uchen', serif;
   text-shadow: 2px 2px 4px #000000;
   margin-top: 100px;
   min-height: 200px;
+}
+
+.outer-heading-2{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-heading-2{
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio-1{
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#contact-1{
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 90px;
 }
 
 /* Photo by Steinar Engeland on Unsplash */
@@ -174,21 +199,21 @@ font-size: 25px;
 text-align: center;
 grid-column: 3/ 4;
 grid-row: 1 / 2;
-text-decoration: none;
+/*text-decoration: none;*/
 }
 
 #i{
   text-align: center;
   grid-column: 1 / 1;
   grid-row: 1 / 2;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 #j{
 text-align: center;
 grid-column: 2/ 2;
 grid-row: 1 / 2;
-text-decoration: none;
+/*text-decoration: none;*/
 }
 
 #e{

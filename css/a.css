@@ -292,6 +292,15 @@ a{
   grid-row: 1 / 2;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+#f > i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
 }
 
 #g{
