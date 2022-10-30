@@ -55,6 +55,8 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
 
   #subheading{
+    display: flex;
+    justify-content: center;
     font-family: 'Uchen', serif;
   }
 
@@ -784,7 +786,7 @@ media query between 800 & 500
     }
     
    }
-   
+
    /* 
     Extenal code sources 
     https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h
