@@ -513,14 +513,10 @@ media query between 800 & 500
       background-color: #101010;
     }
 
-    .nav-menu {
+    .nav-menu, .nav-item {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-    }
-
-    .nav-item {
-      margin-left: 5rem;
     }
 
     .nav-link{

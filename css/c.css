@@ -569,14 +569,10 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
       background-color: #101010;
     }
 
-    .nav-menu {
+    .nav-menu, .nav-item {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-    }
-
-    .nav-item {
-      margin-left: 5rem;
     }
 
     .nav-link{
