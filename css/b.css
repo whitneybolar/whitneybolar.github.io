@@ -495,8 +495,8 @@ media query between 800 & 500
      
    @media only screen and (max-width: 800px) and (min-width: 500px) {
 
-    .checkbox{
-      visibility: hidden;
+      .checkbox{
+        visibility: hidden;
       }
 
       /*ul{
@@ -513,56 +513,18 @@ media query between 800 & 500
       
       /* Parent */
       .about-me {
-      /* Columns */
-      grid-template-columns: 150px 150px 150px;
+        /* Columns */
+        grid-template-columns: 150px 150px 150px;
       }
 
       .sources{
         grid-template-columns: 150px 150px 150px;
-        }
+      }
       
       p { 
           margin-left: 0px; 
       }
-   } 
-
-  /* ----------------------------------------------------------------------------------*/
- /* 
- media query for 550px and under
-   */   
-     
-   @media only screen and (max-width: 800px) and (min-width: 500px) {
-
-    .checkbox{
-      visibility: hidden;
-      }
-
-      /*ul{
-        visibility: collapse;
-        margin-top: -180px; 
-      }*/
-
-      /*About Section: 800 - 500*/ 
-      
-
-      .letter {
-        font-size: 12px;
-      }
-      
-      /* Parent */
-      .about-me {
-      /* Columns */
-      grid-template-columns: 150px 150px 150px;
-      }
-
-      .sources{
-        grid-template-columns: 150px 150px 150px;
-        }
-      
-      p { 
-          margin-left: 0px; 
-      }
-   } 
+   }  
 
  /* 
  media query for 600px and under
