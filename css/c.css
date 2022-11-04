@@ -30,42 +30,26 @@
     margin-left: -120px;
   }
   
-  body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Lato", sans-serif;
-  }
-
-/*Headings*/
-/*Author: w3.css
+ /*Author: w3.css
 https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
 */
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
 
-  /* First image (Logo. Full height) */
-  .bgimg-1 {
-    /*background-color:#cc5500;*/
-    margin-top: 100px;
-    min-height: 100%;
-  }
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
-  .bgimg-2 {
-    /*background-color:#cc5500;*/
-    text-shadow: 2px 2px 4px #000000;
-    margin-top: 100px;
-    min-height: 200px;
-  }
-
-  /* Third image (Contact) */
-  .bgimg-3 {
-    /*background-color:#cc5500;*/
-    text-shadow: 2px 2px 4px #000000;
-    margin-top: 100px;
-    min-height: 200px;
-  }
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  margin-top: 100px;
+  min-height: 100%;
+}
 
 /*.w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}*/
@@ -420,11 +404,12 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
     grid-row-end: 35; */
   }
 
+/* ---------------------------------------------------------------------------------*/
 /* 
-media query between 800 & 500
+media query between 800 & 400
    */   
      
-   @media only screen and (max-width: 800px) and (min-width: 500px) {
+   @media only screen and (max-width: 800px) and (min-width: 400px) {
 
     .checkbox{
         visibility: hidden;
@@ -509,7 +494,7 @@ media query between 800 & 500
       margin-bottom: 50px;
     }
 
-    .w3-bar-item{
+    .w3-bar{
       visibility: hidden;
     }
 
@@ -546,85 +531,92 @@ media query between 800 & 500
     a {
         text-decoration: none;
     }
-
-    /*
-Author: Gaurav
-https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
-*/
-    .navbar {
-        display: flex;
-    }
-
-    .hamburger {
-      display: none;
-    }
-
-    .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      background-color: #101010;
-    }
-
-    .nav-menu, .nav-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .nav-link{
-      font-size: 1.6rem;
-      font-weight: 400;
-      color: #475569;
-    }
-
-    .nav-menu {
-        position: absolute;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        margin-top: 6em;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-        margin-left: 120px;
-    }
-
-    .hamburger {
-      display: block;
-      cursor: pointer;
-      position: fixed;
-      margin-top: -80px;
-      margin-left: 20px;
-      z-index: 100;
-      background-color: #efede7;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
     
+    .bgimg-1 {
+      margin-top: 0px;
+    }
+
+      /*
+  Author: Gaurav
+  https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+   */
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu, .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+    margin-left: 120px;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    margin-top: -80px;
+    margin-left: 20px;
+    z-index: 100;
+    background-color: #efede7;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+ 
     /* Parent */
     .about-me {
      display: flex;

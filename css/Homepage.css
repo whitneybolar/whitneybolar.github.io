@@ -404,10 +404,10 @@ grid-row: 2 / 6;
 
 /* -----------------------------------------------------------------------------------------*/
 /* 
-media query between 800 & 500
+media query between 800 & 400
    */   
      
-   @media only screen and (max-width: 800px) and (min-width: 500px) {
+   @media only screen and (max-width: 800px) and (min-width: 400px) {
 
       .checkbox{
       visibility: hidden;
