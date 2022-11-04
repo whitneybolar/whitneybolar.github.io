@@ -18,6 +18,7 @@
   .w3-bar{
     position: fixed;
     margin-top: -100px;
+    z-index: 100;
     background-color: #efede7;
   }
 
@@ -603,8 +604,13 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
     }
 
     .hamburger {
-        display: block;
-        cursor: pointer;
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      margin-top: -80px;
+      margin-left: 20px;
+      z-index: 100;
+      background-color: #efede7;
     }
 
     .hamburger.active .bar:nth-child(2) {

@@ -21,6 +21,7 @@
   .w3-bar{
     position: fixed;
     margin-top: -100px;
+    z-index: 100;
     background-color: #efede7;
   }
 
@@ -543,7 +544,6 @@ media query between 800 & 500
     }
 
     .nav-item {
-      
         margin: 2.5rem 0;
         margin-left: 120px;
     }
@@ -551,6 +551,11 @@ media query between 800 & 500
     .hamburger {
         display: block;
         cursor: pointer;
+        position: fixed;
+        margin-top: -80px;
+        margin-left: 20px;
+        z-index: 100;
+        background-color: #efede7;
     }
 
     .hamburger.active .bar:nth-child(2) {
