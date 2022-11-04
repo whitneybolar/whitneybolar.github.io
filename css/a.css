@@ -100,12 +100,12 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
     justify-content: center;
     display: grid;
 
-  /* Columns */
-  grid-template-columns: 250px 250px 250px;
-  grid-gap: 5px; 
-  /* Rows */
-  grid-template-rows: auto auto auto;
-  grid-gap: 5px; 
+    /* Columns */
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 5px; 
+    /* Rows */
+    grid-template-rows: auto auto auto;
+    grid-gap: 5px; 
   }
 
   /* slide */ 
@@ -158,12 +158,12 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
 
   #e{
-    text-align: center;
-    grid-column: 3/ 4;
-    grid-row: 1 / 2;
-    text-decoration: none;
-    margin-left: -40px;
-    margin-bottom: 15px;
+      text-align: center;
+      grid-column: 3/ 4;
+      grid-row: 1 / 2;
+      text-decoration: none;
+      margin-left: -40px;
+      margin-bottom: 15px;
     }
 
     #b {
@@ -303,14 +303,14 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
 
   #g{
-  grid-column: 3/ 4;
-  grid-row: 1 / 2;
-  background-color: #383838;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-weight: bold;
+    grid-column: 3/ 4;
+    grid-row: 1 / 2;
+    background-color: #383838;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
   }
 
   #social-media-title{
@@ -390,12 +390,12 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
   
   #input-5{
-  height: auto;
+    height: auto;
   }
   
   label{
-  color: black;
-  font-family: 'Staatliches', cursive;
+    color: black;
+    font-family: 'Staatliches', cursive;
   } 
   
 /* File upload Styling*/
@@ -490,13 +490,13 @@ media query between 800 & 500
       
       /* Parent */
       .about-me {
-      /* Columns */
-      grid-template-columns: 150px 150px 150px;
+        /* Columns */
+        grid-template-columns: 150px 150px 150px;
       }
 
       .sources{
         grid-template-columns: 150px 150px 150px;
-        }
+      }
       
       p { 
           margin-left: 0px; 
