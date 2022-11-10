@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Page Title -->
+    <title> Whitney Bolar </title>
+
+<!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+<!-- Normalize CSS via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Required Plugin Stylesheets -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.css">
+
+<!-- Other Plugin Stylesheets -->
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/lg-transitions.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<!-- Styling -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/a.css">
+<link rel="stylesheet" href="css/assortment.css">
+
+</head>
+
+<body>
+  <!-- Heading Mobile Nav -->
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+<!-- Heading  -->
+<!-- Author:  w3.css -->
+  <div class="w3-bar" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Homepage </a>
+    <a href="#about_me_title" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-info"></i> Information </a>
+    <a href="#metadata" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-th"></i> Metadata </a>
+    <a href="#research" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-bars"></i> Research </a>
+    <a href="#reflection" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> Reflection </a>
+    <a href="#contact_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Any Questions? </a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>--> 
+  </div>
+
+<!-- Heading Title -->
+<!-- Author:  w3.css -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> C++ Assorted Models <span class="w3-hide-small"> and Mapping Textures </span> </span>
+  </div>
+</div>
+  <ul class="nav-menu">  
+    <li class="nav-item">
+      <a href="index.html" class="nav-link"> Homepage </a>
+    </li>
+    <li class="nav-item">
+        <a href="#about_me_title" class="nav-link">Information</a>
+    </li>
+    <li class="nav-item">
+        <a href="#metadata" class="nav-link">Metadata</a>
+    </li>
+    <li class="nav-item">
+        <a href="#research" class="nav-link"> Research </a>
+    </li>
+    <li class="nav-item">
+      <a href="#reflection" class="nav-link"> Reflection  </a>
+  </li>
+    <li class="nav-item">
+        <a href="#contact_title" class="nav-link"> Any Questions? </a>
+    </li>
+</ul>
+
+<h2 id="sources_title"> Final Product & Client </h2> 
+
+<!-- -->
+<section class="sources">
+  <div class="letter" id="f">  
+      <i class="fa fa-search"></i>
+      <a target="_blank" href="https://youtu.be/1g4OBoIIcno" id="resume-link"> Open Zip File </a>
+     <!-- <img id="arrow-3" src="img/arrow-1.png" alt="An arrow used as a link for Whitney Bolar's Portfolio"> --> 
+  </div>
+  <!--<div class="letter" id="g">
+    <a target="_blank" href="https://www.providence.org/doctors/physical-medicine-and-rehabilitation/wa/spokane/frank-jackson-1548604200">
+    <div id="social-media-title"> 
+    CLIENT
+    </div>
+    </a>
+  </div>--> 
+</section> 
+
+<!-- -->
+  <h2 id="about_me_title"> Information </h2> 
+
+  <section class="about-me">
+    <div class="letter" id="a"> 
+      <h4> 
+        I built an assortment of models from scratch and mapped textures onto the assorted models with these specifications: 
+      </h4>
+      <p> 
+        Lighting and Shading 
+      </p>
+      <p>
+        ● vec4 light_position(10.0f, 15.0f, 10.0f, 1.0f);
+      </p>
+        ● vec3 light_ambient(0.3, 0.3, 0.3);
+      </p>
+      <p>
+        ● vec3 light_color(0.9, 0.9, 0.9); 
+      </p>
+      <p>
+        ● float material_shininess = 50.0f; 
+      </p>
+      <br>
+      <p> 
+        View and Projection Matrices 
+      </p>
+      <p> 
+        The camera moves around the scene onto the XZ plane at a radius of a 14.0 unit from the origin while maintaining a constant distance of a 4.0 unit along the Y-axis. The camera switches between the top view and front view with the toggle of the keyboard button ‘t’/’T’. The following projection matrix has been used:      
+      </p>
+      <p> 
+          mat4 projection_matrix = perspective(radians(45.0f), 1.0f, 1.0f, 50.0f);    
+      </p>
+    </div>
+
+      <!--<span id="more">In addition to being a full-time student, Bolar served as an intern for Accountable Custodial and Maintenance by developing their website and market approach through research and front-end programming. They also share the skills that they have learned through their academia and college experience with other students through their role as an academic coach in the JFK Library for EWU Programs Leading to University Success. Bolar served as an Eagle Ambassador where they helped serve as a university ambassador to prospective students by promoting EWU through campus events and student panels. Bolar is experienced in design, content management, research, technical writing, management, programming, and interpersonal communication. Previously Bolar served as a technical writer and visual creator for iFixit from January 2018 to March 2018, and a technical writer for EWU Information Technology from April 2019 to June 2019. Also, Bolar is certified in Course Reading Learning Association at levels one, two and three.</span></p>-->
+     <!-- <button onclick="myFunction()" id="send-button">Read more</button>--> 
+      </div> 
+
+      <!-- </div>-->
+      <lu class="lightgallery">
+        <li data-src="img/assortment/assortment-3.png"> 
+          <a href="">
+            <figure class="letter" id="d" src="img/assortment/assortment-3.png"><i class="fa fa-search"></i></figure>
+          </a>
+        </li>
+     </lu>
+       
+      </div>
+      <div class="letter" id="e">
+      </div>
+    </section> 
+   
+    <div id="metadata"> </div>
+    <!-- 2 -->
+    <h2 id="about_me_title"> Metadata </h2> 
+
+    <section class="about-me">
+
+         <!-- </div>-->
+    <div class="letter" id="c">  
+      <table>
+          <tr>
+              <td>Project Summary</td>
+              <td> Create an assortment of shapes from scratch and map texture into the shapes. 	
+              </td>
+          </tr>
+          <tr>
+              <td>Timeframe</td>
+              <td> Spring Quarter 2022, Week 4  </td>
+          </tr>
+          <tr>
+              <td>Major Tasks & Responsibilities</td>
+              <td> Student programmer </td>
+          </tr>
+          <tr>
+              <td>Platforms</td>
+              <td> Visual Studio Code 2019, Windows, C++ </td>
+          </tr>
+          <tr>
+              <td>Team Members & Collaborators</td>
+              <td> Whitney Bolar </td>
+          </tr>
+        </table>
+  </div>
+
+  
+        <!--<span id="more">In addition to being a full-time student, Bolar served as an intern for Accountable Custodial and Maintenance by developing their website and market approach through research and front-end programming. They also share the skills that they have learned through their academia and college experience with other students through their role as an academic coach in the JFK Library for EWU Programs Leading to University Success. Bolar served as an Eagle Ambassador where they helped serve as a university ambassador to prospective students by promoting EWU through campus events and student panels. Bolar is experienced in design, content management, research, technical writing, management, programming, and interpersonal communication. Previously Bolar served as a technical writer and visual creator for iFixit from January 2018 to March 2018, and a technical writer for EWU Information Technology from April 2019 to June 2019. Also, Bolar is certified in Course Reading Learning Association at levels one, two and three.</span></p>-->
+       <!-- <button onclick="myFunction()" id="send-button">Read more</button>--> 
+        </div> 
+      
+        <!-- </div>-->
+        <lu class="lightgallery">
+          <li data-src="img/assortment/assortment-3.png">
+            <a href="">
+              <figure class="letter" id="b" src="img/assortment/assortment-3.png"><i class="fa fa-search" style="color:white"></i></figure>
+            </a>
+          </li>
+      </lu>
+         
+        </div>
+        <div class="letter" id="e">
+        </div>
+      </section> 
+
+    <div id="documentation"> </div>
+        <!-- 5 -->
+    <h2 id="about_me_title"> Create Shapes </h2> 
+
+    <section class="about-me">
+
+         <!-- </div>-->
+    <div class="letter" id="c">  
+        <p> 
+            I modeled this assortment of objects: cubes, cones, discs, cylinders, and spheres. I applied different transformations; the number of models on the scene also vary.
+        </p>
+    <h4> 
+        Given information and advice: 
+    </h4>
+    <p> 
+        For cones, per-vertex normal has been used before starting the assignment. 
+    </p>
+    <p>
+        Modeling a cylinder is similar to modeling cones, but a cylinder's top is
+open and parallel to the bottom. While constructing a smooth cone, for every
+base vertex, you constructed a triangle. Our professor advised modeling cylinders with the same approach. However, with cylinders, for every base vertex, we will have a parallel top vertex instead of a single tip as found in cones. Each base vertex and the parallel top vertex will construct a rectangular plane with the next base vertex and its parallel top vertex. Use per-vertex normal for modeling a cylinder.
+    </p>
+
+    <br>
+
+    <h4> Development detail: </h4>
+    <p>
+        I establish a relationship between the number of vertices, number of triangles, and number of indices: 
+    </p>
+    <p>
+        Declare some attribute arrays for vertices, colors, and normal. Once the iteration is over, all vertices, colors, and normals are generated. 
+    </p>
+    <br>
+    <p>
+        Cylinder and Sphere: 
+    </p>
+    <p>
+        Each iteration generates two vertices: top (points[i]) and bottom (points[i + STEP]) and find out triangle one (points[i], points[i + STEP], points[i + 1]), and triangle two (points[i + STEP], points[i + 1], and points[i + 1+ STEP]). 
+    </p>
+    <br>
+    <p>
+        Cone: 
+    </p>
+    <p>
+        Each iteration established a relationship between consecutive base vertices and find out (p1, p2, and p3) in a particular triangle making a cross product between (p3-p1) and (p2-p1). 
+    </p>
+
+  </div>
+
+        <lu class="lightgallery">
+          <li data-src="/img/cs-hrv/cs-hrv-2.png">
+            <a href="">
+              <figure class="letter" id="z" src="/img/cs-hrv/cs-hrv-2.png"><i class="fa fa-search" style="color:white"></i></figure>
+            </a>  
+          </li>
+      </lu>
+         
+        </div>
+        <div class="letter" id="e">
+        </div>
+      </section>
+
+      <div id="research"> </div>
+              <!-- 5 -->
+    <h2 id="about_me_title"> Apply Texture </h2> 
+
+    <section class="about-me">
+
+         <!-- </div>-->
+         <div class="letter" id="c">  
+          <h4> 
+            Given information and advice:
+          </h4>
+      <p> 
+        For mapping textures onto objects, at first, find out texture coordinates. Next, use texture coordinates as an additional attribute.
+      </p>
+      <p>
+        For cones, use per-vertex normal in texture mapping. In a similar way, map textures onto a disc.
+      </p>
+      </div>
+
+        <lu class="lightgallery">
+          <li data-src="/img/cs-hrv/cs-hrv-5.png">
+            <a href="">
+              <figure class="letter" id="h" src="/img/cs-hrv/cs-hrv-5.png"><i class="fa fa-search" style="color:white"></i></figure>
+            </a>
+          </li>
+      </lu>
+         
+        </div>
+        <div class="letter" id="e">
+        </div>
+      </section>
+
+  <div id="reflection"> </div>
+     <!-- -->
+  <h2 id="about_me_title"> Reflection </h2> 
+
+  <section class="about-me">
+    <div class="letter" id="a"> 
+      <!-- </div>-->
+      <p> 
+        This assignment helped create a fundamental knowledge of C++, especially how to create objects from the relationships behind vertices, indices, and triangles. These projects helped me become aware of the mathematics behind the assembly of each object. 
+    </p>
+    </div>
+            
+           
+                   <lu class="lightgallery">
+                     <li data-src="/img/cs-hrv/cs-hrv-6.png">
+                      <a href="">
+                        <figure class="letter" id="y" src="/img/cs-hrv/cs-hrv-6.png"><i class="fa fa-search" style="color:white"></i></figure>
+                      </a>
+                     </li>
+                 </lu>
+                    
+                   </div>
+                   <div class="letter" id="e">
+                   </div>
+                 </section>
+
+
+  <h2 id="contact_title"> Any Questions? </h2> 
+
+  <form class="whole-contact-form" action="https://formsubmit.co/whitneybolar98@live.com" enctype="multipart/form-data" method="POST">
+                
+    <div class="name-package">
+            <input id="input-1" 
+                    class="inputs" 
+                     placeholder="First Name*" 
+                    type="text" 
+            name="First Name:" required>
+
+            <input id="input-2" 
+                    class="inputs" 
+                    placeholder="Last Name*" 
+                    type="text" 
+            name="Last Name:" required> 
+    </div> 
+
+    <div class="email-package">
+            <!-- <label for="_replyto"> </label>  name="Services Requested" -->
+            <input id="input-3" class="inputs" placeholder="Email*" type="email" name="Email:" required>
+    </div> 
+
+    <div class="company-package"> 
+            <!-- <label for="company"> </label> -->
+         <input id="input-4" class="inputs" placeholder="Company Name" type="text" name="Company">
+    </div> 
+
+    <div class="company-package"> 
+      <!-- <label for="company"> </label> -->
+   <input id="input-5" class="inputs" placeholder="Message" type="text" name="Message">
+</div> 
+    </div>
+    </section>
+    
+    <div class="submit-package">
+            <input id="send-button" type="submit" value="Submit">
+            <input type="hidden" name="_next" value="/">
+    </div> 
+    
+    <!-- Subject of the email sent to us -->
+    <input type="hidden" name="_subject" value="New submission!">
+
+    <!-- this takes out the "I am not a robot" page. 
+    If you are having troubles with spam, you can remove this-->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- This way we will not be advertising formsubmit.co -->
+    <input type="hidden" name="_next" value="https://whitneybolar.github.io/wb_thankyoupage/">
+    
+    <!-- Boxes template for email sent to us-->
+    <input type="hidden" name="_template" value="box">
+</form> 
+  
+      <footer class="footer">
+
+          <div id="footer-bar"></div>
+          
+          <class="footer-names" id="copyright"> &copy; Copyright @ <span> YEAR </span></p>
+
+      </footer> 
+
+    <!-- jQuery Library via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Plugins(s) -->
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/jquery.drawsvg.js"></script>
+    <!-- Extenal code sources -->
+    <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h-->
+    <!-- https://codepen.io/alvarotrigo/pen/QWqKOdb -->
+    <!-- https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
+    <!-- My Scripts -->
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
