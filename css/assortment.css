@@ -155,7 +155,7 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
     }
 
     #b {
-      background-image: url("/img/cs-hrv/cs-hrv-4.png");
+      background-image: url("/img/assortment/assortment-1.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -187,7 +187,7 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
 
   #z {
-      background-image: url("/img/cs-hrv/cs-hrv-2.png");
+      background-image: url("/img/assortment/assortment-2.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -207,7 +207,7 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
 
   #h {
-      background-image: url("/img/cs-hrv/cs-hrv-5.png");
+      background-image: url("/img/assortment/assortment-4.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -227,7 +227,7 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
 
   #y {
-    background-image: url("/img/cs-hrv/cs-hrv-6.png");
+    background-image: url("/img/assortment/assortment-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,7 +275,7 @@ https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
   }
 
   #f{
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     text-decoration: none;
     text-align: center;
