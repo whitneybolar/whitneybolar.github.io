@@ -569,6 +569,10 @@ media query between 800 & 400
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    #about_me_title{
+      margin-top: 40px;
+    }
       
     /* Parent */
     .about-me {
@@ -641,6 +645,7 @@ media query between 800 & 400
     /*Sources section: Mobile */
     
     #sources_title{
+      margin-top: 60px;
       display: flex; 
       justify-content: center; 
       font-size: 30px; 
