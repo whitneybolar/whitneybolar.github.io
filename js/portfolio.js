@@ -43,7 +43,7 @@ function closeMenu() {
 // read more read less slide 
 // Author: M. Ferguson
 // https://stackoverflow.com/questions/48646853/add-simple-slide-down-animation-to-read-more-text-reveal
-$( "#send-button" ).click(function() {
+$( "#read-button" ).click(function() {
   $( "#more" ).slideToggle( "fast" );
       var $this = $(this);
         $this.toggleClass("open");
