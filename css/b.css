@@ -16,6 +16,25 @@
   margin: 10px;
 }
 
+#b {
+  background-image: url("/404-Final/images/Image1.jpg");
+}
+
+
+#z {
+  background-image: url("/404-Final/images/Image2.jpg");
+  background-color: #383838;
+}
+
+#h {
+  background-image: url("/404-Final/images/Tabloid\ -\ 47.png");
+  background-color: #383838;
+}
+
+#y{
+  background-image: url("/404-Final/images/subpage_alt_Page_3.png");
+}
+
 #f, #l, #o{
   display: flex; 
   justify-content: center;
