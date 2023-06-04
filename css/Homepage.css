@@ -116,13 +116,18 @@ body,h1,h2,h3,h4,h5,h6 {
 .letter {
   font-family: "Lato", sans-serif;
   color: black;
-  border: 10px solid #383838;;
+  border: 10px solid #383838;
   border-radius: .3cm;
   padding: 25px;
 }
 
 #read-button{
   font-family: 'Staatliches', cursive;
+  color: #383838;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 3px solid #383838;
 }
 
 #more {
