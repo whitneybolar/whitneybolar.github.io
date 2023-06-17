@@ -111,6 +111,7 @@ body,h1,h2,h3,h4,h5,h6 {
   font-size: 30px; 
   font-family: 'Staatliches', cursive;
   color: black;
+  margin-bottom: 50px;
 }
 
 .letter {
@@ -154,31 +155,31 @@ body,h1,h2,h3,h4,h5,h6 {
   grid-column: 1 / 4;
   grid-row: 2 / 6;
   text-align: left;
+  border: hidden;
 }
 
 #summary-title{
   font-family: 'Staatliches', cursive;
 }
 
-#c{
+/*#c{
   text-align: center;
   grid-column: 1 / 1;
   grid-row: 1 / 2;
   text-decoration: none;
-}
+}*/
 
 #d{
-  background-image: url(/img/double-arrows.png);
-  background-position: center;
+  background-image: url(/img/myself.JPG);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #383838;
-  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  height: 250px;
+  /*border: 1px solid;*/
   grid-column: 2/ 2;
   grid-row: 1 / 2;
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
+  border: hidden;
 }
 
 #h{
@@ -199,12 +200,12 @@ body,h1,h2,h3,h4,h5,h6 {
   grid-row: 1 / 2;
 }
 
-#e{
+/*#e{
   text-align: center;
   grid-column: 3/ 4;
   grid-row: 1 / 2;
   text-decoration: none;
-}
+}8?
 
 /*
 Sources section: Desktop
@@ -375,6 +376,7 @@ media query between 800 & 400
   #d{
     display: flex;
     justify-content: center;
+    height: 150px;
   }
 
 } /* end of 800 - 500 media query */ 
