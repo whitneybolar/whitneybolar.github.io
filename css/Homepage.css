@@ -109,6 +109,93 @@ body,h1,h2,h3,h4,h5,h6 {
   }
 }
 
+/* Nav-select Section: Desktop*/
+
+.nav-select{
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  display: grid;
+
+  /* Columns */
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-gap: 5px; 
+
+  /* Rows */
+  grid-template-rows: 300px;
+  grid-gap: 5px; 
+}
+
+.options{
+  font-family: 'Staatliches', cursive;
+  display: flex;
+  justify-content: center;
+  color: black;
+  border: 2px solid #383838;
+  border-radius: .1cm;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Photo by Kari Shea on Unsplash */
+#about-option{
+  grid-column: 1 / 1;
+  grid-row: 1/ 1;
+  background-image:url("/img/nav-imgs/kari-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: contrast(90%) grayscale(50%);
+
+  /*filter: invert(19%) sepia(14%) saturate(12%) hue-rotate(341deg) brightness(97%) contrast(89%);*/
+}
+
+#about-option:hover{
+  filter:brightness(85%);
+}
+
+/* Photo by Josh Calabrese on Unsplash */
+#portfolio-option{
+  grid-column: 2 / 2;
+  grid-row: 1/ 1;
+  background-image:url("/img/nav-imgs/josh-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: contrast(90%) grayscale(50%);
+
+}
+
+#portfolio-option:hover{
+  filter:brightness(85%);
+}
+
+/*  Photo by Chua Bing Quan on Unsplash */
+#contact-option{
+  grid-column: 3 / 3;
+  grid-row: 1/ 1;
+  background-image:url("/img/nav-imgs/chua-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: contrast(90%) grayscale(50%);
+}
+
+#contact-option:hover{
+  filter:brightness(85%);
+}
+
+/* Photo by Sarah Dorweiler on Unsplash */
+#resume-option{
+  grid-column: 4 / 4;
+  grid-row: 1/ 1;
+  background-image:url("/img/nav-imgs/nikita-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#resume-option:hover{
+  filter:brightness(85%);
+}
+
 /* About Me Section: Desktop */ 
 
 #about_me_title {
@@ -145,6 +232,7 @@ body,h1,h2,h3,h4,h5,h6 {
   display: flex;
   justify-content: center;
   display: grid;
+  margin-top: -200px;
 
   /* Columns */
   grid-template-columns: 250px 250px 250px;
@@ -179,6 +267,7 @@ body,h1,h2,h3,h4,h5,h6 {
   grid-column: 1/ 2;
   grid-row: 1 / 1 ;
   border: hidden;
+  margin-top: 50px;
 }
 
 #h{
@@ -289,12 +378,33 @@ label{
 
 /* Footer: Desktop */
 
+#footer-bar{
+  border: 1px solid #383838;
+  width: 100%;
+}
+
+#footer-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  background-color: #383838;
+  color:#efede7;
+  width: 100%;
+  height: 50px;
+}
+
+#footer-slogan{
+  font-family: 'Uchen', serif;
+}
+
 .footer {
-  margin-top: 50px; 
-  display: grid; 
-  grid-template-columns: repeat(300, 1fr);
-  grid-template-rows: repeat(70, 1fr); 
-  height: 120px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
 #copyright{
@@ -320,7 +430,24 @@ media query between 800 & 400
   .letter {
   font-size: 12px;
   }
-      
+
+  /* Nav-select Section*/
+
+.nav-select{
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  display: grid;
+
+  /* Columns */
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 5px; 
+
+  /* Rows */
+  grid-template-rows: 300px;
+  grid-gap: 5px; 
+}
+
   .about-me, .sources {     
     /* Columns */
     grid-template-columns: 150px 150px 150px;
@@ -439,7 +566,7 @@ media query for 550px and under
     display: block;
     cursor: pointer;
     position: fixed;
-    margin-top: -80px;
+    margin-top: -140px;
     margin-left: 20px;
     z-index: 100;
     background-color: #efede7;
@@ -457,6 +584,26 @@ media query for 550px and under
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .nav-select{
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: grid;
+  
+    /* Columns */
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-gap: 5px; 
+  
+    /* Rows */
+    grid-template-rows: 200px;
+    grid-gap: 5px; 
+  }
+  
+  /*a:hover{
+    display: hidden;
+  }*/
+
   #about_me_title{
     margin-top: 40px;
   }
@@ -465,6 +612,7 @@ media query for 550px and under
     display: flex;
     justify-content: center;
     display: grid;
+    margin-top: -50px;
       
     /* Columns */
     grid-template-columns: 250px 250px 250px;
@@ -521,43 +669,7 @@ media query for 550px and under
     margin-top: 15px;
   }
 
-  /*Sources section: Mobile */
-      
-  #sources_title{
-    margin-top: 60px;
-    display: flex; 
-    justify-content: center; 
-    font-size: 30px; 
-    font-family: 'Staatliches', cursive;
-    color: black;
-  }
-      
-  #f{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-      
-  #g{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-      
-  #linkedin-button, #handshake-button {
-    height: 40px; 
-    padding: 5px;
-  }
-      
-  .resume-link{
-    height: 50px;
-    text-align: center;
-    justify-content: center;
-    margin: 40px -10px 0px 0px;
-  }
-      
+
   /*Contact Section: Desktop */ 
 
   #contact_title{
@@ -637,6 +749,16 @@ media query for 550px and under
     background-color: #383838;
   }
     
+  #footer-name{
+    font-size: 14px;
+    height: 30px;
+  }
+  
+  #footer-slogan{
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  
 }
 
 /* 
