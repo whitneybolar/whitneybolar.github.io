@@ -82,7 +82,7 @@ About Me Section: Desktop
   font-family: "Lato", sans-serif;
   color: black;
     
-  border: 10px solid #383838;;
+  border: 5px solid #383838;;
   border-radius: .3cm;
   padding: 25px;
 }
@@ -391,6 +391,7 @@ media query between 800 & 400
 
   .letter {
     font-size: 12px;
+    width: 285px;
   }
         
   .about-me, .sources{
@@ -565,7 +566,7 @@ media query between 800 & 400
     grid-row: 5/ 6;
     text-align: left;
   }
-      
+  
   #c{
     text-align: center;
     grid-column: 2 / 3;
@@ -611,14 +612,6 @@ media query between 800 & 400
 
   /*Sources section: Desktop */
       
-  #sources_title{
-    display: flex; 
-    justify-content: center; 
-    font-size: 30px; 
-    font-family: 'Staatliches', cursive;
-    color: black;
-  }
-      
   #f{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -631,18 +624,6 @@ media query between 800 & 400
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-      
-  #linkedin-button, #handshake-button {
-    height: 40px; 
-    padding: 5px;
-  }
-      
-  .resume-link{
-    height: 50px;
-    text-align: center;
-    justify-content: center;
-    margin: 40px -10px 0px 0px;
   }
       
   /*
