@@ -288,38 +288,64 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 
 /* Portfolio section: Desktop */
-/*.two-halfs{
+.two-halfs{
   display: flex;
   justify-content: center;
-  display: grid;
-
-  grid-template-columns: 150px 150px 150px 150px;
-  grid-gap: 5px; 
-
-  grid-template-rows: 300px;
-  grid-gap: 5px; 
-}*/
+  margin-top: 20px;
+}
 
 .projects{
   display: flex;
   justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
   display: grid;
 
   /* Columns */
-  grid-template-columns: 300px;
+  grid-template-columns: 200px;
 
   /* Rows */
-  grid-template-rows: 300px 100px;
+  grid-template-rows: 100px 150px;
+}
+
+.spacer{
+  height: 50px;
 }
 
 .project-pieces{
-  font-family: 'Staatliches', cursive;
-  border: 2px solid #383838;
-  border-radius: .1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #383838;
+  color: #E2E8F0;
+  padding: 5px;
+}
+
+.projects:hover{
+  filter: brightness(85%);
 }
 
 #project1-img{
-  background-image: url("/img/ifixit-img/replacement-image-5.png");
+  background-image: url("/img/ifixit-img/ifixit-instructions-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#project2-img{
+  background-image: url("/img/assortment/assortment-3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#project3-img{
+  background-image: url("/404-Final/images/Image1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#project4-img{
+  background-image: url("/img/cs-hrv/cs-hrv-3.png");
   background-size: cover;
   background-position: center;
 }
@@ -480,13 +506,27 @@ media query between 800 & 400
   grid-gap: 5px; 
 }
 
-  .about-me, .sources {     
+  .about-me {     
     /* Columns */
     grid-template-columns: 150px 150px 150px;
   }
   
   p { 
     margin-left: 0px; 
+  }
+
+  .projects{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+  
+    /* Columns */
+    grid-template-columns: 150px;
+  
+    /* Rows */
+    grid-template-rows: 100px 150px;
   }
   
 } /* end of 800 - 500 media query */ 
@@ -631,16 +671,12 @@ media query for 550px and under
     grid-template-rows: 200px;
     grid-gap: 5px; 
   }
-  
-  /*a:hover{
-    display: hidden;
-  }*/
 
   #about_me_title{
     margin-top: 40px;
   }
 
-  .about-me, .sources {
+  .about-me {
     display: flex;
     justify-content: center;
     display: grid;
@@ -700,8 +736,29 @@ media query for 550px and under
     margin-top: 15px;
   }
 
+  /*Portfolio Section: Mobile*/
+  .two-halfs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .projects{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 30px;
 
-  /*Contact Section: Desktop */ 
+  
+    /* Columns */
+    grid-template-columns: 200px;
+  
+    /* Rows */
+    grid-template-rows: 100px 150px;
+  }
+
+  /*Contact Section: Mobile */ 
 
   #contact_title{
     font-size: 30px; 
