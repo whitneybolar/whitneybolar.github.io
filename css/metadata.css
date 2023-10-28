@@ -1,0 +1,113 @@
+body{
+    background-color: #efede7;
+}
+
+/* Reset CSS for button */ 
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.option_title {
+ font-family: 'Staatliches', cursive;
+  justify-content: center;
+  display: flex; 
+
+  color: #363636;
+  opacity: 80%;
+  
+  font-size: 30px; 
+  margin-top: 80px;
+}
+
+.topic {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meta-option{
+    display: flex; 
+    flex-direction: column;
+    margin: 5px;
+}
+
+.inside-button{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.metadata-info{
+    display: none;
+    text-align: left;
+    padding: 20px;
+    width: 500px;
+}
+
+#tag-button-icon-minus,
+#summary-button-icon-minus,
+#client-name-button-icon-minus, 
+#timeframe-button-icon-minus,
+#majortandr-button-icon-minus,
+#platforms-button-icon-minus,
+#methods-button-icon-minus,
+#team-button-icon-minus {
+    display: none;
+}
+
+/* BASE Meta-Button*/
+.color-button{
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    color: white;
+    background-color: #363636;
+    opacity: 60%;
+    transition: all 0.3s ease-out;
+}
+
+.color-button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    transform: translateX(20rem);
+    transition: 0.5s;
+}
+  
+.color-button:hover{
+    color: black;
+    background-color: transparent;
+}
+
+.color-button:hover:before{
+    transform: translateX(0px);
+}
+
+@media screen and (max-width: 700px) {
+    
+    .meta-option{
+        font-size: 12px;
+    }
+    
+    .metadata-info{
+        padding: 10px;
+        width: 300px;
+    }
+
+    .button{
+        width: 300px;
+    }
+}
+

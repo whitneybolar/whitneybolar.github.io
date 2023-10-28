@@ -64,163 +64,77 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 
 /*
-About Me Section: Desktop
+Topic Sections: Desktop
 */ 
 
-#about_me_title {
+#topic_title {
   font-family: 'Staatliches', cursive;
   color: black;
-
+  justify-content: center;
   display: flex; 
-  justify-content: center; 
   
   font-size: 30px; 
   margin-top: 80px;
 }
 
-.letter {
+.details, .portfolio-buttons, .metadata-info {
   font-family: "Lato", sans-serif;
   color: black;
-    
-  border: 5px solid #383838;;
+  
   border-radius: .3cm;
   padding: 25px;
 }
 
-.about-me, .sources {
+.portfolio-buttons{
+  border: solid #383838 2px;
+  width: 300px;
+}
+
+.metadata-info{
+  display: flex;
+  width: 400px;
+  justify-content: left;
+}
+
+.meta-pairs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.topic, .sources {
   display: flex;
   justify-content: center;
-  display: grid;
+  /*display: grid;*/
 
   /* Columns */
-  grid-template-columns: 250px 250px 250px;
-  grid-gap: 5px; 
+  /*grid-template-columns: 250px 250px 250px;
+  grid-gap: 5px; */
   
   /* Rows */
-  grid-template-rows: auto auto auto;
-  grid-gap: 5px; 
+  /*grid-template-rows: auto auto auto;
+  grid-gap: 5px; */
+
+  border: green dotted 10px;
+}
+
+.parts{
+  display: flex;
+  flex-direction: row;
 }
 
 /* Column: line 1, end line 2 */
 /* Row: line 1, end line 2 */
-#a {
-  grid-column: 1 / 4;
-  grid-row: 2 / 6;
+#part-a {
   text-align: left;
   margin-top: -10px;
-}
-
-#summary-title{
-  font-family: 'Staatliches', cursive;
-}
-
-.lightgallery{
-  margin-left: 30px;
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-  list-style: none;
-}
-
-#d, #b, #h, #z, #y{
-  border: 10px solid #383838;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0px;
-  margin-left: 90px;
-  height: 250px; 
-  position: relative;
-}
-
-#d { 
-  background-image: url("/img/ifixit-img/replacement-image-5.png");
-  grid-column: 1 / 3;
-  grid-row: 1 / 2
-}
-
-#d > i{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-}
-
-#e{
-  text-align: center;
-  grid-column: 3/ 4;
-  grid-row: 1 / 2;
-  text-decoration: none;
-  margin-left: -40px;
-  margin-bottom: 15px;
-}
-
-#b {
-  background-image: url("/img/ifixit-img/replacement-image.png");
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-#b > i{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-}
-
-/* this gets reused for every section with a grid*/
-#c{
-  grid-column: 1 / 4;
-  grid-row: 2 / 4;
-  margin-top: -10px;
-  text-align: left;
-}
-
-td{
-  padding-left: 5px;
-  padding: 30px;
-}
-
-#z {
-  background-image: url("/img/ifixit-img/replacement-image-8.png");
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-#z > i{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-}
-
-#h {
-  background-image: url("/img/ifixit-img/replacement-image-9.png");
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-#h > i{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-}
-
-#y {
-  background-image: url("/img/ifixit-img/replacement-image-4.png");
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-}
-
-#y > i{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
+  border: orange dotted 5px;
 }
 
 /*
-Sources section: Desktop 
+Client/Outcome - Sources section: Desktop 
 */
 
 #sources_title{
@@ -237,6 +151,7 @@ Sources section: Desktop
   text-decoration: none;
   text-align: center;
   position: relative;
+  border: 2px solid #383838;
 }
 
 #f > i{
@@ -273,110 +188,6 @@ Sources section: Desktop
   margin: 40px 0px 0px 0px;
 }
 
-/*Contact Section: Desktop */ 
-#contact_title{
-  display: flex; 
-  justify-content: center; 
-  font-size: 30px; 
-  margin-top: 80px;
-  font-family: 'Staatliches', cursive;
-  color: black;
-}
-
-input[type=text]{
-  background-color: transparent;
-  display: flex;
-  border: #383838 1px solid;
-  height: 20px; 
-  margin: 0px 5px 0px 5px; 
-}
-  
-input[type=email]{
-  background-color: transparent;
-  display: flex;
-  border: #383838 1px solid;
-  height: 20px; 
-}
-  
-::placeholder{
-  font-family: 'Staatliches', cursive;
-  color: #383838;
-  padding: 0px 5px 0px 5px; 
-}
-  
-/*Info Styling */ 
-.name-package{
-  display: flex; 
-  justify-content: center;
-}
-  
-#address-title{
-  display: flex; 
-  justify-content: center;
-}
-  
-#input-1, #input-2{
-  display: flex;
-  width: 203px;
-}
-  
-.email-package,.company-package {
-  display: flex; 
-  justify-content: center;
-  margin: 10px 0px 10px 0px; 
-}
-  
-/* Message Styling */
-  
-#input-3, #input-4, #input-5 {
-  display: flex;
-  width: 415px; 
-}
-  
-#input-5{
-  height: auto;
-}
-  
-label{
-  color: black;
-  font-family: 'Staatliches', cursive;
-} 
-  
-/* Sent Button Styling*/
-.submit-package{
-  display: flex; 
-  justify-content: center;
-  margin: 40px 0px 0px 0px;
-}
-  
-#send-button{
-  font-family: 'Staatliches', cursive;
-  color: white;
-  width: 100px; 
-  height: 40px;
-  border-radius: .1cm;
-  background-color: #383838;
-  margin-top: 20px;
-}
-  
-/* Footer */
-  
-.footer {
-  margin-top: 50px; 
-  display: grid; 
-  grid-template-columns: repeat(300, 1fr);
-  grid-template-rows: repeat(70, 1fr); 
-  height: 120px; 
-}
-  
-#copyright{
-  visibility: hidden;
-  /*color: #F1ECD4;
-  grid-column-start: 125;
-  grid-column-end: 185;
-  grid-row-start: 35;
-  grid-row-end: 35; */
-}
 
 /* ---------------------------------------------------------------------------------*/
 /* 
@@ -389,14 +200,24 @@ media query between 800 & 400
     visibility: hidden;
   }
 
-  .letter {
+  .details {
     font-size: 12px;
     width: 285px;
   }
         
-  .about-me, .sources{
+  .topic, .sources{
     /* Columns */
     grid-template-columns: 150px 150px 150px;
+  }
+
+  .meta-pairs{
+    flex-direction: column;
+  }
+
+  .metadata-info{
+    display: flex;
+    width: 350px;
+    justify-content: center;
   }
 
   p { 
@@ -545,7 +366,7 @@ media query between 800 & 400
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  .about-me, .sources {
+  .topic, .sources {
     display: flex;
     justify-content: center;
     display: grid;
