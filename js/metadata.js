@@ -78,17 +78,18 @@ function FindOption(button){
     }
 }
 
+/*FIX this!!*/
 function switchIcons(buttonIconPlus, buttonIconMinus, description){
 
-    if(buttonIconPlus.style.display == "none"){
-        buttonIconMinus.style.display = "none";
-        $(buttonIconPlus).slideDown();
-        $(description).slideUp();
+    if(buttonIconMinus.style.display == "none"){
+        buttonIconPlus.style.display = "none";
+        $(buttonIconMinus).slideDown();
+        $(description).slideDown();
     }
     else {
-        $(buttonIconMinus).slideDown();
-        buttonIconPlus.style.display = "none";
-        $(description).slideDown();
+        $(buttonIconPlus).slideDown();
+        buttonIconMinus.style.display = "none";
+        $(description).slideUp();
     }
 }
 

@@ -26,17 +26,18 @@
 
     /*Base Nav*/
     .switch-button{
-        position: fixed;
+        /* position: fixed; */ /*fix this later*/
+        position: absolute;
         overflow: hidden;
         background-color: transparent;
         color: #363636;
         border-radius: 50%;
         border: 2px solid #363636;
-        height: 40px;
-        width: 40px;
         margin: 15px;
         margin-top: 20px;
         z-index: 2;
+        height: 40px;
+        width: 40px;
         transition: all 0.3s ease-out;
     }
 

@@ -10,7 +10,7 @@ body{
   padding: 0;
 }
 
-.option_title {
+.source_title {
  font-family: 'Staatliches', cursive;
   justify-content: center;
   display: flex; 
@@ -22,17 +22,44 @@ body{
   margin-top: 80px;
 }
 
-.topic {
+.source-topic {
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -10px;
 }
 
-.meta-option{
+.source-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.source-button-list{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.source-option{
     display: flex; 
     flex-direction: column;
     margin: 5px;
+}
+
+.source-types{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    padding-top: 50px;
 }
 
 .inside-button{
@@ -44,36 +71,42 @@ body{
     margin-left: 10px;
 }
 
-.metadata-info{
+.source-info{
     text-align: left;
     padding: 20px;
-    width: 500px;
 }
 
-#tag-button-icon-plus,
-#summary-button-icon-plus,
-#client-name-button-icon-plus, 
-#timeframe-button-icon-plus,
-#majortandr-button-icon-plus,
-#platforms-button-icon-plus,
-#methods-button-icon-plus,
-#team-button-icon-plus {
+#icon-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tag-button-icon-minus,
+#summary-button-icon-minus,
+#client-name-button-icon-minus, 
+#timeframe-button-icon-minus,
+#majortandr-button-icon-minus,
+#platforms-button-icon-minus,
+#methods-button-icon-minus,
+#team-button-icon-minus,
+.client-info {
     display: none;
 }
 
 /* BASE Meta-Button*/
-.color-button{
+.source-button{
     position: relative;
-    width: 500px;
+    width: 250px;
     overflow: hidden;
     border-radius: 5px;
-    color: white;
-    background-color: #363636;
+    color: black;
+    background-color: transparent;
     opacity: 60%;
     transition: all 0.3s ease-out;
 }
 
-.color-button:before {
+.source-button:before {
     content: "";
     position: absolute;
     left: 0;
@@ -85,12 +118,12 @@ body{
     transition: 0.5s;
 }
   
-.color-button:hover{
+.source-button:hover{
     color: black;
     background-color: rgb(207, 225, 166);
 }
 
-.color-button:hover:before{
+.source-button:hover:before{
     transform: translateX(0px);
 }
 
@@ -105,8 +138,10 @@ body{
         width: 300px;
     }
 
-    .button{
+    .source-button-list{
+        flex-direction: column;
         width: 300px;
     }
+    
 }
 
