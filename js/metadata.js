@@ -78,7 +78,6 @@ function FindOption(button){
     }
 }
 
-/*FIX this!!*/
 function switchIcons(buttonIconPlus, buttonIconMinus, description){
 
     if(buttonIconMinus.style.display == "none"){
@@ -119,7 +118,7 @@ function FindGenOption(button){
         switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, description1, description2, image1, image2);
     }
 
-    /* General Option: Hard Drive */
+    /* General Option: Motherboard*/
     if (buttonType == "motherboardOption"){
         var buttonIconMinus = document.getElementById("motherboard-button-icon-minus");
         var buttonIconPlus = document.getElementById("motherboard-button-icon-plus");
@@ -133,15 +132,7 @@ function FindGenOption(button){
 
 function switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, description1, description2, image1, image2){
 
-    if(buttonIconMinus.style.display == "none"){
-        buttonIconPlus.style.display = "none";
-        $(buttonIconMinus).slideDown();
-        $(description1).slideDown();
-        $(description2).slideDown();
-        $(image1).slideDown();
-        $(image2).slideDown();
-    }
-    else {
+    if(buttonIconPlus.style.display == "none"){
         buttonIconMinus.style.display = "none";
         $(buttonIconPlus).slideDown();
         $(description1).slideUp();
@@ -149,21 +140,28 @@ function switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, desc
         $(image1).slideUp();
         $(image2).slideUp();
     }
+    else {
+        buttonIconPlus.style.display = "none";
+        $(buttonIconMinus).slideDown();
+        $(description1).slideDown();
+        $(description2).slideDown();
+        $(image1).slideDown();
+        $(image2).slideDown();
+    }
 }
 
 function switchIconsReverse (buttonIconPlus, buttonIconMinus, description, image){
 
-    if(buttonIconMinus.style.display == "none"){
-        buttonIconPlus.style.display = "none";
-        $(buttonIconMinus).slideDown();
-        $(description).slideDown();
-        $(image).slideDown();
-    }
-    else {
+    if(buttonIconPlus.style.display == "none"){
         buttonIconMinus.style.display = "none";
         $(buttonIconPlus).slideDown();
         $(description).slideUp();
         $(image).slideUp();
-        
+    }
+    else {
+        buttonIconPlus.style.display = "none";
+        $(buttonIconMinus).slideDown();
+        $(description).slideDown();
+        $(image).slideDown();
     }
 }

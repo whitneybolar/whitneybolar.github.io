@@ -1,3 +1,6 @@
+/* This hold overall styling and containing multiple areas with the same properties*/
+/* contains: body/html, ul/il, headings, crossed with metadata/info/reflection (opened drop down) */
+
 html {
   scroll-behavior: smooth;
   font-family: "Lato", sans-serif;
@@ -9,6 +12,7 @@ a{
 
 body {
   background-color: #efede7;
+  margin-bottom: 50px;
 }
 
 .entire-heading{
@@ -30,6 +34,52 @@ body {
   margin-left: 50px;
   font-family: 'Uchen', serif;
 }
+
+.meta-option{
+  display: flex; 
+  flex-direction: column;
+  margin: 5px;
+}
+
+.info-option, .reflection-option{
+  display: flex; 
+  flex-direction: column;
+  width: 600px;
+}
+
+.option_title {
+  font-family: 'Staatliches', cursive;
+   justify-content: center;
+   display: flex; 
+ 
+   color: #363636;
+   opacity: 80%;
+   
+   font-size: 30px; 
+   margin-top: 80px;
+ }
+
+ .info-description, .reflection-description{
+  margin-left: -30px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: dotted;
+}
+
+il {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #363636;
+  color: white;
+  border-radius: 10px;
+  opacity: 80%;
+  margin: 10px;
+}
      
 @media screen and (max-width: 700px) { 
 
@@ -38,8 +88,33 @@ body {
   }
   
   .sub-heading{
-    margin-left: 15px;
+    margin-left: 10px;
     font-family: 'Uchen', serif;
+  }
+
+  .entire-info{
+    width: 400px;
+  }
+
+  .info-description{
+    margin-left: -30px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-decoration: dotted;
+
+  }
+
+  il {
+    margin: 10px;
+  }
+
+  .meta-option, .info-option, .reflection-option{
+    font-size: 12px;
+    width: 300px;
   }
   
 }

@@ -10,29 +10,11 @@ body{
   padding: 0;
 }
 
-.option_title {
- font-family: 'Staatliches', cursive;
-  justify-content: center;
-  display: flex; 
-
-  color: #363636;
-  opacity: 80%;
-  
-  font-size: 30px; 
-  margin-top: 80px;
-}
-
 .topic {
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.meta-option{
-    display: flex; 
-    flex-direction: column;
-    margin: 5px;
 }
 
 .inside-button{
@@ -57,7 +39,7 @@ body{
 #majortandr-button-icon-plus,
 #platforms-button-icon-plus,
 #methods-button-icon-plus,
-#team-button-icon-plus {
+#team-button-icon-plus{
     display: none;
 }
 
@@ -69,7 +51,7 @@ body{
     border-radius: 5px;
     color: white;
     background-color: #363636;
-    opacity: 60%;
+    opacity: 80%;
     transition: all 0.3s ease-out;
 }
 
@@ -96,16 +78,12 @@ body{
 
 @media screen and (max-width: 700px) {
     
-    .meta-option{
-        font-size: 12px;
-    }
-    
     .metadata-info{
         padding: 10px;
         width: 300px;
     }
 
-    .button{
+    .color-button{
         width: 300px;
     }
 }

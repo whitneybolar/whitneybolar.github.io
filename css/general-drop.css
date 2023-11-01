@@ -1,3 +1,5 @@
+/* Style strictly related to the General Dropdown (this is closed until opened by the user)*/
+
 img {
     width: 100%;
     height: 300px;
@@ -23,9 +25,17 @@ img {
     width: 600px;
 }
 
-#hard-drive-button-icon-plus,
-#screen-button-icon-plus,
-#motherboard-button-icon-plus {
+#hard-drive-button-icon-minus,
+#screen-button-icon-minus,
+#motherboard-button-icon-minus,
+#motherboard-description-1,
+#motherboard-img-1,
+#screen-img-1,
+#screen-img-2,
+#screen-description-1,
+#screen-description-2,
+#hard-drive-description-1,
+#hard-drive-img-1{
     display: none;
 }
 

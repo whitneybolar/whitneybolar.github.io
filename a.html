@@ -46,12 +46,12 @@
     <div class="desk-nav" id="myNavbar">
       <a href="https://whitneybolar.github.io/" class="topic-options-nav" id="desk-homepage"><i id="nav-icons" class="fa fa-home"></i> Homepage </a>
       <a href="portfolio.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-th"></i> Portfolio </a>
+      <a href="#info" class="topic-options-nav" id="desk-information"> <i id="nav-icons" class="fa fa-info"></i> Information </a>
       <a href=".source_title" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-asterisk"></i></i> Product & Client </a>
-      <!-- <a href="#" class="topic-options-nav" id="desk-information"> <i id="nav-icons" class="fa fa-info"></i> Information </a> -->
       <a href="#metadata" class="topic-options-nav" id="desk-metadata"> <i id="nav-icons" class="fa fa-id-card"></i> Metadata </a>
       <!-- <a href="#" class="topic-options-nav" id="desk-document"> <i id="nav-icons" class="fa fa-book"></i> Documentation </a> -->
       <a href="#usability-testing" class="topic-options-nav" id="desk-usability"> <i id="nav-icons" class="fa fa-user"></i> Usability Testing </a>
-      <!-- <a href="#" class="topic-options-nav" id="desk-reflection"><i id="nav-icons" class="fa fa-users"></i> Reflection </a> -->
+      <a href="#reflection" class="topic-options-nav" id="desk-reflection"><i id="nav-icons" class="fa fa-users"></i> Reflection </a>
       <a href="contact.html" target=”_blank” class="topic-options-nav" id="desk-questions"><i id="nav-icons" class="fa fa-envelope"></i> Any Questions? </a>
       <!--<a href="#"><i class="fa fa-search"></i></a>-->
     </div>
@@ -83,10 +83,14 @@
           <i class="fa fa-th" id="nav-img"></i>
           <p class="nav-link"> Portfolio </p>
         </a>
-        <!-- <a href="" class="nav-item" id="info-btn">
+        <a href="#info" class="nav-item" id="info-btn">
             <i class="fa fa-info" id="nav-img"></i>
             <p class="nav-link"> Information</p>
-        </a>--> 
+        </a>
+        <a href="#info" class="nav-item" id="info-btn">
+          <i class="fa fa-asterisk" id="nav-img"></i>
+          <p class="nav-link"> Client & Product </p>
+      </a>
         <a href="#metadata" class="nav-item" id="metadata-btn">
           <i class="fa fa-id-card" id="nav-img"></i>
           <p href="" class="nav-link"> Metadata</p>
@@ -99,10 +103,10 @@
             <i class="fa fa-user" id="nav-img"></i>
             <p class="nav-link"> Usability Testing </p>
         </a>
-        <!-- <a href="" class="nav-item" id="home-btn">
+        <a href="#reflection" class="nav-item" id="home-btn">
           <i class="fa fa-users" id="nav-img"></i>
           <p class="nav-link"> Reflection  </p>
-        </a>-->
+        </a>
         <a href="contact.html" target=”_blank” class="nav-item" id="questions-btn">
             <i class="fa fa-envelope" id="nav-img"></i>
             <p class="nav-link"> Any Questions? </p>
@@ -114,12 +118,50 @@
   <!-- Title and Subheading -->
     <section class="entire-heading">
       <h6 id="main-heading"> HP Envy x360 15-u473cl Repair </h6>
-      <div class="sub-heading"> Co-technical writer, and Device & Photo Expert </div>
+      <div class="sub-heading"> Co-technical writer, and device & Photo Expert </div>
     </section>
+
+  <!-- Info -->
+  <div id="info"> </div>
+  <h2 class="option_title"> Information </h2> 
+
+  <section class="topic">
+    <div class="info-option">
+      <button id="info-highlight">
+              <div class="inside-button">
+              <p> We created replacement guides for the following device problem research:  </p>
+              </div>
+          </button>
+        <div class="info-description"> 
+          <ul> 
+            <il> Screen turns off during video streaming. </il>
+            <il> Smell of burned plastic. </il>
+        </ul>
+        <ul>
+          <il> Flickering screen/vertical lines on display. </il>
+          <il> “Non-removable battery.” </il>
+        </ul>
+          <ul> 
+            <il> Hinges can sometimes break screen when flipping or closing the laptop. </il>
+        </ul>
+        <ul>
+            <il> Short battery life. </il>
+            <il> Battery appears to heat up quickly. </il>
+        </ul>
+        <ul>
+          <il> Battery isn’t always compatible with the power supply. </il>
+        </ul>
+        <ul>
+            <il> Touch screen is loose to the touch. </il>
+        </ul>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Sources -->
   <div id="source"> </div>
-  <h2 class="source_title"> Product & Client </h2> 
+  <h2 class="option_title"> Product & Client </h2> 
 
   <section class="source-topic">
     <div class="source-button-list">
@@ -175,7 +217,7 @@
                   <div class="inside-button">
                   <p class="button-title"> Project Tagline </p>
                   <i class="fa fa-plus" id="tag-button-icon-plus"></i>
-                  <i class="fa fa-minus" id="tag-button-icon-minus"></i>
+                  <i class="fa fa-minus" id="tag-button-icon-minus" style="display:block;"></i>
                   </div>
               </button>
             <p class="metadata-info" id="project-tag-description"> A touch-screen laptop manufactured in 2014 by HP. </p>
@@ -185,7 +227,7 @@
                   <div class="inside-button">
                   <p class="button-title"> Project Summary </p>
                   <i class="fa fa-plus" id="summary-button-icon-plus"></i>
-                  <i class="fa fa-minus" id="summary-button-icon-minus"></i>
+                  <i class="fa fa-minus" id="summary-button-icon-minus" style="display:block;"></i>
                   </div>
               </button>
             <p class="metadata-info" id="summary-description"> An interactive online iFixit replacement guide for a laptop device by making multiple pages of engaging images, and easy-to-follow instructions to safely take apart the device for the user's priority. </p>
@@ -195,7 +237,7 @@
                 <div class="inside-button">
                 <p class="button-title"> Company/Client Name </p>
                 <i class="fa fa-plus" id="client-name-button-icon-plus"></i>
-                <i class="fa fa-minus" id="client-name-button-icon-minus"></i>
+                <i class="fa fa-minus" id="client-name-button-icon-minus" style="display:block;"></i>
                  </div>
             </button>
           <p class="metadata-info" id="client-name-description"> iFixit. </p>
@@ -205,7 +247,7 @@
                 <div class="inside-button">
                 <p class="button-title"> Timeframe </p>
                 <i class="fa fa-plus" id="timeframe-button-icon-plus"></i>
-                <i class="fa fa-minus" id="timeframe-button-icon-minus"></i>
+                <i class="fa fa-minus" id="timeframe-button-icon-minus" style="display:block;"></i>
                  </div>
             </button>
           <p class="metadata-info" id="timeframe-description"> January to March 2018. </p>
@@ -215,7 +257,7 @@
                 <div class="inside-button">
                 <p class="button-title"> Platforms </p>
                 <i class="fa fa-plus" id="platforms-button-icon-plus"></i>
-                <i class="fa fa-minus" id="platforms-button-icon-minus"></i>
+                <i class="fa fa-minus" id="platforms-button-icon-minus" style="display:block;"></i>
                  </div>
             </button>
           <p class="metadata-info" id="platforms-description"> Fixit opening tools & iFixit.com. </p>
@@ -225,7 +267,7 @@
                 <div class="inside-button">
                 <p class="button-title"> Design Tools / UX Methods Used </p>
                 <i class="fa fa-plus" id="methods-button-icon-plus"></i>
-                <i class="fa fa-minus" id="methods-button-icon-minus"></i>
+                <i class="fa fa-minus" id="methods-button-icon-minus" style="display:block;"></i>
                  </div>
             </button>
           <p class="metadata-info" id="methods-description"> Research, Photoshop & usability testing. </p>
@@ -235,7 +277,7 @@
                 <div class="inside-button">
                 <p class="button-title"> Team Members & Collaborators </p>
                 <i class="fa fa-plus" id="team-button-icon-plus"></i>
-                <i class="fa fa-minus" id="team-button-icon-minus"></i>
+                <i class="fa fa-minus" id="team-button-icon-minus" style="display:block;"></i>
                  </div>
             </button>
           <p class="metadata-info" id="team-description"> Whitney Bolar, Maximillian McDonald, Brooke Dunbar, Justice Amsbury & Matty Smith. </p>
@@ -286,7 +328,45 @@
         </div>
     </section>
 
-   
+    <div id="reflection"> </div>
+  <h2 class="option_title"> Reflection </h2> 
+
+  <section class="topic">
+    <div class="reflection-option">
+        <button id="reflection-highlight">
+              <div class="inside-button">
+                  <p> Purpose of the project: </p>
+              </div>
+        </button>
+        <div class="reflection-description"> 
+              <ul> 
+                <il> To help create repair guides for electronics to aid in the reduction of global e-waste. </il>
+              </ul>
+        </div>
+
+        <button id="reflection-highlight">
+              <div class="inside-button">
+                <p> Our client: </p>
+              </div>
+        </button>
+        <div class="reflection-description"> 
+              <ul> 
+                <il> This project provides a symbiotic relationship for iFixit, students, and professors. iFixit can generate repair guides for their business at the cost of providing electronic devices, toolkits, and tech support, while students and professors can use real-world applications to aid in learning technical writing. </il>
+              </ul>
+        </div>
+
+        <button id="reflection-highlight">
+            <div class="inside-button">
+              <p>  What we learned about teamwork: </p>
+            </div>
+          </button>
+        <div class="reflection-description"> 
+            <ul> 
+              <il> This project provides a symbiotic relationship for iFixit, students, and professors. iFixit can generate repair guides for their business at the cost of providing electronic devices, toolkits, and tech support, while students and professors can use real-world applications to aid in learning technical writing.</p> </il>
+            </ul>
+        </div>
+     </div>
+  </section>
    
     <!-- jQuery Library via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
