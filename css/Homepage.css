@@ -3,112 +3,37 @@
   DIAGNOSTIC STYLING Body & Header: Desktop 
 */
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #efede7;
-}
-
-a {
-  text-decoration: none;
-}
-
-.checkbox{
-  visibility: hidden;
-}
-
-.w3-bar{
-  position: fixed;
-  top: 0;
-  background-color: #efede7;
-}
-
-.w3-bar-2{
-  position: fixed;
-  top: 0;
-   right: 0;
-  background-color: #efede7;
-}
-
-.item{ 
-  margin-top: -180px; 
-}
-
-.nav-link, li{
-  margin-left: -120px;
-}
-  
-/*Author: w3.css
-https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio
-*/
-body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Lato", sans-serif;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* First image (Title background. Full height) */
-.bgimg-1 {
-  background-image: url(/img/blueberry-planets-port-r.png);
-  margin-top: 100px;
-  min-height: 100%;
-}
-
-#subheading{
+.homepage-entire-heading{
   display: flex;
   justify-content: center;
-  font-family: 'Uchen', serif;
-}
-
-.bgimg-2 {
-  text-shadow: 2px 2px 4px #000000;
-  margin-top: 100px;
-  min-height: 200px;
-}
-
-.outer-heading-2{
-  margin-top: 150px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  background-image: url("/img/blueberry-planets-port-r.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
 }
 
-.inner-heading-2{
-  display: flex;
-  justify-content: center;
+#homepage-heading{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+  font-style: bold;
 }
 
-#portfolio-1{
-  text-shadow: 2px 2px 4px #000000;
+.homepage-title{
+  background-color: #363636;
+  font-size: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
-
-#contact-1{
-  text-shadow: 2px 2px 4px #000000;
-  margin-bottom: 90px;
-}
-
-/* Third image (Contact Title) */
-.bgimg-3 {
-  text-shadow: 2px 2px 4px #000000;
-  margin-top: 100px;
-  min-height: 200px;
-}
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 200px;
-  }
-}
-
 /* Nav-select Section: Desktop*/
 
 .nav-select{
@@ -195,6 +120,7 @@ body,h1,h2,h3,h4,h5,h6 {
   filter:brightness(85%);
 }
 
+
 /* About Me Section: Desktop */ 
 
 #about_me_title {
@@ -207,10 +133,6 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 
 .letter {
-  font-family: "Lato", sans-serif;
-  color: black;
-  border: 10px solid #383838;
-  border-radius: .3cm;
   padding: 25px;
 }
 
@@ -224,26 +146,22 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 
 #more {
-  display: none;
+ display: none;
 }
 
 .about-me {
   display: flex;
   justify-content: center;
   display: grid;
-  margin-top: -100px;
+  margin-top: 100px;
 
-  /* Columns */
   grid-template-columns: 250px 250px 250px;
   grid-gap: 5px; 
 
-  /* Rows */
   grid-template-rows: auto auto auto;
   grid-gap: 5px; 
 }
-
-/* Column: line 1, end line 2 */
-/* Row: line 1, end line 2 */
+ 
 #a {
   grid-column: 2/ 4;
   grid-row: 1 / 1;
@@ -308,10 +226,6 @@ body,h1,h2,h3,h4,h5,h6 {
   grid-template-rows: 100px 150px;
 }
 
-.spacer{
-  height: 50px;
-}
-
 .project-pieces{
   display: flex;
   justify-content: center;
@@ -350,7 +264,8 @@ body,h1,h2,h3,h4,h5,h6 {
   background-position: center;
 }
 
- /*Contact Section: Desktop */ 
+
+/*Contact Section: Desktop */ 
 #contact_title{
   display: flex; 
   justify-content: center; 
@@ -415,7 +330,7 @@ input[type=email]{
 label{
   color: black;
   font-family: 'Staatliches', cursive;
-} 
+}
 
 /* Sent Button Styling*/
 .submit-package{
@@ -432,46 +347,6 @@ label{
   border-radius: .1cm;
   background-color: #383838;
   margin-top: 20px;
-}
-
-/* Footer: Desktop */
-
-#footer-bar{
-  border: 1px solid #383838;
-  width: 100%;
-}
-
-#footer-name{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Lato", sans-serif;
-  font-weight: bolder;
-  background-color: #383838;
-  color:#efede7;
-  width: 100%;
-  height: 50px;
-}
-
-#footer-slogan{
-  font-family: 'Uchen', serif;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 100px;
-}
-
-#copyright{
-  visibility: hidden;
-  /*color: #F1ECD4;
-  grid-column-start: 125;
-  grid-column-end: 185;
-  grid-row-start: 35;
-  grid-row-end: 35; */
 }
 
 /* -----------------------------------------------------------------------------------------*/
@@ -491,23 +366,20 @@ media query between 800 & 400
 
   /* Nav-select Section*/
 
-.nav-select{
+ .nav-select{
   margin-top: 50px;
   display: flex;
   justify-content: center;
   display: grid;
 
-  /* Columns */
   grid-template-columns: 100px 100px 100px 100px;
   grid-gap: 5px; 
 
-  /* Rows */
   grid-template-rows: 300px;
   grid-gap: 5px; 
 }
 
   .about-me {     
-    /* Columns */
     grid-template-columns: 150px 150px 150px;
   }
   
@@ -522,10 +394,8 @@ media query between 800 & 400
     margin-right: 10px;
     display: grid;
   
-    /* Columns */
     grid-template-columns: 150px;
   
-    /* Rows */
     grid-template-rows: 100px 150px;
   }
   
@@ -536,15 +406,15 @@ media query between 800 & 400
 media query for 550px and under
 */   
 
-@media screen and (max-width: 550px) { 
+@media screen and (max-width: 550px) {
 
-  .w3-bar-item{
+  /*.w3-bar-item{
     visibility: hidden;
-  }
+  }*/
 
   /* hamburger */
 
-  .checkbox {
+  /*.checkbox {
     display: none;
   }
       
@@ -573,104 +443,25 @@ media query for 550px and under
 
   .header{
     border-bottom: 1px solid #E2E8F0;
-  }
+  }*/
 
   /*
   Author: Gaurav
   https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
   */
       
-  .navbar {
+  /*.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-  }
-
-  .nav-menu, .nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
-    margin-left: 120px;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    position: fixed;
-    margin-top: -140px;
-    margin-left: 20px;
-    z-index: 100;
-    background-color: #efede7;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-select{
-    margin-top: -100px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    display: grid;
+    align-items: center;*/
   
     /* Columns */
-    grid-template-columns: 80px 80px 80px 80px;
+   /* grid-template-columns: 80px 80px 80px 80px;
     grid-gap: 5px; 
   
-    /* Rows */
     grid-template-rows: 200px;
     grid-gap: 5px; 
-  }
+  }*/
 
   #about_me_title{
     margin-top: 40px;
@@ -681,17 +472,13 @@ media query for 550px and under
     justify-content: center;
     display: grid;
       
-    /* Columns */
     grid-template-columns: 250px 250px 250px;
     grid-gap: 5px; 
       
-    /* Rows */
     grid-template-rows: auto auto auto;
     grid-gap: 5px; 
   }
       
-  /* Column: line 1, end line 2 */
-  /* Row: line 1, end line 2 */
   #a {
     grid-column: 2/ 3;
     grid-row: 1/ 6;
@@ -737,7 +524,7 @@ media query for 550px and under
   }
 
   /*Portfolio Section: Mobile*/
-  .two-halfs{
+   .two-halfs{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -750,11 +537,8 @@ media query for 550px and under
     margin-top: 10px;
     margin-bottom: 30px;
 
-  
-    /* Columns */
     grid-template-columns: 200px;
-  
-    /* Rows */
+
     grid-template-rows: 100px 150px;
   }
 
@@ -812,12 +596,11 @@ media query for 550px and under
   /* File upload Styling*/
       
   .upload_file-package{
-        /*display: flex; 
+        display: flex; 
         justify-content: center;
         text-align: center;
         color:white;
-        margin: 20px 0px 0px 0px;*/
-        visibility: hidden;
+        margin: 20px 0px 0px 0px;
   }
       
   /* Sent Button Styling*/
@@ -849,8 +632,7 @@ media query for 550px and under
   
 }
 
-/* 
-Extenal code sources 
+/* Extenal code sources 
   https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h
   https://codepen.io/alvarotrigo/pen/QWqKOdb 
   https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci 

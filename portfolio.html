@@ -27,73 +27,76 @@
 <!-- Styling -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/a.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/desk-nav.css">
     <link rel="stylesheet" href="css/Homepage.css">
-    <link rel="stylesheet" href="css/metadata.css">
+
 
 </head>
 
-<body>
-  <!-- Heading Mobile Nav -->
-  <div class="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
+<body style="z-index:3!important;">
 
-<!-- Heading Nav -->
-<!-- Reference Author:  w3.css -->
-  <div class="w3-bar">
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Homepage </a>
-    <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About </a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact </a>
-    <a target="_blank" href="/img/CV.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> CV </a>
-  </div>
-  <div class="w3-bar-2">
-    <a target="_blank" href="https://www.linkedin.com/in/whitney-bolar-7bb222179/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-linkedin-square" style="font-size:20px" ></i></a>
-    <a target="_blank" href="https://github.com/whitneybolar" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa fa-github" style="font-size:20px" ></i></a>
-  </div>
+  <!-- Desktop Nav -->
+  <section class="entire-desk-nav">
+    <div class="desk-nav" id="myNavbar">
+      <a href="/index.html" class="topic-options-nav" id="desk-homepage"><i id="nav-icons" class="fa fa-home"></i> Homepage </a>
+      <a href="/aboutme.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-user"></i> About </a>
+      <a href="/contact.html" class="topic-options-nav" id="desk-information"> <i id="nav-icons" class="fa fa-envelope"></i> Contact </a>
+      <a style=" border-right: none;" target="_blank" href="/img/CV.pdf" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-file"></i></i> CV/Resume </a>
+    </div>
+    <div class="desk-nav" id="social-media">
+      <a href="https://github.com/whitneybolar" target=”_blank” class="topic-options-nav" id="desk-github"><i id="nav-icons" class="fa fa-github" style="font-size:20px;"></i></a>
+      <a href="https://www.linkedin.com/in/whitney-bolar-7bb222179/" target=”_blank” class="topic-options-nav" id="desk-linkedin"><i id="nav-icons"  class="fa fa-linkedin-square" style="font-size:20px;"></i></a>
+    </div>
+    </section>
 
-    <ul class="nav-menu">  
-        <li class="nav-item">
-            <a href="index.html" class="nav-link"> Homepage </a>
-        </li>
-        <li class="nav-item">
-            <a href="aboutme.html" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a target="_blank" href="/img/resume.pdf" class="nav-link"> Resume </a>
-        </li>
-        <li class="nav-item">
-          <a target="_blank" href="https://www.linkedin.com/in/whitney-bolar-7bb222179/" class="nav-link"><i class="fa fa-linkedin-square" style="font-size:20px"></i></a>
-        </li>
-        <li class="nav-item">
-          <a target="_blank" href="https://github.com/whitneybolar" class="nav-link"> <i class="fa fa fa-github" style="font-size:20px"></i></a>
-        </li>
-    </ul>
+  <!-- Mobile Nav -->
+  <section class="entire-nav">
+    <button onclick="switchMenuButton()" class="button switch-button" id="menu-bar">
+      <i class="fa fa-bars" id="bar-image"></i>
+      <i class="fa fa-close" id="close-image" style="color: white;"></i>
+    </button>
+      <div class="menu-background">
+      </div>
+      <section class="nav-menu" id="just-nav"> 
+        <div class="list-part">
+          <a> <i class="fa fa-github" target=”_blank” id="github" style="color:white;"></i></a>
+          <a> <i class="fa fa-linkedin-square" target=”_blank” id="linkedin" style="color:white;"></i></a>
+        </div>
+        <div class="list-part">
+        <a href="/index.html" class="nav-item" id="home-btn">
+          <i class="fa fa-home" id="nav-img"></i>
+          <p class="nav-link"> Homepage </p>
+        </a>
+        <a href="/aboutme.html" class="nav-item" id="portfolio-btn">
+          <i class="fa fa-user" id="nav-img"></i>
+          <p class="nav-link"> About </p>
+        </a>
+        <a href="/contact.html" class="nav-item" id="info-btn">
+            <i class="fa fa-envelope" id="nav-img"></i>
+            <p class="nav-link"> Contact </p>
+        </a>
+        <a style=" border-bottom: none;" target="_blank" href="/img/CV.pdf" class="nav-item" id="info-btn">
+          <i class="fa fa-file" id="nav-img"></i>
+          <p class="nav-link"> CV / Resume </p>
+      </a>
+    </section>
+  </section>
 
-  <!-- Heading Two: Portfolio -->
-  <!-- Reference Author: w3.css -->
-<div class="outer-heading-2">
-  <div class="inner-heading-2">
-    <span id="portfolio-1" class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<!-- Reference Author: w3.css -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center" id="my-work">Projects</h3>
-  <p class="w3-center"><em> Here are some of my projects done individually or with a team.
-    <br> Please, feel free to explore my work and contact me if you have any questions.</em></p><br>
+  <!-- Title and Subheading -->
+  <section class="entire-heading">
+    <h6 id="main-heading" class="portfolio-title"> Portfolio </h6>
+    <div class="sub-heading" style="text-align: center;"> Here are some of my projects done individually or with a team.
+      Please, feel free to explore my work and contact me if you have any questions. </div>
+  </section>
 
    <section class="two-halfs">
     <a href="a.html" class="projects"> 
         <div id="project1-text" class="project-pieces"> HP Envy x360 15-u473cl Repair </div>
         <div id="project1-img" class="project-pieces"> </div>
     </a>
+    </section>
    <!-- <a href="assortment.html" class="projects"> 
         <div id="project2-text" class="project-pieces"> Assorted Models and Mapping Textures </div>
         <div id="project2-img" class="project-pieces"> </div>
@@ -194,9 +197,9 @@
     <h5 id="footer-name"> Whitney Bolar </h5>
     <div id="footer-bar"></div>
     <p id="footer-slogan"> Technical writer, designer and programmer. </p>-->
-  <footer class="footer">
+  <!-- <footer class="footer">
       <class="footer-names" id="copyright"> &copy; Copyright @ <span> YEAR </span></p>
-  </footer> 
+  </footer> --> 
 
 
     <!-- jQuery Library via CDN -->
@@ -209,7 +212,6 @@
     <!-- https://codepen.io/alvarotrigo/pen/QWqKOdb -->
     <!-- https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
     <!-- My Scripts -->
-    <script src="js/portfolio.js"></script>
-    <script src="js/metadata.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

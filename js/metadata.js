@@ -1,5 +1,5 @@
 /* This has all the dropdown menu activations that include 
-metadata, & general-dropdown */
+metadata, & general-dropdown, Read More / Read Less*/
 
 /* Metadata */
 function FindOption(button){
@@ -165,3 +165,17 @@ function switchIconsReverse (buttonIconPlus, buttonIconMinus, description, image
         $(image).slideDown();
     }
 }
+
+$("#read-button").click(function(){
+       $("#more").slideToggle();
+
+        var more = $(this);
+        more.toggleClass("slideDown"); 
+
+        if(more.hasClass("slideDown")){
+            $("#read-button").html("Read Less");
+        } else {
+            $("#read-button").html("Read More");
+        }
+
+  });

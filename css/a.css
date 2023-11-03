@@ -1,5 +1,5 @@
 /* This hold overall styling and containing multiple areas with the same properties*/
-/* contains: body/html, ul/il, headings, crossed with metadata/info/reflection (opened drop down) */
+/* contains: body/html, ul/il, portfolio-title/headings, crossed with metadata/info/reflection (opened drop down) */
 
 html {
   scroll-behavior: smooth;
@@ -15,7 +15,7 @@ body {
   margin-bottom: 50px;
 }
 
-.entire-heading{
+.entire-heading {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ body {
 }
 
 .sub-heading{
-  margin-left: 50px;
+  /*margin-left: 50px;*/
   font-family: 'Uchen', serif;
 }
 
@@ -85,6 +85,10 @@ il {
 
   #main-heading{
     font-size: 25px;
+  }
+
+  .portfolio-title{
+    font-size: 45px;
   }
   
   .sub-heading{
