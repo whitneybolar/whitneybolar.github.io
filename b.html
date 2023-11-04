@@ -11,7 +11,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
 
 <!-- Normalize CSS via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -27,559 +29,451 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
 <!-- Styling -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/b.css">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/a.css">
+<link rel="stylesheet" href="css/metadata.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/desk-nav.css">
+<link rel="stylesheet" href="css/general-drop.css">
+<link rel="stylesheet" href="css/sources.css">
 </head>
 
-<body>
-  <!-- Heading Mobile Nav -->
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+<body style="z-index:3!important;">
+
+  <!-- Desktop Nav -->
+  <section class="entire-desk-nav">
+    <div class="desk-nav" id="myNavbar">
+      <a href="https://whitneybolar.github.io/" class="topic-options-nav" id="desk-homepage"><i id="nav-icons" class="fa fa-home"></i> Homepage </a>
+      <a href="portfolio.html" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-th"></i> Portfolio </a>
+      <a href="#info" class="topic-options-nav" id="desk-information"> <i id="nav-icons" class="fa fa-info"></i> Information </a>
+      <a href=".source_title" class="topic-options-nav" id="desk-portfolio"><i id="nav-icons" class="fa fa-asterisk"></i></i> Product & Client </a>
+      <a href="#metadata" class="topic-options-nav" id="desk-metadata"> <i id="nav-icons" class="fa fa-id-card"></i> Metadata </a>
+      <!-- <a href="#" class="topic-options-nav" id="desk-document"> <i id="nav-icons" class="fa fa-book"></i> Documentation </a> -->
+      <a href="#usability-testing" class="topic-options-nav" id="desk-usability"> <i id="nav-icons" class="fa fa-user"></i> Usability Testing </a>
+      <a href="#reflection" class="topic-options-nav" id="desk-reflection"><i id="nav-icons" class="fa fa-users"></i> Reflection </a>
+      <a href="contact.html" target=”_blank” class="topic-options-nav" id="desk-questions"><i id="nav-icons" class="fa fa-envelope"></i> Any Questions? </a>
+      <!--<a href="#"><i class="fa fa-search"></i></a>-->
     </div>
-  
-  <!-- Heading  -->
-  <!-- Author:  w3.css -->
-  <!-- <div class="w3-top">--> 
-    <div class="w3-bar" id="myNavbar">
-      <!-- <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>--> 
-      <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio </a>
-      <a href="#about_me_title" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-info"></i> Information </a>
-      <a href="#metadata" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-id-card"></i> Metadata </a>
-      <a href="#documentation" class="w3-bar-item w3-button"> <i class="fa fa-book"></i> Documentation </a>
-      <a href="#research" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-bars"></i> Research </a>
-      <a href="#persona" class="w3-bar-item w3-button w3-hide-small"> <i class="fa fa-user"></i> Persona </a>
-      <a href="#reflection" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> Reflection </a>
-      <a href="#contact_title" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Any Questions? </a>
-      <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-        <i class="fa fa-search"></i>
-      </a>--> 
+    <div class="desk-nav" id="social-media">
+      <a href="https://github.com/whitneybolar" target=”_blank” class="topic-options-nav" id="desk-github"><i id="nav-icons" class="fa fa-github" style="font-size:20px;"></i></a>
+      <a href="https://www.linkedin.com/in/whitney-bolar-7bb222179/" target=”_blank” class="topic-options-nav" id="desk-linkedin"><i id="nav-icons"  class="fa fa-linkedin-square" style="font-size:20px;"></i></a>
     </div>
-  
-  <!-- Heading Title -->
-  <!-- Author:  w3.css -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WordPress <span class="w3-hide-small">Student</span> User Guide </span>
+    </section>
+
+  <!-- Mobile Nav -->
+  <section class="entire-nav">
+    <button onclick="switchMenuButton()" class="button switch-button" id="menu-bar">
+      <i class="fa fa-bars" id="bar-image"></i>
+      <i class="fa fa-close" id="close-image" style="color: white;"></i>
+    </button>
+      <div class="menu-background">
       </div>
-    </div>
-  
-    <ul class="nav-menu">  
-      <li class="nav-item">
-        <a href="portfolio.html" class="nav-link"> Portfolio </a>
-      </li>
-      <li class="nav-item">
-          <a href="#about_me_title" class="nav-link">Information</a>
-      </li>
-      <li class="nav-item">
-          <a href="#metadata" class="nav-link">Metadata</a>
-      </li>
-      <li class="nav-item">
-        <a href="#documentation" class="nav-link"> Documentation  </a>
-    </li>
-      <li class="nav-item">
-          <a href="#usability-testing" class="nav-link"> Usability Testing </a>
-      </li>
-      <li class="nav-item">
-        <a href="#reflection" class="nav-link"> Reflection  </a>
-    </li>
-      <li class="nav-item">
-          <a href="#contact_title" class="nav-link"> Any Questions? </a>
-      </li>
-     </ul>
-  
-    <h2 id="sources_title"> Final Product & Client </h2> 
-    <section class="sources">
-      <div class="letter" id="client-extra">
-        <a target="_blank" href="https://inside.ewu.edu/instructional-technology/">
-        <div id="social-media-title"> 
-            CLIENT
+      <section class="nav-menu" id="just-nav"> 
+        <div class="list-part">
+          <a href="https://github.com/whitneybolar"> <i class="fa fa-github" target=”_blank” id="github" style="color:white;"></i></a>
+          <a href="https://www.linkedin.com/in/whitney-bolar-7bb222179/"> <i class="fa fa-linkedin-square" target=”_blank” id="linkedin" style="color:white;"></i></a>
         </div>
+        <div class="list-part">
+        <a href="https://whitneybolar.github.io/" class="nav-item" id="home-btn">
+          <i class="fa fa-home" id="nav-img"></i>
+          <p class="nav-link"> Homepage </p>
+        </a>
+        <a href="portfolio.html" class="nav-item" id="portfolio-btn">
+          <i class="fa fa-th" id="nav-img"></i>
+          <p class="nav-link"> Portfolio </p>
+        </a>
+        <a href="#info" class="nav-item" id="info-btn">
+            <i class="fa fa-info" id="nav-img"></i>
+            <p class="nav-link"> Information</p>
+        </a>
+        <a href="#info" class="nav-item" id="info-btn">
+          <i class="fa fa-asterisk" id="nav-img"></i>
+          <p class="nav-link"> Client & Product </p>
+      </a>
+        <a href="#metadata" class="nav-item" id="metadata-btn">
+          <i class="fa fa-id-card" id="nav-img"></i>
+          <p href="" class="nav-link"> Metadata</p>
+        </a>
+        <!-- <a href="" class="nav-item" id="documentation-btn">
+          <i class="fa fa-book" id="nav-img"></i>
+          <p class="nav-link"> Documentation </p>
+        </a>-->
+        <a href="#usability-testing" class="nav-item" id="usability-btn">
+            <i class="fa fa-user" id="nav-img"></i>
+            <p class="nav-link"> Usability Testing </p>
+        </a>
+        <a href="#reflection" class="nav-item" id="home-btn">
+          <i class="fa fa-users" id="nav-img"></i>
+          <p class="nav-link"> Reflection  </p>
+        </a>
+        <a href="contact.html" target=”_blank” class="nav-item" id="questions-btn">
+            <i class="fa fa-envelope" id="nav-img"></i>
+            <p class="nav-link"> Any Questions? </p>
         </a>
       </div> 
     </section>
-   
-    <!-- -->
-    <section class="sources">
-      <div class="letter" id="f">
-        <i class="fa fa-search"></i>  
-          <a target="_blank" href="404-Final/How_to_create_email_notification_In_Workflow-2.pdf">  How to create an email notification In Workflow  </a>
-        <!-- <img id="arrow-3" src="img/arrow-1.png" alt="An arrow used as a link for Whitney Bolar's Portfolio"> --> 
+  </section>
+
+  <!-- Title and Subheading -->
+    <section class="entire-heading">
+      <h6 id="main-heading"> WordPress Student User Guide </h6>
+      <div class="sub-heading"> Co-Technical writer, graphics person, & script writer </div>
+    </section>
+
+  <!-- Info -->
+  <div id="info"> </div>
+  <h2 class="option_title"> Information </h2> 
+
+  <section class="topic">
+    <div class="info-option">
+      <button id="info-highlight">
+              <div class="inside-button">
+              <p> We planned on revising two instruction forms, which include the following: </p>
+              </div>
+          </button>
+        <div class="info-description"> 
+          <ul> 
+            <il> How do I add a page on WordPress?  </il>
+            <il> How do I add a post on WordPress? </il>
+          </ul>
+        </div>
+        <button id="info-highlight">
+          <div class="inside-button">
+          <p>  We broke up the instructions to create separate instructions: </p>
+          </div>
+        </button>
+        <div class="info-description"> 
+          <ul> 
+            <il> How to add a page to WordPress </il>
+            <il> How to Add A Post to WordPress </il>
+          </ul>
+          <ul> 
+            <il> How to add a page to WordPress </il>
+            <il> How to Add A Post to WordPress </il>
+          </ul>
+          <ul> 
+            <il> How to change the URL of the WordPress Page </il>
+            <il> How to add a Subpage to a WordPress page </il>
+          </ul>
+          <ul> 
+            <il> We realized that the instructions for these questions are either incomplete or difficult to follow. Some are very wordy and some don’t have nearly enough information. Revisions were necessary so they were easier for users to understand. </il>
+          </ul>
+        </div>
+        <button id="info-highlight">
+          <div class="inside-button">
+          <p>  The instructions that we planned to create answer the following questions: </p>
+          </div>
+        </button>
+        <div class="info-description"> 
+          <ul> 
+            <il> How to create an email notification in Workflow? </il>
+          </ul>
+          <ul> 
+            <il> How to create a confirmation email in Workflow? </il>
+          </ul>
+          <ul> 
+            <il> How to change the visibility settings of a WordPress Page? </il>
+          </ul>
+          <ul> 
+            <il> How to create a survey on WordPress? </il>
+          </ul>
+          <ul> 
+            <il> How to request a plugin? </il>
+          </ul>
+        </div>
       </div>
-  
-    <div class="letter" id="o">  
-      <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_change_the_Wordpress_page_status.pdf" id="resume-link"> How to change the Wordpress page status </a>
-    </div>
-  
-    <div class="letter" id="l">  
-      <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/Choosing_the_Visibility_Settings_of_a_WordPress_Page.pdf" id="resume-link"> How to change the visibility settings of a WordPress page</a>
-    </div>
-  </section> 
-  
-  <section class="sources">
-    <div class="letter" id="f">  
-      <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_Create_a_Survey_in_WordPress.pdf" id="resume-link"> How to create a WordPress survey </a>
-    </div>
-  
-    <div class="letter" id="o">  
-       <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_Request_a_Plugin.pdf" id="resume-link"> How to request a plugin for WordPress
-        </a>
-    </div>
-  
-    <div class="letter" id="l">  
-      <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_change_the_URL_of_a_WordPress_Page.pdf" id="resume-link"> How to change the URL of WordPress page 
-        </a>
-    </div>
-  </section> 
-  
-  <section class="sources">
-    <div class="letter" id="f">  
-      <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_Add_Post_to_WordPress.pdf" id="resume-link"> How to add a post to WordPress 
-        </a>
-    </div>
-  
-  
-    <div class="letter" id="o"> 
-       <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_Add a page_to_Wordpress.pdf" id="resume-link"> How to add a page to WordPress 
-        </a>
-    </div>
-  
-    <div class="letter" id="l"> 
-      <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_create_a_Subpage_for_WordPress_page.pdf" id="resume-link"> How to add a subpage to a WordPress page 
-        </a>
-    </div>
-  </section> 
-  
-  <section class="sources">
-    <div class="letter" id="f">  
-      <i class="fa fa-search"></i>
-        <a target="_blank" href="404-Final/How_to_create_a_confimation_email_in_Workflow-2.pdf" id="resume-link"> How to create a confirmation email in Workflow 
-        </a>
-    </div>
-  </section> 
-  
-  <!-- -->
-    <h2 id="about_me_title"> Information </h2> 
-  
-    <section class="about-me">
-      <div class="letter" id="a"> 
-        <h4> 
-          We planned on revising two instruction forms, which include the following: 
-        </h4>
-        <p> 
-            ● How do I add a page on WordPress? 
-        </p>
-        <p>
-        ● How do I add a post on WordPress?
-        </p>
-  
-        <br>
-  
-        <h4>
-            We broke up the instructions to create separate instructions:
-        </h4>
-        <p>
-        ● How to add a page to WordPress
-        </p>
-        <p>
-        ● How to Add A Post to WordPress
-        </p>
-        <p>
-        ● How to change the URL of the WordPress Page
-        </p>
-        <p>
-        ● How to add a Subpage to a WordPress page
-        </p>
-        <p>
-          We realized that the instructions for these questions are either incomplete or difficult to follow. Some are very wordy and some don’t have nearly enough information. Revisions were necessary so they were easier for users to understand.
-        </p>
-  
-        <br>
-  
-        <h4>
-        The instructions that we planned to create answer the following questions: 
-        </h4>
-        <p>
-        ● How to create an email notification in Workflow?
-        </p>
-        <p>
-        ● How to create a confirmation email in Workflow?
-        </p>
-        <p>
-        ● How to change the visibility settings of a WordPress Page?
-        </p>
-        <p>
-        ● How to create a survey on WordPress?
-        </p>
-        <p>
-        ● How to request a plugin?
-        </p>
-  </div>
-  
-  
-        <!--<span id="more">In addition to being a full-time student, Bolar served as an intern for Accountable Custodial and Maintenance by developing their website and market approach through research and front-end programming. They also share the skills that they have learned through their academia and college experience with other students through their role as an academic coach in the JFK Library for EWU Programs Leading to University Success. Bolar served as an Eagle Ambassador where they helped serve as a university ambassador to prospective students by promoting EWU through campus events and student panels. Bolar is experienced in design, content management, research, technical writing, management, programming, and interpersonal communication. Previously Bolar served as a technical writer and visual creator for iFixit from January 2018 to March 2018, and a technical writer for EWU Information Technology from April 2019 to June 2019. Also, Bolar is certified in Course Reading Learning Association at levels one, two and three.</span></p>-->
-       <!-- <button onclick="myFunction()" id="send-button">Read more</button>--> 
-        </div> 
-  
-  <!-- </div>-->
-        <lu class="lightgallery">
-          <li data-src="/404-Final/images/(Callouts A)(Alt Text Done) (Intro_Conclusion Done) How to create email notification In Workflow-2_Page_1_Image_0002 2.jpg"> 
-            <a href="">
-              <figure class="letter" id="d" src="/404-Final/images/(Callouts A)(Alt Text Done) (Intro_Conclusion Done) How to create email notification In Workflow-2_Page_1_Image_0002 2.jpg" style="background-image: url('/404-Final/images/(Callouts A)(Alt Text Done) (Intro_Conclusion Done) How to create email notification In Workflow-2_Page_1_Image_0002 2.jpg');"><i class="fa fa-search"></i></figure>
+    </section>
+
+
+    <!-- Sources -->
+  <div id="source"> </div>
+  <h2 class="option_title"> Product & Client </h2> 
+
+  <section class="source-topic">
+    <div class="source-button-list">
+        <div class="source-section">
+                <a target="_blank" href="404-Final/How_to_create_email_notification_In_Workflow-2.pdf"> 
+                    <button class="button source-button">
+                        <div class="inside-button">
+                        <p class="button-title"> Final Product - How to create an email notification In Workflow </p>
+                        <i class="fa fa-search" id="icon-search"></i>
+                        </div>
+                    </button>
+                </a>
+            </div>
+        <div class="source-section">
+                <a target="_blank" href="404-Final/How_to_change_the_Wordpress_page_status.pdf"> 
+                    <button class="button source-button">
+                        <div class="inside-button">
+                        <p class="button-title"> Final Product - How to change the Wordpress page status </p>
+                        <i class="fa fa-search" id="icon-search"></i>
+                        </div>
+                    </button>
+                </a>
+            </div>
+        <div class="source-section">
+                <a target="_blank" href="404-Final/Choosing_the_Visibility_Settings_of_a_WordPress_Page.pdf"> 
+                    <button class="button source-button">
+                        <div class="inside-button">
+                        <p class="button-title"> Final Product - How to change the visibility settings of a WordPress page </p>
+                        <i class="fa fa-search" id="icon-search"></i>
+                        </div>
+                    </button>
+                </a>
+            </div>
+          <div class="source-section">
+              <a target="_blank" href="404-Final/How_to_Create_a_Survey_in_WordPress.pdf"> 
+                  <button class="button source-button">
+                      <div class="inside-button">
+                      <p class="button-title"> Final Product - How to create a WordPress survey </p>
+                      <i class="fa fa-search" id="icon-search"></i>
+                      </div>
+                  </button>
+              </a>
+          </div>
+          <div class="source-section">
+            <a target="_blank" href="404-Final/How_to_Request_a_Plugin.pdf"> 
+                <button class="button source-button">
+                    <div class="inside-button">
+                    <p class="button-title"> Final Product - How to request a plugin for WordPress </p>
+                    <i class="fa fa-search" id="icon-search"></i>
+                    </div>
+                </button>
             </a>
-          </li>
-       </lu>
-         
+           </div>
+          <div class="source-section">
+            <a target="_blank" href="404-Final/How_to_change_the_URL_of_a_WordPress_Page.pdf" > 
+                <button class="button source-button">
+                    <div class="inside-button">
+                    <p class="button-title"> Final Product - How to change the URL of WordPress page </p>
+                    <i class="fa fa-search" id="icon-search"></i>
+                    </div>
+                </button>
+            </a>
+         </div>
+         <div class="source-section">
+          <a target="_blank" href="404-Final/How_to_Add_Post_to_WordPress.pdf"> 
+              <button class="button source-button">
+                  <div class="inside-button">
+                  <p class="button-title"> Final Product - How to add a post to WordPress </p>
+                  <i class="fa fa-search" id="icon-search"></i>
+                  </div>
+              </button>
+          </a>
+         </div>
+       <div class="source-section">
+        <a target="_blank" href="404-Final/How_to_Add a page_to_Wordpress.pdf"> 
+            <button class="button source-button">
+                <div class="inside-button">
+                <p class="button-title"> Final Product - How to add a page to WordPress </p>
+                <i class="fa fa-search" id="icon-search"></i>
+                </div>
+            </button>
+         </a>
         </div>
-        <div class="letter" id="e">
+        <div class="source-section">
+          <a target="_blank" href="404-Final/How_to_create_a_Subpage_for_WordPress_page.pdf"> 
+              <button class="button source-button">
+                  <div class="inside-button">
+                  <p class="button-title"> Final Product - How to add a subpage to a WordPress page </p>
+                  <i class="fa fa-search" id="icon-search"></i>
+                  </div>
+              </button>
+           </a>
+          </div>
+          <div class="source-section">
+            <a target="_blank"  href="404-Final/How_to_create_a_confimation_email_in_Workflow-2.pdf"> 
+                <button class="button source-button">
+                    <div class="inside-button">
+                    <p class="button-title"> Final Product - How to create a confirmation email in Workflow </p>
+                    <i class="fa fa-search" id="icon-search"></i>
+                    </div>
+                </button>
+             </a>
+            </div>
+            <div class="source-section">
+              <a target="_blank" href="https://inside.ewu.edu/instructional-technology/"> 
+                  <button class="button source-button">
+                      <div class="inside-button">
+                      <p class="button-title"> Client Website </p>
+                      <i class="fa fa-search" id="icon-search"></i>
+                      </div>
+                  </button>
+              </a>
+           </div>
         </div>
-      </section> 
-     
-      <div id="metadata"> </div>
-  <!-- 2 -->
-      <h2 id="about_me_title"> Metadata </h2> 
-  
-      <section class="about-me">
-  
-  <!-- </div>-->
-      <div class="letter" id="c">  
-          <table>
-            <tr>
-              <td>Project Tagline</td>
-              <td>A set of instructions for printable and digital formats.  </td>
-            </tr>
-            <tr>
-                <td>Project Summary</td>
-                <td> An introductive level of instructions for WordPress to help navigate Eastern Washington University students through college resources. </td>
-            </tr>
-            <tr>
-                <td>Company/Client Name</td>
-                <td> Danny Messina </td>
-            </tr>
-            <tr>
-                <td>Timeframe</td>
-                <td> April to June 2019 </td>
-            </tr>
-            <tr>
-                <td>Major Tasks & Responsibilities</td>
-                <td>Technical writer, graphics person, & script writer</td>
-            </tr>
-            <tr>
-                <td>Platforms</td>
-                <td> Eastern Washington University IT Help Desk </td>
-            </tr>
-            <tr>
-                <td>Design Tools / UX Methods Used</td>
-                <td> Research, Photoshop & usability testing </td>
-            </tr>
-            <tr>
-                <td>Team Members & Collaborators</td>
-                <td> Whitney Bolar, Anthony Mendoza & Andrew Lawson </td>
-            </tr>
-          </table>
+   </section>
+
+    <div id="metadata"> </div>
+    <h2 class="option_title"> Metadata </h2> 
+
+    <section class="topic">
+      <div class="meta-option">
+          <button id="projectTagline" onClick="FindOption(projectTagline)" class="button color-button">
+                  <div class="inside-button">
+                  <p class="button-title"> Project Tagline </p>
+                  <i class="fa fa-plus" id="tag-button-icon-plus"></i>
+                  <i class="fa fa-minus" id="tag-button-icon-minus" style="display:block;"></i>
+                  </div>
+              </button>
+            <p class="metadata-info" id="project-tag-description"> A set of instructions for printable and digital formats. </p>
       </div>
-  
-  
-    
-          <!--<span id="more">In addition to being a full-time student, Bolar served as an intern for Accountable Custodial and Maintenance by developing their website and market approach through research and front-end programming. They also share the skills that they have learned through their academia and college experience with other students through their role as an academic coach in the JFK Library for EWU Programs Leading to University Success. Bolar served as an Eagle Ambassador where they helped serve as a university ambassador to prospective students by promoting EWU through campus events and student panels. Bolar is experienced in design, content management, research, technical writing, management, programming, and interpersonal communication. Previously Bolar served as a technical writer and visual creator for iFixit from January 2018 to March 2018, and a technical writer for EWU Information Technology from April 2019 to June 2019. Also, Bolar is certified in Course Reading Learning Association at levels one, two and three.</span></p>-->
-         <!-- <button onclick="myFunction()" id="send-button">Read more</button>--> 
-          </div> 
-        
-  <!-- </div>-->
-          <lu class="lightgallery">
-            <li data-src="/404-Final/images/Image1.jpg">
-              <a href="">
-                <figure class="letter" id="b" src="/404-Final/images/Image1.jpg"><i class="fa fa-search"></i></figure>
-              </a>
-            </li>
-        </lu>
-           
-          </div>
-          <div class="letter" id="e">
-          </div>
-        </section> 
-  
-      <div id="research"> </div>
-  <!-- 5 -->
-      <h2 id="about_me_title"> Research </h2> 
-  
-      <section class="about-me">
-  
-  <!-- </div>-->
-      <div class="letter" id="c">  
-          <h4> 
-              Interviewees: 
-          </h4>
-          <p> 
-              As a team, we all found different kinds of people on Eastern Washington University campus to create an accustomed difficulty level. We narrowed the users down to 3 types of students:
-          <p>
-          ●  New Undergraduate Students 
-          </p>
-          <p>
-          ●  Accustomed Undergraduate Students
-          </p>
-          <p>
-          ●  Graduate Student Employees
-          </p>
-          <br>
-          <h4>
-          Graduate Students’ Results:
-          </h4>
-          <p>
-          I got to interview three graduate student employees. I talked to a program assistant that needed to know most functions for the development of a new website on Wordpress. I talked to the Program Assistant that created the webpage for Pence Union Building at EWU. I also talked to an administrative specialist; she only needed to know a few functions to develop surveys for other students.
-          </p>
-          <br>
-          <p>
-          Here are their results: 
-          </p>
-          <p>
-          ● They all struggled in the beginning of their job.
-          </p>
-          <p>
-  
-          ● All of them agreed that they did not have any recollection of Wordpress as an undergrad. 
-          </p>
-          <p>
-          ● Most of them thought that if they knew about Wordpress before they graduated with their bachelors, they could have made exceptional work quicker.
-          </p>
-          <p>
-          ● They did say that Wordpress is an easy program to use, so the learning process was quick and easy to understand. 
-          </p>
-          <br>
-          <h4>
-          Conclusion:
-          </h4>
-          <p>
-          ●  A larger number of staff members use WordPress, because they have access to the EWU webpage.
-          </p>
-          <p>
-          ●  An average undergrad or graduate student would not have a need to use Wordpress unless their major required it. 
-          </p>
-          <p>
-  
-          ●  I realized that they have a diverse amount of Wordpress experience influenced by their job description.  
-          </p>
+      <div class="meta-option">
+          <button id="projectSummary" onClick="FindOption(projectSummary)" class="button color-button">
+                  <div class="inside-button">
+                  <p class="button-title"> Project Summary </p>
+                  <i class="fa fa-plus" id="summary-button-icon-plus"></i>
+                  <i class="fa fa-minus" id="summary-button-icon-minus" style="display:block;"></i>
+                  </div>
+              </button>
+            <p class="metadata-info" id="summary-description"> An introductive level of instructions for WordPress to help navigate Eastern Washington University students through college resources. </p>
       </div>
-  
-  
-        <lu class="lightgallery">
-            <li data-src="/404-Final/images/image2.jpg">
-              <a href="">
-                <figure class="letter" id="z" src="/404-Final/images/image2.jpg"><i class="fa fa-search"></i></figure>
-              </a>  
-            </li>
-        </lu>
-           
-          </div>
-          <div class="letter" id="e">
-          </div>
-        </section>
-  
-        <div id="persona"> </div>
-  <!-- 5 -->
-      <h2 id="about_me_title"> Persona </h2> 
-  
-      <section class="about-me">
-  
-  <!-- </div>-->
-      <div class="letter" id="c">  
-        <h4> 
-          Persona Intent:  
-        </h4>
-        <p> 
-            The user persona helps influence the revised instructions made for Wordpress users on the EWU website. 
-        </p>
-  
-        <p>
-            The persona represents a graduate student that recently got a Bachelors of Arts in Communication and applied for the Graduate Service Appointments (GSA) to get an assistantship position at an advisory office. 
-        </p>
-        <p>
-            I realized that the Wordpress program has an audience of faculty, staff and students at Eastern Washington University. In response to my discovery, I created a persona that will have the perspective of an EWU staff member and student.  
-        </p>
-        <p>
-            The persona is based on a GSA staff member in order to help revise instructions for Wordpress. The persona would not need to know all the functions equally to know how to achieve his job. The approach from Carol’s persona is to prioritize the commonly used instructions to help the majority of Wordpress users.
-        </p>
+      <div class="meta-option">
+        <button id="clientName" onClick="FindOption(clientName)" class="button color-button">
+                <div class="inside-button">
+                <p class="button-title"> Company/Client Name </p>
+                <i class="fa fa-plus" id="client-name-button-icon-plus"></i>
+                <i class="fa fa-minus" id="client-name-button-icon-minus" style="display:block;"></i>
+                 </div>
+            </button>
+          <p class="metadata-info" id="client-name-description"> Danny Messina - Eastern Washington University IT. </p>
       </div>
-  
-  
-          <lu class="lightgallery">
-            <li data-src="/404-Final/images/Tabloid - 47.png">
-              <a href="">
-                <figure class="letter" id="h" src="/404-Final/images/Tabloid - 47.png"><i class="fa fa-search" style="color:white"></i></figure>
-              </a>
-            </li>
-        </lu>
-           
-          </div>
-          <div class="letter" id="e">
-          </div>
-        </section>
-  
-        <div id="documentation"> </div>
-                 <!-- 5 -->
-              <h2 id="about_me_title"> Documentation </h2> 
-  
-             <section class="about-me">
-             
-                      <!-- </div>-->
-              <div class="letter" id="c">  
-              <h4> 
-                  Purpose of the project: 
-              </h4>
-              <p> 
-                  In order to help create repair guides for electronics to aid in the reduction of global e-waste. 
-              </p>
-              <br>
-              <h4>
-                  Our client:
-              </h4>
-              <p>
-                  This project provides a symbiotic relationship for iFixit, students, and professors. iFixit is able to generate repair guides for their business at the cost of providing electronic devices, toolkits, and tech support, while students and professors are able to use real world applications to aid in learning technical writing. 
-              </p>
-              <br>
-              <h4>
-                  What we learned about teamwork:
-              </h4>
-              <p>
-                  My recommendation for the project is that groups be divided up randomly or some other measure than by academic prowess. It was blatantly evident that certain groups were short on manpower and ultimately I believe they could have used some strongly performing students to keep them accountable. 
-              </p>
-        </div>
-      </section>
-  
-      <div id="reflection"> </div>
-      <!-- 5 -->
-      <h2 id="about_me_title"> Usability Testing & Reflection </h2> 
-        
-      <section class="about-me">
-                  
-      <!-- </div>-->
-      <div class="letter" id="c">  
-        <h4> 
-        User Background: 
-        </h4>
-        <p> 
-        The users commonly had a background of little knowledge of WordPress, but the expectancy of graduation neared the present. The personas made for the instructions influenced the level of experience that the testers held. The instructions consist of fundamental-based directions to help beginners like new graduate students or staff members have an understanding of how WordPress works. 
-        </p>
-        <br>
-        <h4> 
-        Results: 
-        </h4>
-        <p>
-        ●  Testers used the instructions without any explanation or purpose of the outcome.
-        </p>
-        <p>
-        ●  The testers understood the graphics without the callback indication.  
-        </p>
-        <br>
-        <h4> 
-        Conclusion:  
-        </h4>
-        <p> ●  For accessibility purposes we plan to incorporate callback instances when more than one action exists in one graphic, but we are glad to know that the markup we had made sense to the testers. 
-        </p>
-        <p> ●  As a group, we realized that the instructions needed an explanation in the beginning to satisfy the user's curiosity.
-        </p>
-        <p> ●  Along with the introduction, we wrote a description of how to use the instructions and we wrote a conclusive indication of what the instructions should have done. </p>
-        <p> ●  With a quick explanation the user could give better feedback by knowing the relevance of the instructions to the product. </p>
-        <p> ●  I learned that the instructions we made had a positive outcome from our testers. They explained that the graphics and wording were straightforward. </p>
+      <div class="meta-option">
+        <button id="timeframe" onClick="FindOption(timeframe)" class="button color-button">
+                <div class="inside-button">
+                <p class="button-title"> Timeframe </p>
+                <i class="fa fa-plus" id="timeframe-button-icon-plus"></i>
+                <i class="fa fa-minus" id="timeframe-button-icon-minus" style="display:block;"></i>
+                 </div>
+            </button>
+          <p class="metadata-info" id="timeframe-description"> April to June 2019. </p>
       </div>
-            
-          <lu class="lightgallery">
-            <li data-src="/404-Final/images/subpage_alt_Page_3.png">
-              <a href="">
-              <figure class="letter" id="y" src="/404-Final/images/subpage_alt_Page_3.png"><i class="fa fa-search"></i></figure>
-              </a>
-            </li>
-          </lu>
+      <div class="meta-option">
+        <button id="platforms" onClick="FindOption(platforms)" class="button color-button">
+                <div class="inside-button">
+                <p class="button-title"> Platforms </p>
+                <i class="fa fa-plus" id="platforms-button-icon-plus"></i>
+                <i class="fa fa-minus" id="platforms-button-icon-minus" style="display:block;"></i>
+                 </div>
+            </button>
+          <p class="metadata-info" id="platforms-description"> Wordpress, Photoshop, and Figma </p>
       </div>
-      <div class="letter" id="e">
+      <div class="meta-option">
+        <button id="methods" onClick="FindOption(methods)" class="button color-button">
+                <div class="inside-button">
+                <p class="button-title"> Design Tools / UX Methods Used </p>
+                <i class="fa fa-plus" id="methods-button-icon-plus"></i>
+                <i class="fa fa-minus" id="methods-button-icon-minus" style="display:block;"></i>
+                 </div>
+            </button>
+          <p class="metadata-info" id="methods-description"> Research & usability testing </p>
+      </div>
+      <div class="meta-option">
+        <button id="team" onClick="FindOption(team)" class="button color-button">
+                <div class="inside-button">
+                <p class="button-title"> Team Members & Collaborators </p>
+                <i class="fa fa-plus" id="team-button-icon-plus"></i>
+                <i class="fa fa-minus" id="team-button-icon-minus" style="display:block;"></i>
+                 </div>
+            </button>
+          <p class="metadata-info" id="team-description"> Whitney Bolar, Anthony Mendoza & Andrew Lawson </p>
       </div>
     </section>
-  
-    <h2 id="contact_title"> Any Questions? </h2> 
-  
-    <form class="whole-contact-form" action="https://formsubmit.co/whitneybolar98@live.com" enctype="multipart/form-data" method="POST">
-                  
-      <div class="name-package">
-              <input id="input-1" 
-                      class="inputs" 
-                       placeholder="First Name*" 
-                      type="text" 
-              name="First Name:" required>
-  
-              <input id="input-2" 
-                      class="inputs" 
-                      placeholder="Last Name*" 
-                      type="text" 
-              name="Last Name:" required> 
-      </div> 
-  
-      <div class="email-package">
-              <!-- <label for="_replyto"> </label>  name="Services Requested" -->
-              <input id="input-3" class="inputs" placeholder="Email*" type="email" name="Email:" required>
-      </div> 
-  
-      <div class="company-package"> 
-              <!-- <label for="company"> </label> -->
-           <input id="input-4" class="inputs" placeholder="Company Name" type="text" name="Company">
-      </div> 
-  
-      <div class="company-package"> 
-        <!-- <label for="company"> </label> -->
-     <input id="input-5" class="inputs" placeholder="Message" type="text" name="Message">
-     </div> 
+
+    <!-- Usability Testing --> 
+    <!-- <div id="usability-testing"> </div>
+    <h2 class="option_title"> Usability Testing </h2> 
+
+    <section class="topic">
+      <p class="outside-description"> Each participant was provided the aforementioned laptop for repairs, computer access to the replacement guides, and an iFixit toolkit. One team member verbally outlined the test instructions while another took notes of performance during the execution of the directions as well as timed the participants. Upon completion, both participants commented that the replacement guides were straightforward to comprehend. However, there were a few notes that were worth reporting: </p>
+      <div class="general-option">
+          <button id="hardDrive" onClick="FindGenOption(hardDrive)" class="button color-button">
+                  <div class="inside-button">
+                    <p class="button-title"> Hard Drive </p>
+                    <i class="fa fa-plus" id="hard-drive-button-icon-plus"></i>
+                    <i class="fa fa-minus" id="hard-drive-button-icon-minus"></i>
+                  </div>
+            </button>
+            <img src="img/ifixit-img/ifixit-instructions-1.jpg" class="general-info" id="hard-drive-img-1" alt="Image of a plastic opening tool prying off a rubber pad from the HP laptop.">
+            <p class="general-info" id="hard-drive-description-1"> For the hard drive, we did not indicate to “pry up latch” connecting the white ribbon cable to the motherboard. </p>
+      </div>
+      <div class="general-option">
+        <button id="screenOption" onClick="FindGenOption(screenOption)" class="button color-button">
+                <div class="inside-button">
+                    <p class="button-title"> Screen </p>
+                    <i class="fa fa-plus" id="screen-button-icon-plus"></i>
+                    <i class="fa fa-minus" id="screen-button-icon-minus"></i>
+                </div>
+          </button>
+          <img src="img/ifixit-img/ifixit-instructions-screen-4.png" class="general-info" id="screen-img-1" alt="">
+          <p class="general-info" id="screen-description-1"> For the screen, the first step to “remove 2 screws” from the guide was omitted. </p>
+          <img src="img/ifixit-img/ifixit-instructions-screen-3.png" class="general-info" id="screen-img-2" alt="">
+          <p class="general-info" id="screen-description-2"> We will consider marking up the “black tape” as a contingency. We did not mention disconnecting the golden connector after removing the UPC tape. </p>
+        </div>
+        <div class="general-option">
+            <button id="motherboardOption" onClick="FindGenOption(motherboardOption)" class="button color-button">
+                    <div class="inside-button">
+                      <p class="button-title"> MotherBoard </p>
+                      <i class="fa fa-plus" id="motherboard-button-icon-plus"></i>
+                      <i class="fa fa-minus" id="motherboard-button-icon-minus"></i>
+                    </div>
+              </button>
+              <img src="img/ifixit-img/ifixit-instructions-motherboard-1.png" class="general-info" id="motherboard-img-1" alt="Image of a plastic opening tool prying off a rubber pad from the HP laptop.">
+              <p class="general-info" id="motherboard-description-1"> For the motherboard, tne participant had difficulty locating the power jack based on the photo used in the guide.
+            </p>
+        </div>
+    </section>-->
+
+  <!-- Reflection -->
+  <!-- <div id="reflection"> </div>
+  <h2 class="option_title"> Reflection </h2> 
+
+  <section class="topic">
+    <div class="reflection-option">
+        <button id="reflection-highlight">
+              <div class="inside-button">
+                  <p> Purpose of the project: </p>
+              </div>
+        </button>
+        <div class="reflection-description"> 
+              <ul> 
+                <il> To help create repair guides for electronics to aid in the reduction of global e-waste. </il>
+              </ul>
+        </div>
+
+        <button id="reflection-highlight">
+              <div class="inside-button">
+                <p> Our client: </p>
+              </div>
+        </button>
+        <div class="reflection-description"> 
+              <ul> 
+                <il> This project provides a symbiotic relationship for iFixit, students, and professors. iFixit can generate repair guides for their business at the cost of providing electronic devices, toolkits, and tech support, while students and professors can use real-world applications to aid in learning technical writing. </il>
+              </ul>
+        </div>
+
+        <button id="reflection-highlight">
+            <div class="inside-button">
+              <p>  What we learned about teamwork: </p>
+            </div>
+          </button>
+        <div class="reflection-description"> 
+            <ul> 
+              <il> This project provides a symbiotic relationship for iFixit, students, and professors. iFixit can generate repair guides for their business at the cost of providing electronic devices, toolkits, and tech support, while students and professors can use real-world applications to aid in learning technical writing.</p> </il>
+            </ul>
+        </div>
      </div>
-     </section>
-      
-      <div class="submit-package">
-              <input id="send-button" type="submit" value="Submit">
-              <input type="hidden" name="_next" value="/">
-      </div> 
-      
-      <!-- Subject of the email sent to us -->
-      <input type="hidden" name="_subject" value="New submission!">
-  
-      <!-- this takes out the "I am not a robot" page. 
-      If you are having troubles with spam, you can remove this-->
-      <input type="hidden" name="_captcha" value="false">
-      
-      <!-- This way we will not be advertising formsubmit.co -->
-      <input type="hidden" name="_next" value="https://whitneybolar.github.io/wb_thankyoupage/">
-      
-      <!-- Boxes template for email sent to us-->
-      <input type="hidden" name="_template" value="box">
-    </form> 
-    
-        <footer class="footer">
-  
-            <div id="footer-bar"></div>
-  
-            <class="footer-names" id="copyright"> &copy; Copyright @ <span> YEAR </span></p>
-  
-        </footer> 
-  
-      <!-- jQuery Library via CDN -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- Plugins(s) -->
-      <script src="js/lightgallery-all.min.js"></script>
-      <script src="js/jquery.drawsvg.js"></script>
-      <!-- Extenal code sources -->
-      <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h-->
-      <!-- https://codepen.io/alvarotrigo/pen/QWqKOdb -->
-      <!-- https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
-      <!-- My Scripts -->
-      <script src="js/portfolio.js"></script>
-  </body>
-  </html>
-  
+  </section>-->
+   
+    <!-- jQuery Library via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Plugins(s) -->
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/jquery.drawsvg.js"></script>
+    <!-- My Scripts -->
+    <script src="js/portfolio.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

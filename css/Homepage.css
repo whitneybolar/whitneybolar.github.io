@@ -34,7 +34,7 @@
   margin-top: 50px;
   margin-bottom: 60px;
 }
-/* Nav-select Section: Desktop*/
+/* Homepage Option Section: Desktop*/
 
 .nav-select{
   display: flex;
@@ -206,38 +206,78 @@
 }
 
 /* Portfolio section: Desktop */
-.two-halfs{
+.desk-projects{
   display: flex;
   justify-content: center;
+  align-items: top;
+  flex-direction: row;
   margin-top: 20px;
 }
 
-.projects{
+.desk-portfolio-entire-description{
   display: flex;
-  justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: grid;
-
-  /* Columns */
-  grid-template-columns: 200px;
-
-  /* Rows */
-  grid-template-rows: 100px 150px;
+  flex-direction: column;
+  justify-content: start;
+  width: 400px;
+  padding-left: 10px;
 }
 
-.project-pieces{
+.desk-portfolio-img-ifixit{
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  text-align: center;
-  background-color: #383838;
-  color: #E2E8F0;
-  padding: 5px;
+  background-image: url("/img/ifixit-img/ifixit-instructions-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
 }
 
-.projects:hover{
-  filter: brightness(85%);
+.desk-portfolio-img-wordpress{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-image: url("/404-Final/images/Image1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+}
+
+.desk-portfolio-project-title-right, .desk-portfolio-project-subtitle-right, .desk-portfolio-description-right, .button-right {
+  display: flex;
+  justify-content: end;
+}
+
+.desk-portfolio-project-title-left, .desk-portfolio-project-subtitle-left, .desk-portfolio-description-left {
+  display: flex;
+  justify-content: start;
+}
+
+.desk-portfolio-project-title-right, .desk-portfolio-project-title-left{
+  display: flex;
+  background-color: #363636;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.desk-portfolio-project-subtitle-right, .desk-portfolio-project-subtitle-left{
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.desk-portfolio-description-right, .desk-portfolio-description-left{
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.desk-portfolio-description-right{
+  text-align: right;
+}
+
+.button-right{
+  padding-right: 10px;
 }
 
 #project1-img{
@@ -262,6 +302,11 @@
   background-image: url("/img/cs-hrv/cs-hrv-3.png");
   background-size: cover;
   background-position: center;
+}
+
+/*portfolio Mobile*/ 
+.two-halfs{
+  display: none;
 }
 
 
@@ -354,7 +399,7 @@ label{
 media query between 800 & 400
    */   
      
-@media only screen and (max-width: 800px) and (min-width: 400px) {
+@media only screen and (max-width: 800px) and (min-width: 500px) {
 
   .checkbox{
   visibility: hidden;
@@ -386,82 +431,15 @@ media query between 800 & 400
   p { 
     margin-left: 0px; 
   }
-
-  .projects{
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: grid;
-  
-    grid-template-columns: 150px;
-  
-    grid-template-rows: 100px 150px;
-  }
   
 } /* end of 800 - 500 media query */ 
 
 /* -----------------------------------------------------------------------------------------*/
 /* 
-media query for 550px and under
+media query for 600px and under
 */   
 
-@media screen and (max-width: 550px) {
-
-  /*.w3-bar-item{
-    visibility: hidden;
-  }*/
-
-  /* hamburger */
-
-  /*.checkbox {
-    display: none;
-  }
-      
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    font-size: 62.5%;
-  }
-      
-  li {
-    list-style: none;
-    font-family: "Lato", sans-serif;
-  }
-      
-  a {
-    text-decoration: none;
-  }
-
-  #subheading{
-    margin-bottom: 100px;
-  }
-
-  .header{
-    border-bottom: 1px solid #E2E8F0;
-  }*/
-
-  /*
-  Author: Gaurav
-  https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
-  */
-      
-  /*.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;*/
-  
-    /* Columns */
-   /* grid-template-columns: 80px 80px 80px 80px;
-    grid-gap: 5px; 
-  
-    grid-template-rows: 200px;
-    grid-gap: 5px; 
-  }*/
+@media screen and (max-width: 700px) {
 
   #about_me_title{
     margin-top: 40px;
@@ -523,24 +501,48 @@ media query for 550px and under
     margin-top: 15px;
   }
 
+  /* Portfolio Desktop */
+  .desk-projects{
+    display: none;
+  }
+
   /*Portfolio Section: Mobile*/
-   .two-halfs{
+
+  .two-halfs{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    margin-top: 20px;
   }
   
   .projects{
     display: flex;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
     display: grid;
-    margin-top: 10px;
     margin-bottom: 30px;
-
+  
+    /* Columns */
     grid-template-columns: 200px;
-
+  
+    /* Rows */
     grid-template-rows: 100px 150px;
   }
+  
+  .project-pieces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #383838;
+    color: #E2E8F0;
+    padding: 5px;
+  }
+  
+  .projects:hover{
+    filter: brightness(85%);
+  }
+  
 
   /*Contact Section: Mobile */ 
 
@@ -631,9 +633,3 @@ media query for 550px and under
   }
   
 }
-
-/* Extenal code sources 
-  https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h
-  https://codepen.io/alvarotrigo/pen/QWqKOdb 
-  https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci 
-*/

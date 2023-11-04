@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 600px;
+    width: 700px;
 }
 
 .source-option{
@@ -49,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 10px;
 }
 
 #tag-button-icon-minus,
@@ -66,7 +67,7 @@
 /* BASE Meta-Button*/
 .source-button{
     position: relative;
-    width: 250px;
+    width: 300px;
     overflow: hidden;
     border-radius: 5px;
     color: black;
