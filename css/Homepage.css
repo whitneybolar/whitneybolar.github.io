@@ -515,10 +515,10 @@ media query for 600px and under
     justify-content: center;
     display: grid;
       
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 200px 300px 200px;
     grid-gap: 5px; 
       
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     grid-gap: 5px; 
   }
       
