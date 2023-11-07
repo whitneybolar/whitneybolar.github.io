@@ -64,7 +64,6 @@
     }
 
     .menu-background{
-        display: none;
         border-radius: 20%;
         position: relative;
         background-color: #363636;
@@ -73,7 +72,7 @@
         display: flex; 
         justify-content: center;
         height: 1px;
-        margin-top: 0px;
+        margin-top: -10px;
         margin-left: 250px;
         z-index: 1;
         transition: all 0.9s ease-in-out;
