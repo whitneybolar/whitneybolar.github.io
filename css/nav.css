@@ -27,6 +27,10 @@
     /*Base Nav*/
     .switch-button{
         /* position: fixed; */ /*fix this later*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
         position: absolute;
         overflow: hidden;
         background-color: transparent;
