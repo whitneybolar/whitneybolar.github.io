@@ -34,6 +34,7 @@
   margin-top: 50px;
   margin-bottom: 60px;
 }
+
 /* Homepage Option Section: Desktop*/
 
 .nav-select{
@@ -145,6 +146,11 @@
   border: 3px solid #383838;
 }
 
+#read-button:hover{
+  background-color: #363636;
+    color: white;
+}
+
 #more {
  display: none;
 }
@@ -211,7 +217,7 @@
   justify-content: center;
   align-items: top;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .desk-portfolio-entire-description{
@@ -425,7 +431,7 @@ media query between 800 & 400
 }
 
   .about-me {     
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 200px 200px 200px;
   }
   
   p { 
@@ -439,8 +445,67 @@ media query between 800 & 400
 media query for 600px and under
 */   
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
 
+  .nav-select{
+    display: flex;
+    justify-content: center;
+    display: grid;
+  
+    /* Columns */
+    grid-template-columns: 150px;
+    grid-gap: 5px; 
+  
+    /* Rows */
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-gap: 5px; 
+  }
+
+  .options{
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    justify-content: center;
+    color: black;
+    border: 2px solid #383838;
+    border-radius: .1cm;
+    padding: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Photo by Kari Shea on Unsplash */
+#about-option{
+  grid-column: 1 / 1;
+  grid-row: 1/ 1;
+  background-image:url("/img/nav-imgs/kari-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: contrast(90%) grayscale(50%);
+
+  /*filter: invert(19%) sepia(14%) saturate(12%) hue-rotate(341deg) brightness(97%) contrast(89%);*/
+}
+
+#about-option:hover{
+  filter:brightness(85%);
+}
+
+/* Photo by Josh Calabrese on Unsplash */
+#portfolio-option{
+  grid-column: 1 / 1;
+  grid-row: 2/ 2;
+}
+
+#contact-option{
+  grid-column: 1 / 1;
+  grid-row: 3/ 3;
+}
+
+#resume-option{
+  grid-column: 1 / 1;
+  grid-row: 4/ 4;
+}
+
+  /*About Me Mobile*/ 
   #about_me_title{
     margin-top: 40px;
   }

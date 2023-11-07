@@ -1,0 +1,139 @@
+body{
+    background-color: #efede7;
+}
+
+#resume{
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.resume-main-header{
+ display: flex;
+ justify-content: space-between;
+ align-items: bottom;
+ padding-right: 50px;
+ padding-left: 50px;
+ padding-top: 50px;
+}
+
+.main-heading-title{
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#whitney-bolar-title, .sub-title{
+    color: rgb(60, 152, 160);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.entire-contact{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: end;
+}
+
+.sub-title{
+    font-family: 'Montserrat';
+    border-bottom: 2px solid  rgb(60, 152, 160);
+    padding-bottom: 5px;;
+    font-size: 20px;
+    text-transform: uppercase;
+} 
+
+.resume-section{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#skill-list{
+    display: flex;
+    flex-direction: row;
+    font: 12px;
+}
+
+.skill-column{
+    width: 350px;
+}
+
+.skills-bullet{
+    padding: 5px;
+}
+
+.location-time-experience, .location-time-honors{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.time-experience, .time-honors{
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.experience-bullet{
+    margin: 5px;
+}
+
+.specific-skills{
+    font-style: italic;
+}
+
+.portfolio-references{
+    border-radius: 10px;
+    border: 3px #363636 solid;
+    background-color: transparent;
+}
+
+.portfolio-references:hover{
+    background-color: #363636;
+    color: white;
+}
+
+@media only screen and (max-width: 650px) {
+    #resume{
+        font-size: 12px;
+    }
+    
+    .resume-main-header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 50px;
+        width: 100%;
+       }
+
+    .entire-contact{
+        justify-content: flex-end;
+        text-align: start;
+        margin-top: 50px;
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 100%;
+    }
+
+    #skill-list{
+        flex-direction: column;
+    }
+
+    .location-time-experience {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
+    .time-experience, .time-honors{
+        padding-left: 5px;
+        font-weight: bold;
+    }
+    
+  }

@@ -81,9 +81,9 @@
     }
 
     .menu-bar{
-        padding-left: 15px;
-        padding-top: 15px;
         display: none;
+        /*padding-left: 15px;
+        padding-top: 15px;*/
     }
 
     .list-part{
