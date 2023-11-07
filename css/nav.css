@@ -71,7 +71,7 @@
         width: 100%;
         display: flex; 
         justify-content: center;
-        height: 0.1px;
+        height: 1px;
         margin-top: -5px;
         /*margin-left: 250px;*/
         z-index: 1;
