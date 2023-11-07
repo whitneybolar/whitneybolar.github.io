@@ -21,7 +21,7 @@ function switchMenuButton(){
 function navVisibility(){
     if(buttonIconHamburger.style.display == "none"){
         /* try scale with circle above!*/
-        $(menuBackground).css({ transform: 'scale(1500)' });
+        $(menuBackground).css({ transform: 'scale(2000)' });
         $(menuNav).delay(500).slideDown();
         /*$(menuNavUnder).delay(500).slideDown();*/
         /*$(menuNavTwo).delay(500).fadeIn();
