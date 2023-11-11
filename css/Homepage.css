@@ -576,11 +576,13 @@ media query for 600px and under
   .two-halfs{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
   }
   
   .projects{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -588,7 +590,7 @@ media query for 600px and under
     margin-bottom: 30px;
   
     /* Columns */
-    grid-template-columns: 200px;
+    grid-template-columns: 300px;
   
     /* Rows */
     grid-template-rows: 100px 150px;
