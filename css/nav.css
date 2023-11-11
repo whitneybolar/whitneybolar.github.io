@@ -27,6 +27,7 @@
     /*Base Nav*/
     .switch-button{
         /* position: fixed; */ /*fix this later*/
+       /*position: sticky;*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,8 +49,6 @@
     .switch-button:before{
         content: "";
         position: absolute;
-        left: 0;
-        top: 0;
         background-color: transparent;
         height: 100%;
         width: 100%;

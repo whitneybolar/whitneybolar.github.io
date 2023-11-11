@@ -1,4 +1,4 @@
-var buttonIconHamburger = document.getElementById("bar-image");
+    const buttonIconHamburger = document.getElementById("bar-image");
     const buttonIconClose = document.getElementById("close-image");
     const menuBackground = document.getElementsByClassName("menu-background");
     const menuNav = document.getElementsByClassName("list-part");

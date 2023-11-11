@@ -431,7 +431,7 @@ media query between 800 & 400
 }
 
   .about-me {     
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 100px;
   }
   
   p { 
