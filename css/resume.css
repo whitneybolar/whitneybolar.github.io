@@ -84,6 +84,10 @@ body{
     font-style: italic;
 }
 
+.more-details{
+    color: black;
+}
+
 .portfolio-references{
     border-radius: 10px;
     border: 3px #363636 solid;
