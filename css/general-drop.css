@@ -35,7 +35,28 @@ img {
 #screen-description-1,
 #screen-description-2,
 #hard-drive-description-1,
-#hard-drive-img-1{
+#hard-drive-img-1,
+#second-button-icon-minus,
+#second-img-1,
+#second-img-2,
+#second-description-1,
+#second-description-2,
+#third-button-icon-minus,
+#third-img-1,
+#third-img-2,
+#third-description-1,
+#third-description-2,
+#fourth-button-icon-minus,
+#fourth-img-1,
+#fourth-img-2,
+#fourth-description-1,
+#fourth-description-2,
+#fifth-button-icon-minus,
+#fifth-img-1,
+#fifth-img-2,
+#fifth-description-1,
+#fifth-description-2
+{
     display: none;
 }
 

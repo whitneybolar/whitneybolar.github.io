@@ -128,6 +128,53 @@ function FindGenOption(button){
         switchIcons(buttonIconPlus, buttonIconMinus, description, image);
     }
 
+     /* General Option: Second */
+     if (buttonType == "secondOption"){
+        var buttonIconMinus = document.getElementById("second-button-icon-minus");
+        var buttonIconPlus = document.getElementById("second-button-icon-plus");
+        var description1 = document.getElementById("second-description-1");
+        var description2 = document.getElementById("second-description-2");
+        var image1 = document.getElementById("second-img-1");
+        var image2 = document.getElementById("second-img-2");
+    
+        switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, description1, description2, image1, image2);
+    }
+
+    /* General Option: Third */
+    if (buttonType == "thirdOption"){
+        var buttonIconMinus = document.getElementById("third-button-icon-minus");
+        var buttonIconPlus = document.getElementById("third-button-icon-plus");
+        var description1 = document.getElementById("third-description-1");
+        var description2 = document.getElementById("third-description-2");
+        var image1 = document.getElementById("third-img-1");
+        var image2 = document.getElementById("third-img-2");
+    
+        switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, description1, description2, image1, image2);
+    }
+
+    /* General Option: Fourth */
+    if (buttonType == "fourthOption"){
+        var buttonIconMinus = document.getElementById("fourth-button-icon-minus");
+        var buttonIconPlus = document.getElementById("fourth-button-icon-plus");
+        var description1 = document.getElementById("fourth-description-1");
+        var description2 = document.getElementById("fourth-description-2");
+        var image1 = document.getElementById("fourth-img-1");
+        var image2 = document.getElementById("fourth-img-2");
+    
+        switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, description1, description2, image1, image2);
+    }
+
+    /* General Option: Fifth */
+    if (buttonType == "fifthOption"){
+        var buttonIconMinus = document.getElementById("fifth-button-icon-minus");
+        var buttonIconPlus = document.getElementById("fifth-button-icon-plus");
+        var description1 = document.getElementById("fifth-description-1");
+        var description2 = document.getElementById("fifth-description-2");
+        var image1 = document.getElementById("fifth-img-1");
+        var image2 = document.getElementById("fifth-img-2");
+    
+        switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, description1, description2, image1, image2);
+    }
 }
 
 function switchIconsTwoDescriptionsReverse(buttonIconPlus, buttonIconMinus, description1, description2, image1, image2){
