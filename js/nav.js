@@ -36,4 +36,18 @@ function navVisibility(){
     }
 }
 
+window.onscroll = function() {
+
+    var currentPosition = window.scrollY;
+    
+    if(currentPosition > 50){
+        $(menuBackground).delay(500).css({ transform: 'scale(0.1)' });
+        $(menuNav).fadeOut();
+        buttonIconClose.style.display = "none";
+        $(buttonIconHamburger).slideDown();
+    }
+    else{
+        document.getElementsByClassName('entire-nav').style.top = "0";
+    }
+}
   

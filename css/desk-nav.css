@@ -1,6 +1,14 @@
 /* Style strictly related to the Desktop Nav*/
 
 @media (min-width: 600px){
+    
+    .entire-desk-nav{
+	    position: sticky;
+	    top: 0;
+        background-color: #efede7;
+
+        z-index: 3;
+    }
 
     .desk-nav{
         display: flex;
@@ -9,7 +17,7 @@
         justify-content: start;
 
         background-color: #efede7;
-        font-size: 14px;
+        font-size: 16px;
 
     }
 

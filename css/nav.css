@@ -24,10 +24,16 @@
         display: none;
     }
 
+    .entire-nav{
+        position: sticky;
+	    top: 0;
+        background-color: #efede7;
+
+        z-index: 3; 
+    }
+
     /*Base Nav*/
     .switch-button{
-        /* position: fixed; */ /*fix this later*/
-       /*position: sticky;*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,10 +85,14 @@
         /*margin-left: 250px;*/
         z-index: 1;
         transition: all 0.9s ease-in-out;
+
+        position: sticky;
+        top: 0;
     }
 
     .menu-bar{
         display: none;
+
         /*padding-left: 15px;
         padding-top: 15px;*/
 
