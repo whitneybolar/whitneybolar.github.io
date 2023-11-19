@@ -5,7 +5,6 @@
     /*const menuNavUnder = document.getElementsByClassName("list-part-under");*/
 
 function switchMenuButton(){
-    $(menuBackground).style.backgroundColor = "#363636";
 
    if(buttonIconHamburger.style.display == "none"){
         buttonIconClose.style.display = "none";
@@ -40,8 +39,6 @@ function navVisibility(){
 window.onscroll = function() {
 
     var currentPosition = window.scrollY;
-
-    $(menuBackground).style.backgroundColor = "#363636";
     
     if(currentPosition > 50){
         $(menuBackground).delay(500).css({ transform: 'scale(0.1)' });
