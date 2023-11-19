@@ -74,7 +74,6 @@
 
     .menu-background{
         border-radius: 20%;
-        position: relative;
         background-color: #363636;
         color: white;
         width: 100%;
@@ -88,6 +87,7 @@
 
         position: sticky;
         top: 0;
+        display: none;
     }
 
     .menu-bar{
