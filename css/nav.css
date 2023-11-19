@@ -75,7 +75,7 @@
     .menu-background{
         border-radius: 20%;
         position: relative;
-        background-color: #363636;
+        background-color: #363636; /*change this color?*/
         color: white;
         width: 100%;
         display: flex; 
