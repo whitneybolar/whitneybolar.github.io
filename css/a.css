@@ -83,7 +83,11 @@ il {
      
 @media screen and (max-width: 700px) { 
 
-  #main-heading, .portfolio-title{
+  #main-heading{
+    font-size: 25px;
+  }
+
+  .portfolio-title{
     font-size: 45px;
   }
   
