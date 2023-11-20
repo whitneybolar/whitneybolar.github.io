@@ -222,16 +222,6 @@
             <p class="metadata-info" id="project-tag-description"> A touch-screen laptop manufactured in 2014 by HP. </p>
       </div>
       <div class="meta-option">
-          <button id="projectSummary" onClick="FindOption(projectSummary)" class="button color-button">
-                  <div class="inside-button">
-                  <p class="button-title"> Project Summary </p>
-                  <i class="fa fa-plus" id="summary-button-icon-plus"></i>
-                  <i class="fa fa-minus" id="summary-button-icon-minus" style="display:block;"></i>
-                  </div>
-              </button>
-            <p class="metadata-info" id="summary-description"> This project contains an interactive step-by-step replacement guide for a laptop device via iFixit. </p>
-      </div>
-      <div class="meta-option">
         <button id="clientName" onClick="FindOption(clientName)" class="button color-button">
                 <div class="inside-button">
                 <p class="button-title"> Company/Client Name </p>
@@ -313,17 +303,18 @@
           <img src="img/ifixit-img/ifixit-instructions-screen-3.png" class="general-info" id="screen-img-2" alt="">
           <p class="general-info" id="screen-description-2"> We will considered marking up the “black tape” as a contingency. However, we did not mention disconnecting the golden connector after removing the UPC tape. Our laptop came with black tape, so we planned to add notes for this issue. </p>
         </div>
-        <div class="general-option">
-            <button id="motherboardOption" onClick="FindGenOption(motherboardOption)" class="button color-button">
+        <section class="topic">
+          <div class="general-option">
+            <button id="thirdOption" onClick="FindGenOption(thirdOption)" class="button color-button">
                     <div class="inside-button">
-                      <p class="button-title"> MotherBoard </p>
-                      <i class="fa fa-plus" id="motherboard-button-icon-plus"></i>
-                      <i class="fa fa-minus" id="motherboard-button-icon-minus"></i>
+                        <p class="button-title"> MotherBoard: </p>
+                        <i class="fa fa-plus" id="third-button-icon-plus"></i>
+                        <i class="fa fa-minus" id="third-button-icon-minus"></i>
                     </div>
               </button>
-              <img src="img/ifixit-img/ifixit-instructions-motherboard-1.png" class="general-info" id="motherboard-img-1" alt="Image of a plastic opening tool prying off a rubber pad from the HP laptop.">
-              <p class="general-info" id="motherboard-description-1"> For the motherboard, the participant had difficulty locating the power jack based on the photo used in the guide. We selected photos with the same camera angle to help the user undertsand the placement of the actions. </p>
-        </div>
+              <img src="img/ifixit-img/ifixit-instructions-motherboard-1.png" class="general-info" id="third-img-2" alt="Image of a plastic opening tool prying off a rubber pad from the HP laptop.">
+              <p class="general-info" id="third-description-2"> For the motherboard, the participant had difficulty locating the power jack based on the photo used in the guide. We selected photos with the same camera angle to help the user undertsand the placement of the actions. </p>
+            </div>
     </section>
 
     <div id="reflection"> </div>

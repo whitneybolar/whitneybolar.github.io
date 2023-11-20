@@ -212,6 +212,7 @@
 }
 
 /* Portfolio section: Desktop */
+
 .desk-projects{
   display: flex;
   justify-content: center;
@@ -255,6 +256,17 @@
   justify-content: end;
   align-items: center;
   background-image: url("/img/cs-hrv/hrv-screen.png");
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+}
+
+.desk-portfolio-img-assortment{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-image: url("/img/assortment/assortment-3.png");
   background-size: cover;
   background-position: center;
   width: 250px;
