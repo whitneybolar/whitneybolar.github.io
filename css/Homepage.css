@@ -63,11 +63,11 @@
   margin-bottom: 30px;
 }
 
-/* Photo by Kari Shea on Unsplash */
+/* Photo by Josh Calabrese on Unsplash */
 #about-option{
   grid-column: 1 / 1;
   grid-row: 1/ 1;
-  background-image:url("/img/nav-imgs/kari-unsplash.jpg");
+  background-image:url("/img/nav-imgs/josh-unsplash.jpg");
   background-size: cover;
   background-position: center;
   filter: contrast(90%) grayscale(50%);
@@ -79,11 +79,11 @@
   filter:brightness(85%);
 }
 
-/* Photo by Josh Calabrese on Unsplash */
+/* Photo by Igor Son on Unsplash*/
 #portfolio-option{
   grid-column: 2 / 2;
   grid-row: 1/ 1;
-  background-image:url("/img/nav-imgs/josh-unsplash.jpg");
+  background-image:url("/img/nav-imgs/igor-unsplash.jpg");
   background-size: cover;
   background-position: center;
   filter: contrast(90%) grayscale(50%);
@@ -94,11 +94,11 @@
   filter:brightness(85%);
 }
 
-/*  Photo by Chua Bing Quan on Unsplash */
+/* Photo by Pawel Czerwinski on Unsplash */
 #contact-option{
   grid-column: 3 / 3;
   grid-row: 1/ 1;
-  background-image:url("/img/nav-imgs/chua-unsplash.jpg");
+  background-image:url("/img/nav-imgs/pawel-c-unsplash.jpg");
   background-size: cover;
   background-position: center;
   filter: contrast(90%) grayscale(50%);

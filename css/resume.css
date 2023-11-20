@@ -25,7 +25,7 @@ body{
 }
 
 #whitney-bolar-title, .sub-title{
-    color: rgb(60, 152, 160);
+    color: rgb(66, 101, 70);
     font-weight: 900;
     font-size: 40px;
 }
@@ -39,7 +39,7 @@ body{
 
 .sub-title{
     font-family: 'Montserrat';
-    border-bottom: 2px solid  rgb(60, 152, 160);
+    border-bottom: 2px solid rgb(66, 101, 70);
     padding-bottom: 5px;;
     font-size: 20px;
     text-transform: uppercase;
