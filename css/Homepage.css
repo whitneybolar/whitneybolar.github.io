@@ -334,6 +334,12 @@
   background-position: center;
 }
 
+#project5-img{
+  background-image: url("/img/assortment/assortment-3.png");
+  background-size: cover;
+  background-position: center;
+}
+
 /*portfolio Mobile*/ 
 .two-halfs{
   display: none;
@@ -429,7 +435,7 @@ label{
 media query between 800 & 400
    */   
      
-@media only screen and (max-width: 800px) and (min-width: 500px) {
+@media only screen and (max-width: 800px) and (min-width: 700px) {
 
   .checkbox{
   visibility: hidden;
@@ -469,7 +475,7 @@ media query between 800 & 400
 media query for 600px and under
 */   
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
   .nav-select{
     display: flex;
@@ -497,22 +503,6 @@ media query for 600px and under
     margin-bottom: 10px;
   }
 
-  /* Photo by Kari Shea on Unsplash */
-#about-option{
-  grid-column: 1 / 1;
-  grid-row: 1/ 1;
-  background-image:url("/img/nav-imgs/kari-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  filter: contrast(90%) grayscale(50%);
-
-  /*filter: invert(19%) sepia(14%) saturate(12%) hue-rotate(341deg) brightness(97%) contrast(89%);*/
-}
-
-#about-option:hover{
-  filter:brightness(85%);
-}
-
 #portfolio-option{
   grid-column: 1 / 1;
   grid-row: 2/ 2;
@@ -538,7 +528,7 @@ media query for 600px and under
     justify-content: center;
     display: grid;
       
-    grid-template-columns: 200px 300px 200px;
+    grid-template-columns: 150px 350px 150px;
     grid-gap: 5px; 
       
     grid-template-rows: auto;
@@ -640,6 +630,10 @@ media query for 600px and under
     background-color: transparent;
     border: 1px solid #363636;
     border-top: none;
+  }
+
+  #course-title{
+    display: none;
   }
   
   /*Contact Section: Mobile */ 

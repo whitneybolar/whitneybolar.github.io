@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 
-#main-heading{
+.main-heading{
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: center;
@@ -32,8 +32,9 @@ body {
 }
 
 .sub-heading{
-  margin: 0px 50px 20px 50px;
+  margin: 0px 65px 20px 65px;
   font-family: 'Uchen', serif;
+  text-align: center;
 }
 
 .meta-option{
@@ -84,17 +85,12 @@ il {
      
 @media screen and (max-width: 700px) { 
 
-  #main-heading{
-    font-size: 25px;
-  }
-
-  .portfolio-title{
+  .main-heading{
     font-size: 45px;
   }
-  
-  .sub-heading{
-    margin-left: 10px;
-    font-family: 'Uchen', serif;
+
+  #hrv-title, #wordpress-title, #ifixit-title{
+    font-size: 30px;
   }
 
   .entire-info{
