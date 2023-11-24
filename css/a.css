@@ -86,11 +86,11 @@ il {
 @media screen and (max-width: 700px) { 
 
   .main-heading{
-    font-size: 45px;
+    font-size: 30px;
   }
 
-  #hrv-title, #wordpress-title, #ifixit-title {
-    font-size: 30px;
+  #contact-heading, #portfolio-heading{
+    font-size: 45px;
   }
 
   .entire-info{
