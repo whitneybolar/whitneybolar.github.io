@@ -1,9 +1,12 @@
+
     const buttonIconHamburger = document.getElementById("bar-image");
     const buttonIconClose = document.getElementById("close-image");
     const menuBackground = document.getElementsByClassName("menu-background");
     const menuNav = document.getElementsByClassName("list-part");
     /*const menuNavUnder = document.getElementsByClassName("list-part-under");*/
 
+    $(menuBackground).delay(500).css({ transform: 'scale(0.1)' });
+    
 function switchMenuButton(){
 
    if(buttonIconHamburger.style.display == "none"){
