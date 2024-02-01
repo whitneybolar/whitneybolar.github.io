@@ -106,6 +106,10 @@ media query for 600px and under
     align-items: center;
     flex-direction: column;
   }
+
+  .outside-description{
+    font-size: 12px;
+  }
   
 }
 
